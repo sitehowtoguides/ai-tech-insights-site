@@ -1,4 +1,5 @@
 ---
+layout: post.njk
 title: Choosing the Right Large Language Model
 description: A guide to help you select the best LLM for your specific needs, comparing popular options like GPT-4, Gemini, Claude, and others.
 date: 2025-05-02

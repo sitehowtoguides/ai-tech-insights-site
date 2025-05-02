@@ -1,19 +1,9 @@
 ---
-layout: base.njk
+layout: post.njk
 title: Understanding Large Language Models (LLMs)
 date: 2025-05-02
 tags: ["guide", "ai-concepts"]
 ---
-
-<article class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md mt-12">
-<h1 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">{{ title }}</h1>
-
-<div class="flex items-center text-sm text-gray-500 mb-6">
-    <span class="mr-4"><i class="far fa-calendar-alt mr-1"></i> {{ page.date | date: "%b %d, %Y" }}</span>
-    {# Add reading time later if needed #}
-</div>
-
-<div class="prose lg:prose-xl max-w-none text-gray-700">
 
 Large Language Models (LLMs) are a type of artificial intelligence designed to understand and generate human-like text. They are trained on massive amounts of text data from the internet, books, and other sources.
 
@@ -46,7 +36,4 @@ LLMs have a wide range of capabilities, including:
 *   LLaMA from Meta
 
 Understanding the basics of LLMs helps in using these powerful tools more effectively.
-
-</div>
-</article>
 

@@ -20,14 +20,15 @@ This site is designed to be easily maintainable, allowing new content (like guid
 ```
 /
 ├── .github/workflows/deploy.yml  # GitHub Actions workflow for deployment
-├── _includes/                    # Layout templates (e.g., base.njk)
-│   └── base.njk
+├── _includes/                    # Layout templates
+│   ├── base.njk                  # Base layout (header, footer, etc.)
+│   └── post.njk                  # Layout for content pages (guides, tutorials)
 ├── guides/                       # Content folder for guides (add other categories here)
 │   ├── understanding-llms.md
 │   └── choosing-llm.md
-├── .eleventy.js                # Eleventy configuration file
+├── .eleventy.js                # Eleventy configuration file (incl. date filters)
 ├── .gitignore                    # Specifies files/folders ignored by Git
-├── index.njk                     # Home page content template
+├── index.njk                     # Home page content template (uses base.njk)
 ├── input.css                     # Tailwind CSS input file
 ├── package.json                  # Project dependencies and scripts
 ├── package-lock.json             # Locked dependency versions
@@ -36,12 +37,12 @@ This site is designed to be easily maintainable, allowing new content (like guid
 └── README.md                     # This file
 ```
 
-*   **`_includes/`**: Contains reusable layout files (like the header, footer, and main page structure).
-*   **`guides/`**: Contains Markdown files for content in the "Guides" category. Create similar folders for other categories (e.g., `tutorials/`, `automations/`).
-*   **`.eleventy.js`**: Configures how Eleventy builds the site (input/output directories, passthrough copies, etc.).
-*   **`index.njk`**: The template for the site's home page.
+*   **`_includes/`**: Contains reusable layout files. `base.njk` provides the overall site structure (header, footer). `post.njk` extends `base.njk` and provides a specific layout for content pages like guides and tutorials, including title, date, and styled content area.
+*   **`guides/`**: Contains Markdown files for content in the "Guides" category. Create similar folders for other categories (e.g., `tutorials/`, `automations/`). Content files should specify `layout: post.njk` in their front matter.
+*   **`.eleventy.js`**: Configures how Eleventy builds the site, including input/output directories, passthrough copies, and custom filters (like date formatting using Luxon).
+*   **`index.njk`**: The template for the site's home page. It uses the `base.njk` layout directly and defines its own content structure.
 *   **`input.css`**, **`tailwind.config.js`**, **`postcss.config.js`**: Files related to Tailwind CSS configuration and build.
-*   **`package.json`**: Defines project scripts and dependencies.
+*   **`package.json`**: Defines project scripts (like `start` and `build`) and dependencies (like Eleventy, Tailwind, Luxon).
 *   **`.github/workflows/deploy.yml`**: Defines the automated build and deployment process triggered on pushes to the `main` branch.
 
 ## Local Development
