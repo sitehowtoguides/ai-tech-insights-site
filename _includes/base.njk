@@ -96,10 +96,7 @@
     <main class="flex-grow"> {# Added flex-grow to ensure footer stays at bottom #}
       {# Define a block for main content #}
       {% block content %}
-        {# Default content if block is not overridden - can be empty or have a placeholder #}
-        <div class="container mx-auto px-4 py-8">
-          <p>Default content area. This should be overridden by child templates.</p>
-        </div>
+        {# Default content block - child templates should override this #}
       {% endblock %}
     </main>
 
