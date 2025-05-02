@@ -14,12 +14,7 @@ module.exports = function(eleventyConfig) {
   });
 
   // Add passthrough copy for CSS. Tailwind builds it, but this ensures Eleventy knows about it.
-  // Ensure the 'css' directory exists at the root or adjust the path accordingly.
-  // If your built CSS is in _site/css, Eleventy handles it automatically.
-  // If you have a source CSS folder, copy it like this:
-  // eleventyConfig.addPassthroughCopy("src/css"); 
   // Since Tailwind builds directly to _site/css, this might not be needed unless you have other static CSS files.
-  // Let's keep it commented out for now unless build issues arise.
   // eleventyConfig.addPassthroughCopy("css");
 
   // You might add more configuration here later, like passthrough copy for assets
@@ -32,21 +27,8 @@ module.exports = function(eleventyConfig) {
     output: "_site"
   };
 
-  // Return the configuration object
+  // Return the configuration object - Simplified to rely on Eleventy defaults for template processing
   return {
-    // Control which files Eleventy will process
-    // e.g., `templateFormats: ["md", "njk", "html", "liquid"],`
-    templateFormats: ["md", "njk"], // Process only Markdown and Nunjucks files
-
-    // Pre-process data files
-    // dataTemplateEngine: "njk",
-
-    // Pre-process Markdown files
-    markdownTemplateEngine: "njk",
-
-    // Pre-process HTML files
-    // htmlTemplateEngine: "njk",
-
     // Path prefix for GitHub Pages deployment
     pathPrefix: "/ai-tech-insights-site/",
 
