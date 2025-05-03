@@ -20,7 +20,7 @@
             width: 100%;
         }
         .nav-link::after {
-            content: ";
+            content: '';
             display: block;
             width: 0;
             height: 2px;
@@ -69,6 +69,14 @@
         .callout-info { background-color: #eff6ff; border-color: #60a5fa; color: #1e40af; }
         .callout-warning { background-color: #fffbeb; border-color: #facc15; color: #92400e; }
         .callout-tip { background-color: #ecfdf5; border-color: #34d399; color: #065f46; }
+        /* FAQ Accordion Styles */
+        .faq-item { margin-bottom: 1rem; border-bottom: 1px solid #e0e0e0; padding-bottom: 1rem; }
+        .faq-question { width: 100%; text-align: left; background: none; border: none; padding: 0.75rem 0; font-size: 1.1rem; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; color: #1f2937; }
+        .faq-question:hover { color: #4f46e5; }
+        .faq-answer { padding: 0.5rem 0 1rem 0; color: #374151; display: none; }
+        .faq-answer.open { display: block; }
+        .faq-icon { transition: transform 0.2s ease-in-out; }
+        .faq-question[aria-expanded="true"] .faq-icon { transform: rotate(45deg); }
     </style>
     <!-- HowTo Schema -->
     <script type="application/ld+json">
@@ -195,7 +203,7 @@
           "name": "Are there free alternatives to Midjourney for AI image generation?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, several alternatives offer free tiers or credits, such as Stable Diffusion (requires setup or uses web interfaces), Leonardo.Ai, Adobe Firefly, and sometimes DALL-E via integrations like Microsoft Copilot or limited free credits. Check our guide on <a href=\'how-to-generate-ai-images.html\'>How to Generate AI Images</a> for more options."
+            "text": "Yes, several alternatives offer free tiers or credits, such as Stable Diffusion (requires setup or uses web interfaces), Leonardo.Ai, Adobe Firefly, and sometimes DALL-E via integrations like Microsoft Copilot or limited free credits. Check our guide on <a href='how-to-generate-ai-images.html'>How to Generate AI Images</a> for more options."
           }
         }
       ]
@@ -205,32 +213,45 @@
 <body class="bg-gray-50 font-sans leading-normal tracking-normal">
 
     <!-- Header -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="../index.html" class="text-2xl font-bold text-indigo-600">AI Tech Insights</a>
-            <div class="hidden md:flex space-x-6 items-center">
-                <a href="../index.html" class="text-gray-600 hover:text-indigo-600 nav-link">Home</a>
-                <a href="../guides.html" class="text-gray-600 hover:text-indigo-600 nav-link">Guides</a>
-                <a href="#" class="text-gray-600 hover:text-indigo-600 nav-link">Tools</a>
-                <a href="#" class="text-gray-600 hover:text-indigo-600 nav-link">About</a>
-                <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition duration-300">Contact</a>
-            </div>
-            <!-- Mobile Menu Button -->
-            <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
-                    <i class="fas fa-bars fa-lg"></i>
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="../index.html" class="text-2xl font-bold text-indigo-600 flex items-center">
+                        <i class="fas fa-robot mr-2"></i>
+                        AI Tech Insights
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="../index.html" class="nav-link font-medium text-gray-700 hover:text-indigo-600">Home</a>
+                    <a href="../automations.html" class="nav-link font-medium text-gray-700 hover:text-indigo-600">Automations</a>
+                    <a href="../guides.html" class="nav-link font-medium text-indigo-600 hover:text-indigo-600">Guides</a> <!-- Active Link -->
+                    <a href="../tutorials.html" class="nav-link font-medium text-gray-700 hover:text-indigo-600">Tutorials</a>
+                    <a href="../trends.html" class="nav-link font-medium text-gray-700 hover:text-indigo-600">AI Trends</a>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
                 </button>
             </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="pt-2 pb-4 space-y-1">
+                    <a href="../index.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">Home</a>
+                    <a href="../automations.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">Automations</a>
+                    <a href="../guides.html" class="block px-3 py-2 text-base font-medium text-indigo-600 bg-indigo-50">Guides</a> <!-- Active Link -->
+                    <a href="../tutorials.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">Tutorials</a>
+                    <a href="../trends.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">AI Trends</a>
+                </div>
+            </div>
         </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="mobile-menu md:hidden">
-            <a href="../index.html" class="block px-6 py-2 text-sm text-gray-600 hover:bg-gray-100">Home</a>
-            <a href="../guides.html" class="block px-6 py-2 text-sm text-gray-600 hover:bg-gray-100">Guides</a>
-            <a href="#" class="block px-6 py-2 text-sm text-gray-600 hover:bg-gray-100">Tools</a>
-            <a href="#" class="block px-6 py-2 text-sm text-gray-600 hover:bg-gray-100">About</a>
-            <a href="#" class="block px-6 py-2 text-sm text-gray-600 hover:bg-gray-100">Contact</a>
-        </div>
-    </nav>
+    </header>
+
 
     <!-- Article Content -->
     <main class="container mx-auto px-6 py-12">
@@ -266,153 +287,254 @@
             <p>Midjourney's primary interface is its bot within the Discord chat platform. Even if a trial isn't active, joining the server is useful for seeing community creations and getting notified of future opportunities.</p>
             <ol>
                 <li><strong>Get a Discord Account:</strong> If you don't have one, sign up for a free account at <a href="https://discord.com" target="_blank" rel="noopener noreferrer">discord.com</a> or via their app.</li>
-                <li><strong>Find the Invite Link:</strong> Go to the Midjourney website (<a href="https://www.midjourney.com" target="_blank" rel="noopener noreferrer">midjourney.com</a>) and look for a button or link labeled "Join the Beta" or similar, which will lead you to the Discord invite.</li>
-                <li><strong>Accept the Invite:</strong> Click the invite link. Discord will prompt you to join the Midjourney server. Accept the invitation.</li>
-                <li><strong>Agree to Terms:</strong> You'll likely need to read and agree to the server rules and Midjourney's Terms of Service upon joining.</li>
+                <li><strong>Find the Invite Link:</strong> Go to the official Midjourney website (<a href="https://www.midjourney.com" target="_blank" rel="noopener noreferrer">midjourney.com</a>) and look for a button or link labeled "Join the Beta" or similar, which will provide the Discord invite link.</li>
+                <li><strong>Join the Server:</strong> Click the invite link. Discord will prompt you to join the Midjourney server. Accept the invitation.</li>
+                <li><strong>Verify and Accept Rules:</strong> You may need to complete verification steps within Discord and agree to the server rules before gaining full access.</li>
             </ol>
-            <!-- Placeholder for Discord join screenshot -->
-            <img src="../images/midjourney-discord-join.png" alt="Screenshot showing the process of joining the Midjourney Discord server">
+            <img src="../images/midjourney-discord-join.png" alt="Steps to join the Midjourney Discord server">
 
-            <h2 id="navigating-the-discord-server">Navigating the Discord Server (for Trial Users)</h2>
-            <p>The Midjourney Discord server is bustling. For trial users, the key areas are:</p>
+            <h2 id="navigating-the-discord-server">Navigating the Discord Server for Trial Users</h2>
+            <p>Once you're in the Midjourney Discord server, here's where trial users typically operate:</p>
             <ul>
-                <li><strong>#announcements:</strong> Check here first for trial status and rules.</li>
-                <li><strong>#status:</strong> Monitor server performance and potential trial pauses.</li>
-                <li><strong>#rules:</strong> Understand the community guidelines.</li>
-                <li><strong>Newcomer/Newbie Channels:</strong> Look for channels specifically designated for new users, often named like `#newbies-1`, `#getting-started`, etc. During active trials, these are usually the *only* places where free users can generate images.</li>
-                <li><strong>#support:</strong> For technical help, though direct support might be limited for trial users.</li>
+                <li><strong>Newcomer Rooms (#newbies, #getting-started):</strong> These channels are specifically designated for new users, including those on a free trial. This is where you'll use the `/imagine` command.</li>
+                <li><strong>#announcements:</strong> Crucial for checking trial status and other official news.</li>
+                <li><strong>#status:</strong> Provides updates on server performance and potential outages.</li>
+                <li><strong>#rules & #faq:</strong> Read these to understand server etiquette and Midjourney policies.</li>
             </ul>
-            <p>Avoid using the `/imagine` command in general chat channels unless trial rules explicitly permit it, as it usually requires a subscription.</p>
+            <p>The server can be very busy, especially the newbie channels. Your generations will appear alongside many others.</p>
+            <img src="../images/midjourney-discord-newbie-channel.png" alt="Screenshot of a Midjourney newbie channel on Discord">
 
-            <h2 id="generating-your-first-image-the-imagine-command">Generating Your First Image: The /imagine Command</h2>
-            <p>If a free trial is active and you're in a designated newbie channel, here's how to create an image:</p>
+            <h2 id="generating-your-first-image">Generating Your First Image (During a Trial)</h2>
+            <p>If a free trial is active, here's the core process:</p>
             <ol>
-                <li><strong>Start the Command:</strong> Type `/imagine` in the message bar. Discord will show a prompt suggestion. Click or tap on it.</li>
-                <li><strong>Enter Your Prompt:</strong> After `/imagine prompt:`, type a detailed description of the image you want to create. Be descriptive! Think about subject, style, lighting, composition, etc. Our guide on <a href="how-to-write-effective-ai-prompts.html">writing effective prompts</a> can help, though Midjourney has its own nuances.</li>
+                <li><strong>Go to a Newbie Channel:</strong> Select one of the designated newcomer channels (e.g., `#newbies-123`).</li>
+                <li><strong>Type the Command:</strong> In the message bar, type `/imagine` and press Space or Tab. A `prompt` field will appear.</li>
+                <li><strong>Write Your Prompt:</strong> Describe the image you want to create in the `prompt` field. Be descriptive! Example: `/imagine prompt: A cute robot mascot holding a glowing lightbulb, digital art style`</li>
                 <li><strong>Send the Command:</strong> Press Enter.</li>
-                <li><strong>Wait for Generation:</strong> The Midjourney bot will acknowledge your request and start generating a grid of four initial image options. This can take a minute or two. Your request will appear in the channel feed, often mixed with others'.</li>
-                <li><strong>Interact with Results:</strong> Once generated, you'll see your 2x2 grid. Below it are buttons:</li>
-                    <ul>
-                        <li><strong>U1, U2, U3, U4:</strong> Upscale one of the four images (top-left, top-right, bottom-left, bottom-right).</li>
-                        <li><strong>V1, V2, V3, V4:</strong> Create variations based on one of the four images.</li>
-                        <li><strong>Rerun (🔄):</strong> Rerun the same prompt for a new grid.</li>
-                    </ul>
+                <li><strong>Wait for Generation:</strong> The Midjourney bot will acknowledge your request and start generating. You'll see four initial low-resolution images appear in the chat after a short wait.</li>
+                <li><strong>Upscale or Vary:</strong> Below the grid of four images (labeled 1-4, top-left to bottom-right), you'll see buttons: U1-U4 (Upscale) and V1-V4 (Variations). Clicking a 'U' button creates a larger, higher-resolution version of that image. Clicking a 'V' button creates four new variations based on the style of that image. The 🔄 button reruns the original prompt.</li>
             </ol>
             <div class="callout callout-tip">
-                <strong>Tip:</strong> Using U or V buttons also consumes your trial credits! Choose wisely.
+                <strong>Tip:</strong> Upscales and variations also consume your trial credits (GPU time). Be mindful of your usage! Check our <a href="how-to-master-prompt-engineering.html">prompt engineering guide</a> for tips.
             </div>
-            <!-- Placeholder for imagine command screenshot -->
-            <img src="../images/midjourney-imagine-command.png" alt="Screenshot showing the /imagine command being used in Discord">
+            <img src="../images/midjourney-imagine-command-example.png" alt="Example of using the /imagine command in Midjourney">
 
             <h2 id="understanding-trial-limitations">Understanding Trial Limitations</h2>
-            <p>Free trials always come with strings attached:</p>
+            <p>Free trials always come with restrictions:</p>
             <ul>
-                <li><strong>Limited Generations:</strong> The most significant limit is the number of 'jobs' (generations, variations, upscales) you can perform. This is often around 20-25 jobs, equivalent to a small amount of GPU time. Check your remaining time using the `/info` command in Discord.</li>
-                <li><strong>Feature Restrictions:</strong> Some advanced features, parameters, or newer model versions might be disabled for trial users.</li>
-                <li><strong>Slower Speed:</strong> Generations might be placed in a slower queue compared to paid subscribers.</li>
-                <li><strong>Public Generations:</strong> All images generated during a trial are public within the Discord channel. Private generation ('stealth mode') requires a higher-tier subscription.</li>
-                <li><strong>Terms of Service:</strong> Usage rights, especially for commercial purposes, might be more restrictive for trial images. Always check the official ToS.</li>
+                <li><strong>Limited Generations:</strong> The most significant limit. You'll get a fixed amount of GPU time or a specific number of 'jobs' (generations, variations, upscales). Use `/info` command in Discord to check your remaining trial time.</li>
+                <li><strong>Slower Generation Speed:</strong> Trial users often have lower priority than subscribers, potentially leading to longer wait times ('Relaxed' mode).</li>
+                <li><strong>Limited Features:</strong> Access to advanced parameters, higher resolutions, or newer features might be restricted.</li>
+                <li><strong>Public Generations:</strong> All images generated in newbie channels are public and visible to everyone on the server.</li>
+                <li><strong>Commercial Use Restrictions:</strong> As mentioned, using trial images commercially might violate the Terms of Service. Check the official terms.</li>
             </ul>
 
-            <h2 id="tips-for-maximizing-your-free-trial">Tips for Maximizing Your Free Trial</h2>
-            <p>Given the limited credits, make every generation count:</p>
-            <ol>
-                <li><strong>Plan Your Prompts:</strong> Think carefully about what you want to create *before* using the `/imagine` command. Draft prompts offline.</li>
-                <li><strong>Start Simple:</strong> Don't make your very first prompt overly complex. Get a feel for how Midjourney interprets basic requests.</li>
-                <li><strong>Study Prompts:</strong> Look at the prompts others are using in the channel (and the resulting images) to learn what works well.</li>
-                <li><strong>Use `/info`:</strong> Regularly check your remaining trial time with the `/info` command so you know how many generations you have left.</li>
-                <li><strong>Be Selective with U/V Buttons:</strong> Only upscale or create variations if you're genuinely interested in the result, as these actions use credits.</li>
-                <li><strong>Save Your Images:</strong> Click on an upscaled image to open it, then right-click (or long-press on mobile) to save it, as your access is temporary.</li>
-            </ol>
-
-            <h2 id="what-if-no-free-trial-is-available">What If No Free Trial is Available? Alternatives</h2>
-            <p>If Midjourney isn't offering a free trial, don't despair! You have other options for AI image generation, many with free tiers or credits:</p>
+            <h2 id="maximizing-your-free-trial">Maximizing Your Free Trial Experience</h2>
+            <p>If you get access to a trial, make it count:</p>
             <ul>
-                <li><strong>Stable Diffusion:</strong> An open-source model. You can run it locally (requires technical setup and a good GPU) or use various web interfaces (like DreamStudio, Leonardo.Ai, Mage.space) that often offer free starting credits.</li>
-                <li><strong>Leonardo.Ai:</strong> Offers daily free credits for generating images using various models, including their own fine-tuned ones.</li>
-                <li><strong>Adobe Firefly:</strong> Integrated into Adobe products and available standalone, offering monthly free generative credits. Designed to be commercially safe.</li>
-                <li><strong>Microsoft Copilot (Designer):</strong> Often integrates <a href="how-to-use-dalle-for-free.html">DALL-E 3</a> for free image generation via Bing Chat or dedicated apps.</li>
-                <li><strong>Canva:</strong> Includes an AI image generator (often based on Stable Diffusion) with free uses available.</li>
+                <li><strong>Plan Your Prompts:</strong> Think carefully about what you want to create before using the `/imagine` command.</li>
+                <li><strong>Start Simple:</strong> Don't use overly complex prompts initially. Get a feel for how Midjourney interprets basic descriptions.</li>
+                <li><strong>Use `/info`:</strong> Regularly check your remaining trial credits using the `/info` command in Discord.</li>
+                <li><strong>Focus on Learning:</strong> Use the trial to understand Midjourney's style, how prompts work, and the effect of basic parameters (like `--ar` for aspect ratio).</li>
+                <li><strong>Save Your Images:</strong> Click on generated images and select "Open original" or right-click to save them, as finding them later in the busy chat can be difficult.</li>
+                <li><strong>Observe Others:</strong> Watch the prompts and results from other users in the newbie channels to learn techniques.</li>
             </ul>
-            <p>Exploring these can give you a taste of AI image generation even without a Midjourney trial. Check out our broader guide on <a href="how-to-generate-ai-images.html">How to Generate AI Images</a> for more details.</p>
+
+            <h2 id="what-if-no-trial-is-active">What If No Free Trial is Active?</h2>
+            <p>If Midjourney isn't offering a free trial, you have a few options:</p>
+            <ul>
+                <li><strong>Subscribe:</strong> Consider purchasing a Midjourney subscription if you need consistent access. Plans start at various price points.</li>
+                <li><strong>Explore Alternatives:</strong> Use other AI image generators that offer free tiers or credits (see FAQ).</li>
+                <li><strong>Wait:</strong> Keep an eye on the Midjourney Discord announcements for future trial opportunities.</li>
+                <li><strong>View Community Work:</strong> You can still browse the Midjourney Discord server and website gallery to see what's possible and learn from others' prompts.</li>
+            </ul>
 
             <h2 id="conclusion">Conclusion: Seizing the Free Opportunity</h2>
-            <p>While not a constant offering, Midjourney's occasional free trials provide a valuable opportunity to experience one of the most powerful AI image generators available. By staying informed through official channels, understanding the Discord environment, mastering the basic commands, and being mindful of the limitations, you can effectively explore Midjourney's capabilities without opening your wallet.</p>
-            <p>Keep an eye on the Midjourney Discord announcements. If a trial opens up, jump in, experiment creatively, and make the most of your limited credits. Even a brief trial can offer significant insights into the potential of AI art generation.</p>
+            <p>While not a constant offering, Midjourney's occasional free trials provide a valuable glimpse into its powerful AI image generation capabilities. By staying informed through official channels, understanding the Discord environment, using commands effectively, and being mindful of limitations, you can make the most of any free access you gain. Even without a trial, exploring the community and alternatives can be a great starting point in the world of AI art.</p>
 
-            <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
-
-            <h3>Is Midjourney always free to try?</h3>
-            <p>No, Midjourney does not offer a persistent free tier like some other AI services. Free access is typically limited to occasional free trial periods announced by Midjourney. These trials often have strict limits on the number of images you can generate.</p>
-
-            <h3>How do I know if a Midjourney free trial is active?</h3>
-            <p>The best way to know is to check the official Midjourney website (midjourney.com) and their official Discord server, particularly the #announcements channel. They usually publicize free trial periods there.</p>
-
-            <h3>How many images can I generate during a free trial?</h3>
-            <p>The number varies depending on the specific trial offer. Historically, trials have offered around 25 free jobs (which includes initial generations, variations, and upscales). Check the trial announcement for the exact limit.</p>
-
-            <h3>Can I use images generated during the free trial commercially?</h3>
-            <p>Midjourney's terms of service regarding commercial use for free trial images can be complex and may differ from paid plans. Generally, commercial use might be restricted or require a paid subscription. Always consult the official Midjourney Terms of Service active during the trial period for definitive rules.</p>
-
-            <h3>What happens when my free trial runs out?</h3>
-            <p>Once you exhaust your free trial credits (GPU minutes), you will no longer be able to use the `/imagine` command or other generation features. To continue using Midjourney, you will need to subscribe to one of their paid plans.</p>
-
-            <h3>Are there free alternatives to Midjourney for AI image generation?</h3>
-            <p>Yes, several alternatives offer free tiers or credits, such as Stable Diffusion (requires setup or uses web interfaces), Leonardo.Ai, Adobe Firefly, and sometimes DALL-E via integrations like Microsoft Copilot or limited free credits. Check our guide on <a href='how-to-generate-ai-images.html'>How to Generate AI Images</a> for more options.</p>
-
-        </article>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-10 mt-12">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">AI Tech Insights</h3>
-                    <p class="text-gray-400">Your guide to navigating the world of Artificial Intelligence tools and technologies.</p>
+            <h2 id="faq">Frequently Asked Questions</h2>
+            <div class="faq-section">
+                <div class="faq-item">
+                    <h3>
+                        <button aria-expanded="false" aria-controls="faq1-answer" class="faq-question">
+                            Is Midjourney always free to try?
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                    </h3>
+                    <div id="faq1-answer" class="faq-answer">
+                        <p>No, Midjourney does not offer a persistent free tier like some other AI services. Free access is typically limited to occasional free trial periods announced by Midjourney. These trials often have strict limits on the number of images you can generate.</p>
+                    </div>
                 </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-3">Quick Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="../index.html" class="text-gray-400 hover:text-white">Home</a></li>
-                        <li><a href="../guides.html" class="text-gray-400 hover:text-white">Guides</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Tools</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
-                    </ul>
+                <div class="faq-item">
+                    <h3>
+                        <button aria-expanded="false" aria-controls="faq2-answer" class="faq-question">
+                            How do I know if a Midjourney free trial is active?
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                    </h3>
+                    <div id="faq2-answer" class="faq-answer">
+                        <p>The best way to know is to check the official Midjourney website (midjourney.com) and their official Discord server, particularly the #announcements channel. They usually publicize free trial periods there.</p>
+                    </div>
                 </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-3">Resources</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Glossary</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
-                    </ul>
+                <div class="faq-item">
+                    <h3>
+                        <button aria-expanded="false" aria-controls="faq3-answer" class="faq-question">
+                            How many images can I generate during a free trial?
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                    </h3>
+                    <div id="faq3-answer" class="faq-answer">
+                        <p>The number varies depending on the specific trial offer. Historically, trials have offered around 25 free jobs (which includes initial generations, variations, and upscales). Check the trial announcement for the exact limit.</p>
+                    </div>
                 </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-3">Connect</h4>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
+                <div class="faq-item">
+                    <h3>
+                        <button aria-expanded="false" aria-controls="faq4-answer" class="faq-question">
+                            Can I use images generated during the free trial commercially?
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                    </h3>
+                    <div id="faq4-answer" class="faq-answer">
+                        <p>Midjourney's terms of service regarding commercial use for free trial images can be complex and may differ from paid plans. Generally, commercial use might be restricted or require a paid subscription. Always consult the official Midjourney Terms of Service active during the trial period for definitive rules.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3>
+                        <button aria-expanded="false" aria-controls="faq5-answer" class="faq-question">
+                            What happens when my free trial runs out?
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                    </h3>
+                    <div id="faq5-answer" class="faq-answer">
+                        <p>Once you exhaust your free trial credits (GPU minutes), you will no longer be able to use the `/imagine` command or other generation features. To continue using Midjourney, you will need to subscribe to one of their paid plans.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3>
+                        <button aria-expanded="false" aria-controls="faq6-answer" class="faq-question">
+                            Are there free alternatives to Midjourney for AI image generation?
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                    </h3>
+                    <div id="faq6-answer" class="faq-answer">
+                        <p>Yes, several alternatives offer free tiers or credits, such as Stable Diffusion (requires setup or uses web interfaces), Leonardo.Ai, Adobe Firefly, and sometimes DALL-E via integrations like Microsoft Copilot or limited free credits. Check our guide on <a href='how-to-generate-ai-images.html'>How to Generate AI Images</a> for more options.</p>
                     </div>
                 </div>
             </div>
-            <div class="text-center text-gray-500 mt-8 pt-8 border-t border-gray-700">
-                &copy; 2025 AI Tech Insights. All rights reserved.
+        </article>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-12 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">AI Tech Insights</h4>
+                    <p class="text-sm">Your guide to understanding and utilizing the power of artificial intelligence. We provide tutorials, guides, and news on the latest AI trends.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="hover:text-white text-sm">Home</a></li>
+                        <li><a href="../guides.html" class="hover:text-white text-sm">Guides</a></li>
+                        <li><a href="../tutorials.html" class="hover:text-white text-sm">Tutorials</a></li>
+                        <li><a href="../trends.html" class="hover:text-white text-sm">AI Trends</a></li>
+                        <li><a href="#" class="hover:text-white text-sm">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white text-sm">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Categories</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../automations.html" class="hover:text-white text-sm">AI Automations</a></li>
+                        <li><a href="#" class="hover:text-white text-sm">Machine Learning</a></li>
+                        <li><a href="#" class="hover:text-white text-sm">Natural Language Processing</a></li>
+                        <li><a href="#" class="hover:text-white text-sm">Computer Vision</a></li>
+                        <li><a href="#" class="hover:text-white text-sm">AI Ethics</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Stay Updated</h4>
+                    <p class="text-sm mb-3">Subscribe to our newsletter for the latest AI news and tutorials.</p>
+                    <form>
+                        <div class="flex">
+                            <input type="email" placeholder="Your email" class="w-full px-3 py-2 rounded-l-md text-gray-800 focus:outline-none text-sm">
+                            <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-r-md text-sm font-medium">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Copyright & Social -->
+            <div class="mt-8 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-center md:text-left">&copy; 2025 AI Tech Insights. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-github"></i></a>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- JavaScript for Mobile Menu and FAQ -->
     <script>
-        // Mobile menu toggle
-        const menuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        menuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('open');
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        mobileMenuButton.addEventListener("click", () => {
+            mobileMenu.classList.toggle("open");
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll("a[href^='#']").forEach(anchor => {
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute("href");
+                if (targetId === "#") return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
+
+        // FAQ Accordion Script
+        document.querySelectorAll(".faq-question").forEach(button => {
+            button.addEventListener("click", () => {
+                const answer = document.getElementById(button.getAttribute("aria-controls"));
+                const isExpanded = button.getAttribute("aria-expanded") === "true";
+
+                // Close other open FAQs
+                document.querySelectorAll(".faq-answer.open").forEach(openAnswer => {
+                    if (openAnswer !== answer) {
+                        openAnswer.classList.remove("open");
+                        const otherButton = document.querySelector(`[aria-controls="${openAnswer.id}"]`);
+                        if (otherButton) {
+                            otherButton.setAttribute("aria-expanded", "false");
+                        }
+                    }
+                });
+
+                // Toggle current FAQ
+                button.setAttribute("aria-expanded", !isExpanded);
+                answer.classList.toggle("open");
+            });
         });
     </script>
 
 </body>
 </html>
+
