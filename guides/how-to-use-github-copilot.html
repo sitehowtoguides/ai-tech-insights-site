@@ -586,41 +586,86 @@
 
 </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-300 py-8 mt-12">
-        <div class="container mx-auto px-4 text-center">
-            <p>&copy; 2025 AI Tech Insights. All rights reserved.</p>
-            <div class="mt-4 space-x-4">
-                <a href="#" class="hover:text-white">Privacy Policy</a>
-                <a href="#" class="hover:text-white">Terms of Service</a>
-                <a href="#" class="hover:text-white">Contact Us</a>
+      <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-12 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">AI Tech Insights</h4>
+                    <p class="text-sm">Your guide to understanding and utilizing the power of artificial intelligence. We provide tutorials, guides, and news on the latest AI trends.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="hover:text-white text-sm">Home</a></li>
+                        <li><a href="../guides.html" class="hover:text-white text-sm">Guides</a></li>
+                        <li><a href="../tutorials.html" class="hover:text-white text-sm">Tutorials</a></li>
+                        <li><a href="../trends.html" class="hover:text-white text-sm">AI Trends</a></li>
+                        <li><a href="#" class="hover:text-white text-sm">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white text-sm">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Categories</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../automations.html" class="hover:text-white text-sm">AI Automations</a></li>
+                        <li><a href="#" class="hover:text-white text-sm">Machine Learning</a></li>
+                        <li><a href="#" class="hover:text-white text-sm">Natural Language Processing</a></li>
+                        <li><a href="#" class="hover:text-white text-sm">Computer Vision</a></li>
+                        <li><a href="#" class="hover:text-white text-sm">AI Ethics</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Stay Updated</h4>
+                    <p class="text-sm mb-3">Subscribe to our newsletter for the latest AI news and tutorials.</p>
+                    <form>
+                        <div class="flex">
+                            <input type="email" placeholder="Your email" class="w-full px-3 py-2 rounded-l-md text-gray-800 focus:outline-none text-sm">
+                            <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-r-md text-sm font-medium">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Copyright & Social -->
+            <div class="mt-8 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-center md:text-left">&copy; 2025 AI Tech Insights. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-github"></i></a>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- JavaScript for Mobile Menu & FAQ Accordion -->
     <script>
-        // Mobile menu toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
+
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('open');
         });
 
-        // FAQ Accordion
-        const faqItems = document.querySelectorAll('.faq-item');
-        faqItems.forEach(item => {
-            const questionButton = item.querySelector('.faq-question');
-            const answerPanel = item.querySelector('.faq-answer');
-            const icon = questionButton.querySelector('.faq-icon');
+        // FAQ Accordion Script
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = document.getElementById(button.getAttribute('aria-controls'));
+                const isExpanded = button.getAttribute('aria-expanded') === 'true';
 
-            questionButton.addEventListener('click', () => {
-                const isExpanded = questionButton.getAttribute('aria-expanded') === 'true';
-                questionButton.setAttribute('aria-expanded', !isExpanded);
-                answerPanel.classList.toggle('open');
+                button.setAttribute('aria-expanded', !isExpanded);
+                answer.classList.toggle('open');
             });
         });
     </script>
-
 </body>
 </html>
 
