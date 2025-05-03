@@ -7,40 +7,247 @@
     <meta name="description" content="Learn the basics of how to generate AI images from text prompts. This guide covers choosing tools, writing prompts, and understanding the process for beginners.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <style>
+        /* Custom CSS from index.html */
+        .gradient-bg {
+            background: linear-gradient(135deg, #6e8efb 0%, #a777e3 100%);
+        }
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #4f46e5;
+            transition: width .3s;
+        }
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .mobile-menu.open {
+            max-height: 500px;
+        }
+        /* Styles for article content */
+        .prose {
+            max-width: 80ch;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .prose h1, .prose h2, .prose h3, .prose h4 {
+            color: #1f2937; /* gray-800 */
+            font-weight: 700;
+            margin-top: 1.5em;
+            margin-bottom: 0.8em;
+        }
+        .prose h1 { font-size: 2.25rem; line-height: 2.5rem; }
+        .prose h2 { font-size: 1.875rem; line-height: 2.25rem; }
+        .prose h3 { font-size: 1.5rem; line-height: 2rem; }
+        .prose h4 { font-size: 1.25rem; line-height: 1.75rem; }
+        .prose p { margin-bottom: 1.25em; line-height: 1.7; color: #374151; /* gray-700 */}
+        .prose a { color: #4f46e5; /* indigo-600 */ text-decoration: none; }
+        .prose a:hover { text-decoration: underline; }
+        .prose ul, .prose ol { margin-left: 1.5em; margin-bottom: 1.25em; color: #374151; }
+        .prose li { margin-bottom: 0.5em; }
+        .prose blockquote { border-left: 4px solid #d1d5db; /* gray-300 */ padding-left: 1em; margin-left: 0; margin-right: 0; font-style: italic; color: #4b5563; /* gray-600 */}
+        .prose code { background-color: #f3f4f6; /* gray-100 */ padding: 0.2em 0.4em; border-radius: 4px; font-size: 0.9em; }
+        .prose pre { background-color: #1f2937; /* gray-800 */ color: #e5e7eb; /* gray-200 */ padding: 1em; border-radius: 8px; overflow-x: auto; }
+        .prose table { width: 100%; border-collapse: collapse; margin-bottom: 1.25em; }
+        .prose th, .prose td { border: 1px solid #d1d5db; /* gray-300 */ padding: 0.5em 0.75em; text-align: left; }
+        .prose th { background-color: #f3f4f6; /* gray-100 */ font-weight: 600; }
+        .prose img { max-width: 100%; height: auto; border-radius: 8px; margin-top: 1em; margin-bottom: 1em; }
+        /* FAQ Accordion Styles */
+        .faq-item { margin-bottom: 1rem; border-bottom: 1px solid #e0e0e0; padding-bottom: 1rem; }
+        .faq-question { width: 100%; text-align: left; background: none; border: none; padding: 0.75rem 0; font-size: 1.1rem; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; color: #1f2937; }
+        .faq-question:hover { color: #4f46e5; }
+        .faq-answer { padding: 0.5rem 0 1rem 0; color: #374151; display: none; }
+        .faq-answer.open { display: block; }
+        .faq-icon { transition: transform 0.2s ease-in-out; }
+        .faq-question[aria-expanded="true"] .faq-icon { transform: rotate(45deg); }
+    </style>
 
+    <!-- HowTo Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Generate AI Images: A Beginner's Overview",
+      "description": "Learn the fundamental steps involved in generating images using AI text-to-image tools, from choosing a platform to refining your results.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.how-toguides.com/images/generate-ai-images-featured.webp",
+        "width": "1200",
+        "height": "800"
+      },
+      "totalTime": "PT15M",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "AI Image Generation Tool (e.g., Midjourney, DALL-E, Stable Diffusion, Bing Image Creator)"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Web Browser or Specific App (like Discord for Midjourney)"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Account for the chosen tool (may require subscription)"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Choose an AI Image Generation Tool",
+          "text": "Select an AI tool based on factors like desired style, ease of use, access method (web, Discord), and cost (free trials, subscriptions). Popular options include Midjourney, DALL-E 3 (via ChatGPT/Bing), Stable Diffusion, and Adobe Firefly.",
+          "url": "#step-1-choose-tool",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://www.how-toguides.com/images/ai-image-tools-comparison.webp",
+            "width": "800",
+            "height": "600"
+          }
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Access the Tool and Understand the Interface",
+          "text": "Sign up or log in to your chosen platform. Familiarize yourself with the interface, locating the text input area (prompt box) and the generate/create button.",
+          "url": "#step-2-access-interface",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://www.how-toguides.com/images/ai-image-interface-example.webp",
+            "width": "800",
+            "height": "600"
+          }
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Write a Descriptive Prompt",
+          "text": "Clearly describe the image you envision. Include details about the subject, action, setting, style (photorealistic, cartoon, oil painting), lighting, colors, and composition. Be specific!",
+          "url": "#step-3-write-prompt",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://www.how-toguides.com/images/ai-image-prompt-writing.webp",
+            "width": "800",
+            "height": "600"
+          }
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Add Parameters or Settings (Optional)",
+          "text": "Many tools allow extra parameters to control aspects like aspect ratio (--ar), style intensity (--s), negative prompts (--no), or specific model versions. Check your tool's documentation.",
+          "url": "#step-4-add-parameters",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://www.how-toguides.com/images/ai-image-parameters-example.webp",
+            "width": "800",
+            "height": "600"
+          }
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Generate the Image(s)",
+          "text": "Submit your prompt and any parameters. The AI will process your request and generate one or more image options based on your description.",
+          "url": "#step-5-generate-images",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://www.how-toguides.com/images/ai-image-generation-process.webp",
+            "width": "800",
+            "height": "600"
+          }
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Review and Refine",
+          "text": "Examine the generated images. If they aren't quite right, refine your prompt with more detail or different keywords. Use features like variations (V buttons in Midjourney) or conversational refinement (ChatGPT) if available.",
+          "url": "#step-6-review-refine",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://www.how-toguides.com/images/ai-image-refinement.webp",
+            "width": "800",
+            "height": "600"
+          }
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Upscale and Save",
+          "text": "Once you have an image you like, use the tool's upscale feature (if applicable, like U buttons in Midjourney) to get a higher-resolution version. Then, download and save the final image to your device.",
+          "url": "#step-7-upscale-save",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://www.how-toguides.com/images/ai-image-save-final.webp",
+            "width": "800",
+            "height": "600"
+          }
+        }
+      ]
+    }
+    </script>
 
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the best AI image generators for beginners?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tools integrated into familiar interfaces are often easiest for beginners. Bing Image Creator (powered by DALL-E 3) is free and web-based. DALL-E 3 within ChatGPT Plus is also user-friendly if you're already a subscriber. Midjourney is powerful but has a steeper learning curve due to its Discord interface."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I generate AI images for free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, several options offer free AI image generation, often with limitations. Bing Image Creator provides free daily/weekly credits. Some Stable Diffusion interfaces can be run locally for free (requires technical setup). Many paid tools used to offer limited free trials, but availability varies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I make AI images look more realistic?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use keywords like 'photorealistic', 'realistic photo', '8K resolution', 'detailed skin texture', 'cinematic lighting', 'shot on [camera type/lens]'. Specify details about lighting, camera angles (close-up, wide shot), and materials. Experiment with different models or style parameters if available."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are 'negative prompts'?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A negative prompt tells the AI what *not* to include in the image. Many tools support this (often using a '--no' parameter or a separate input box). Examples: '--no text, words, signature', '--no extra limbs, deformed hands', '--no blurry background'. This helps refine results and remove unwanted elements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can AI generate images of specific people or characters?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Generating images of specific, real people (especially celebrities) is often restricted by AI tools due to privacy and ethical concerns. Generating copyrighted characters may also be limited or produce inconsistent results. Creating consistent original characters across multiple images requires advanced techniques like using seed numbers or specific model training."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the legal rights for AI-generated images?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This is a complex and evolving area. Generally, the terms of service of the AI tool dictate usage rights. Some tools (like DALL-E via OpenAI) grant users broad ownership, including commercial use. Others might have restrictions. Copyright law regarding AI art is still being established globally. Always check the specific tool's terms."
+          }
+        }
+      ]
+    }
+    </script>
 
-
-<style>
-.author-box {
-    /* Using Tailwind classes primarily, but you can add custom styles here */
-    /* Example: Add a subtle background */
-    /* background-color: #f9fafb; */
-    /* padding: 2rem; */
-    /* border-radius: 0.5rem; */
-}
-
-.author-image {
-    /* Ensures the image is circular and covers the area */
-    border: 2px solid #e5e7eb; /* Optional border */
-}
-
-.author-name {
-    /* Custom styles for name if needed */
-    color: #1f2937; /* Dark gray */
-}
-
-.author-bio {
-    /* Custom styles for bio if needed */
-    line-height: 1.6;
-}
-
-/* Optional social link styling */
-.author-social a {
-    transition: color 0.2s ease-in-out;
-}
-</style>
 </head>
 <body class="font-sans antialiased text-gray-800 bg-gray-50">
     <!-- Header -->
@@ -273,41 +480,7 @@
             </section>
 
         </article>
-
-        -->
-    </div>
-</div>
-
-    
-        -->
-    </div>
-</div>
-
-
-
-        -->
-    </div>
-</div>
-
-
-<div class="author-box mt-12 border-t pt-8 flex items-start space-x-4">
-    <img src="../images/alex-thompson.png" alt="Alex Thompson" class="author-image w-20 h-20 md:w-24 md:h-24 rounded-full object-cover flex-shrink-0">
-    <div>
-        <h4 class="author-name text-xl font-semibold mb-1">Alex Thompson</h4>
-        <p class="author-bio text-sm text-gray-600">
-            Alex Thompson is a senior content strategist and AI specialist at AI Tech Insights. With years of experience analyzing and working hands-on with large language models, image generation tools, and automation platforms, Alex focuses on creating clear, actionable guides that help both beginners and professionals navigate the rapidly evolving AI landscape. Their goal is to demystify complex AI concepts and empower readers to leverage these powerful technologies for creativity, productivity, and innovation. When not exploring the latest AI advancements, Alex enjoys experimenting with prompt engineering and sharing practical tips with the community.
-        </p>
-        <!-- Optional: Add social links here -->
-        <!-- 
-        <div class="author-social mt-2 space-x-3">
-            <a href="#" class="text-gray-500 hover:text-blue-600">Twitter</a>
-            <a href="#" class="text-gray-500 hover:text-blue-600">LinkedIn</a>
-        </div>
-        -->
-    </div>
-</div>
-
-</main>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-gray-300 py-8 mt-12">
