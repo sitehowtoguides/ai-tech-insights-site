@@ -209,6 +209,36 @@
       ]
     }
     </script>
+<style>
+.author-box {
+    /* Using Tailwind classes primarily, but you can add custom styles here */
+    /* Example: Add a subtle background */
+    /* background-color: #f9fafb; */
+    /* padding: 2rem; */
+    /* border-radius: 0.5rem; */
+}
+
+.author-image {
+    /* Ensures the image is circular and covers the area */
+    border: 2px solid #e5e7eb; /* Optional border */
+}
+
+.author-name {
+    /* Custom styles for name if needed */
+    color: #1f2937; /* Dark gray */
+}
+
+.author-bio {
+    /* Custom styles for bio if needed */
+    line-height: 1.6;
+}
+
+/* Optional social link styling */
+.author-social a {
+    transition: color 0.2s ease-in-out;
+}
+</style>
+
 </head>
 <body class="bg-gray-50 font-sans leading-normal tracking-normal">
 
@@ -422,7 +452,44 @@
                 </div>
             </div>
         </article>
-    </main>
+<div class="author-box mt-12 border-t pt-8 flex items-start space-x-4">
+    <!-- Author Image -->
+    <img src="../images/author-placeholder.png" alt="Author Name" class="author-image w-16 h-16 md:w-20 md:h-20 rounded-full object-cover flex-shrink-0">
+    
+    <!-- Author Info -->
+    <div class="author-info">
+        <h4 class="author-name text-lg md:text-xl font-semibold mb-1">Alex Thompson</h4>
+        <p class="author-bio text-sm text-gray-600">
+            Alex Thompson is a senior content strategist and AI specialist at AI Tech Insights. With years of experience analyzing and working hands-on with large language models, image generation tools, and automation platforms, Alex focuses on creating clear, actionable guides that help both beginners and professionals navigate the rapidly evolving AI landscape. Their goal is to demystify complex AI concepts and empower readers to leverage these powerful technologies for creativity, productivity, and innovation. When not exploring the latest AI advancements, Alex enjoys experimenting with prompt engineering and sharing practical tips with the community.
+        </p>
+        <!-- Optional: Add social links here -->
+        <!-- 
+        <div class="author-social mt-2 space-x-3">
+            <a href="#" class="text-gray-500 hover:text-blue-600">Twitter</a>
+            <a href="#" class="text-gray-500 hover:text-blue-600">LinkedIn</a>
+        </div>
+        -->
+    </div>
+</div>
+
+    <div class="author-box mt-12 border-t pt-8 flex items-start space-x-4">
+    <img src="../images/alex-thompson.png" alt="Alex Thompson" class="author-image w-20 h-20 md:w-24 md:h-24 rounded-full object-cover flex-shrink-0">
+    <div>
+        <h4 class="author-name text-xl font-semibold mb-1">Alex Thompson</h4>
+        <p class="author-bio text-sm text-gray-600">
+            Alex Thompson is a senior content strategist and AI specialist at AI Tech Insights. With years of experience analyzing and working hands-on with large language models, image generation tools, and automation platforms, Alex focuses on creating clear, actionable guides that help both beginners and professionals navigate the rapidly evolving AI landscape. Their goal is to demystify complex AI concepts and empower readers to leverage these powerful technologies for creativity, productivity, and innovation. When not exploring the latest AI advancements, Alex enjoys experimenting with prompt engineering and sharing practical tips with the community.
+        </p>
+        <!-- Optional: Add social links here -->
+        <!-- 
+        <div class="author-social mt-2 space-x-3">
+            <a href="#" class="text-gray-500 hover:text-blue-600">Twitter</a>
+            <a href="#" class="text-gray-500 hover:text-blue-600">LinkedIn</a>
+        </div>
+        -->
+    </div>
+</div>
+
+</main>
 
 
     <!-- Footer -->
