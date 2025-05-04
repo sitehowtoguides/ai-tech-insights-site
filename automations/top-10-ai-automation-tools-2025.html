@@ -441,43 +441,62 @@
         </article>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-300 mt-12">
-        <div class="container mx-auto px-4 py-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- About Section -->
+        <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-12 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About -->
                 <div>
-                    <h3 class="text-lg font-semibold text-white mb-3">AI Tech Insights</h3>
-                    <p class="text-sm">Your go-to resource for clear, practical guides and insights into the world of Artificial Intelligence tools and technologies.</p>
+                    <h4 class="text-lg font-semibold text-white mb-4">AI Tech Insights</h4>
+                    <p class="text-sm">Your guide to understanding and utilizing the power of artificial intelligence. We provide tutorials, guides, and news on the latest AI trends.</p>
                 </div>
 
                 <!-- Quick Links -->
                 <div>
-                    <h3 class="text-lg font-semibold text-white mb-3">Quick Links</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="../index.html" class="hover:text-white hover:underline">Home</a></li>
-                        <li><a href="../guides.html" class="hover:text-white hover:underline">Guides</a></li>
-                        <li><a href="../automations.html" class="hover:text-white hover:underline">Automations</a></li>
-                        <li><a href="../tutorials.html" class="hover:text-white hover:underline">Tutorials</a></li>
-                        <li><a href="../trends.html" class="hover:text-white hover:underline">AI Trends</a></li>
-                        <!-- Add links to privacy policy, about page etc. if they exist -->
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="hover:text-white text-sm">Home</a></li>
+                        <li><a href="../guides.html" class="hover:text-white text-sm">Guides</a></li>
+                        <li><a href="../tutorials.html" class="hover:text-white text-sm">Tutorials</a></li>
+                        <li><a href="../trends.html" class="hover:text-white text-sm">AI Trends</a></li>
+                        <li><a href="#" class="hover:text-white text-sm">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white text-sm">Terms of Service</a></li>
                     </ul>
                 </div>
 
-                <!-- Newsletter or Contact -->
+                <!-- Categories -->
                 <div>
-                    <h3 class="text-lg font-semibold text-white mb-3">Stay Updated</h3>
-                    <p class="text-sm mb-3">Get the latest AI guides and insights delivered to your inbox.</p>
+                    <h4 class="text-lg font-semibold text-white mb-4">Categories</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../automations.html" class="hover:text-white text-sm">AI Automations</a></li>
+                        <li><a href="#" class="hover:text-white text-sm">Machine Learning</a></li>
+                        <li><a href="#" class="hover:text-white text-sm">Natural Language Processing</a></li>
+                        <li><a href="#" class="hover:text-white text-sm">Computer Vision</a></li>
+                        <li><a href="#" class="hover:text-white text-sm">AI Ethics</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Stay Updated</h4>
+                    <p class="text-sm mb-3">Subscribe to our newsletter for the latest AI news and tutorials.</p>
                     <form>
                         <div class="flex">
-                            <input type="email" placeholder="Enter your email" class="w-full px-3 py-2 rounded-l-md text-gray-800 focus:outline-none text-sm">
+                            <input type="email" placeholder="Your email" class="w-full px-3 py-2 rounded-l-md text-gray-800 focus:outline-none text-sm">
                             <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-r-md text-sm font-medium">Subscribe</button>
                         </div>
                     </form>
                 </div>
             </div>
-            <div class="mt-8 pt-4 border-t border-gray-700 text-center text-sm">
-                &copy; 2025 AI Tech Insights. All rights reserved.
+
+            <!-- Copyright & Social -->
+            <div class="mt-8 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-center md:text-left">&copy; 2025 AI Tech Insights. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-github"></i></a>
+                </div>
             </div>
         </div>
     </footer>
