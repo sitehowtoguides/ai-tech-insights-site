@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI for Admin Tasks: Automating Repetitive Work (2025) - AI Master Guides</title>
+    <meta name="description" content="Learn how AI assistants automate repetitive administrative tasks like scheduling, email management, data entry, and report generation. Boost productivity in 2025.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom CSS from index.html */
+        .gradient-bg {
+            background: linear-gradient(135deg, #6e8efb 0%, #a777e3 100%);
+        }
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .nav-link::after {
+            content: ";
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #4f46e5;
+            transition: width .3s;
+        }
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .mobile-menu.open {
+            max-height: 500px;
+        }
+        /* Styles for article content */
+        .prose {
+            max-width: 80ch;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .prose h1, .prose h2, .prose h3, .prose h4 {
+            color: #1f2937; /* gray-800 */
+            font-weight: 700;
+            margin-top: 1.5em;
+            margin-bottom: 0.8em;
+        }
+        .prose h1 { font-size: 2.25rem; line-height: 2.5rem; }
+        .prose h2 { font-size: 1.875rem; line-height: 2.25rem; }
+        .prose h3 { font-size: 1.5rem; line-height: 2rem; }
+        .prose h4 { font-size: 1.25rem; line-height: 1.75rem; }
+        .prose p { margin-bottom: 1.25em; line-height: 1.7; color: #374151; /* gray-700 */ max-width: 75ch; }
+        .prose p:not(:last-child) { margin-bottom: 1.25em; }
+        .prose a { color: #4f46e5; /* indigo-600 */ text-decoration: none; }
+        .prose a:hover { text-decoration: underline; }
+        .prose ul, .prose ol { margin-left: 1.5em; margin-bottom: 1.25em; color: #374151; }
+        .prose li { margin-bottom: 0.5em; }
+        .prose blockquote { border-left: 4px solid #d1d5db; /* gray-300 */ padding-left: 1em; margin-left: 0; margin-right: 0; font-style: italic; color: #4b5563; /* gray-600 */}
+        .prose code { background-color: #f3f4f6; /* gray-100 */ padding: 0.2em 0.4em; border-radius: 4px; font-size: 0.9em; }
+        .prose pre { background-color: #1f2937; /* gray-800 */ color: #e5e7eb; /* gray-200 */ padding: 1em; border-radius: 8px; overflow-x: auto; }
+        .prose table { width: 100%; border-collapse: collapse; margin-bottom: 1.25em; }
+        .prose th, .prose td { border: 1px solid #d1d5db; /* gray-300 */ padding: 0.5em 0.75em; text-align: left; }
+        .prose th { background-color: #f3f4f6; /* gray-100 */ font-weight: 600; }
+        .prose img { max-width: 100%; height: auto; border-radius: 8px; margin-top: 1em; margin-bottom: 1em; }
+        /* FAQ Accordion Styles */
+        .faq-item details { margin-bottom: 1rem; border-bottom: 1px solid #e0e0e0; padding-bottom: 1rem; }
+        .faq-item summary { width: 100%; text-align: left; background: none; border: none; padding: 0.75rem 0; font-size: 1.1rem; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; color: #1f2937; list-style: none; /* Remove default marker */ }
+        .faq-item summary::-webkit-details-marker { display: none; /* Hide Safari marker */ }
+        .faq-item summary:hover { color: #4f46e5; }
+        .faq-item summary .faq-icon { transition: transform 0.2s ease-in-out; }
+        .faq-item details[open] summary .faq-icon { transform: rotate(45deg); }
+        .faq-answer { padding: 0.5rem 0 1rem 0; color: #374151; }
+    </style>
+    <style>
+        .author-box {}
+        .author-image { border: 2px solid #e5e7eb; }
+        .author-name { color: #1f2937; }
+        .author-bio { line-height: 1.6; }
+        .author-social a { transition: color 0.2s ease-in-out; }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of administrative tasks can AI assistants automate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI assistants can automate a wide range of tasks, including scheduling meetings, managing calendars, filtering and prioritizing emails, drafting standard responses, transcribing meeting notes, managing travel arrangements, basic data entry, generating simple reports, and reminding users of deadlines."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are AI assistants secure for handling sensitive company information?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Reputable AI assistant providers prioritize security using encryption, access controls, and compliance with data privacy regulations (like GDPR). However, it's crucial to review the security policies of any tool, configure settings appropriately, and ensure employees understand best practices for using AI with sensitive data."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do AI assistants differ from traditional automation tools like macros or RPA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While macros and RPA excel at automating rule-based, repetitive tasks within specific applications, AI assistants often incorporate natural language processing and machine learning. This allows them to understand context, handle more varied requests, learn user preferences, and interact more flexibly across different platforms (email, calendar, chat)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are some popular AI assistant tools for administrative tasks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Examples include dedicated AI scheduling tools (like Calendly, Motion), AI features within productivity suites (like Microsoft Copilot for Microsoft 365, Google Workspace Duet AI), specialized email management tools, and broader AI assistants that integrate various functions. No-code platforms like Zapier can also be used to build custom AI admin workflows."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the main benefit of using AI for administrative task automation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The primary benefit is significant time savings for employees. By offloading routine, time-consuming administrative tasks to AI, professionals can free up their schedules to focus on more strategic, complex, and high-value work that requires human judgment and creativity, ultimately boosting overall productivity and job satisfaction."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="../index.html" class="text-2xl font-bold text-indigo-600 flex items-center">
+                        <img src="../images/logo.svg" alt="AI Master Guides Logo" class="h-8 mr-2">
+                        AI Master Guides
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="../index.html" class="nav-link font-medium text-gray-700 hover:text-indigo-600">Home</a>
+                    <a href="../automations.html" class="nav-link font-medium text-indigo-600 hover:text-indigo-600">Automations</a> <!-- Active Link -->
+                    <a href="../guides.html" class="nav-link font-medium text-gray-700 hover:text-indigo-600">Guides</a>
+                    <a href="../tutorials.html" class="nav-link font-medium text-gray-700 hover:text-indigo-600">Tutorials</a>
+                    <a href="../trends.html" class="nav-link font-medium text-gray-700 hover:text-indigo-600">AI Trends</a>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="pt-2 pb-4 space-y-1">
+                    <a href="../index.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">Home</a>
+                    <a href="../automations.html" class="block px-3 py-2 text-base font-medium text-indigo-600 bg-indigo-50">Automations</a> <!-- Active Link -->
+                    <a href="../guides.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">Guides</a>
+                    <a href="../tutorials.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">Tutorials</a>
+                    <a href="../trends.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">AI Trends</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="container mx-auto px-4 pt-6 pb-12">
+        <article class="prose lg:prose-xl">
+            <h1 style="margin-top: 0;">Automating Repetitive Administrative Tasks with AI Assistants (2025)</h1>
+            <p class="text-lg text-gray-600">Last Updated: May 5, 2025</p>
+
+            <p>In any organization, countless hours are consumed by repetitive administrative tasks – scheduling meetings, managing emails, entering data, generating routine reports. While essential, these tasks often divert valuable time from more strategic work. Enter **AI assistants for administrative tasks**, powerful tools designed to handle the mundane, freeing up human potential in 2025.</p>
+
+            <p>This article explores how **AI task automation** is specifically targeting the administrative burden. We'll look at practical examples of **automating repetitive tasks with AI**, including **AI email management**, intelligent scheduling, data entry automation, and more. Discover how leveraging **AI productivity tools** can significantly boost efficiency across your organization.</p>
+
+            <!-- [Image: Illustration of a virtual assistant icon juggling various admin tasks like calendar, email, documents, and data entry icons] -->
+
+            <h2 id="burden-admin">The Burden of Repetitive Admin Work</h2>
+            <p>Administrative tasks are the necessary glue holding business operations together, but their cumulative effect can be a major drain on productivity. Scheduling a single meeting can involve multiple back-and-forth emails. Managing an overflowing inbox takes constant attention. Manually transferring data between systems is tedious and error-prone.</p>
+
+            <p>Studies consistently show that professionals spend a significant portion of their workweek on such tasks. This not only reduces the time available for core responsibilities and strategic thinking but can also lead to burnout and decreased job satisfaction. **AI task automation** offers a compelling solution to reclaim this lost time and focus.</p>
+
+            <h2 id="ai-assistants">What are AI Assistants for Administrative Tasks?</h2>
+            <p>**AI assistants for administrative tasks** are software tools that use artificial intelligence, particularly Natural Language Processing (NLP) and Machine Learning (ML), to understand requests, perform actions, and learn user preferences. They go beyond simple rule-based automation (like macros) by handling more complex, context-dependent tasks and interacting more naturally with users.</p>
+
+            <p>These assistants can integrate with various workplace tools like calendars, email clients, CRM systems, and project management software to execute tasks across platforms. They can often be interacted with via text commands, voice, or directly within the applications they support.</p>
+
+            <h2 id="scheduling-calendar">AI for Scheduling and Calendar Management</h2>
+            <p>Coordinating schedules is one of the most common administrative headaches. **AI scheduling assistants** streamline this process significantly:</p>
+            <ul>
+                <li><strong>Automated Booking:</strong> Tools like Calendly or Motion allow users to share a link showing their availability. The AI handles the booking process based on predefined rules and integrates directly with the user's calendar.</li>
+                <li><strong>Natural Language Scheduling:</strong> Some assistants allow users to make requests like "Find a 30-minute slot next week for me, Sarah, and John." The AI checks everyone's availability and proposes suitable times.</li>
+                <li><strong>Meeting Prioritization:</strong> Advanced assistants might learn which meetings are critical and help prioritize or reschedule less important ones automatically based on user preferences or project deadlines.</li>
+                <li><strong>Automated Reminders:</strong> Sending meeting reminders to attendees automatically.</li>
+            </ul>
+            <p>By automating scheduling, AI saves countless hours previously spent on email tag.</p>
+
+            <!-- [Image: Mock-up of an AI scheduling assistant interface showing calendar integration and automated time suggestions] -->
+
+            <h2 id="email-management">AI Email Management: Taming the Inbox</h2>
+            <p>The sheer volume of email can be overwhelming. **AI email management** tools help users regain control:</p>
+            <ul>
+                <li><strong>Smart Filtering and Prioritization:</strong> AI analyzes incoming emails based on sender, content, and user behavior to automatically categorize them (e.g., urgent, important, newsletter) and highlight priority messages.</li>
+                <li><strong>Automated Responses:</strong> Drafting or suggesting replies to common inquiries based on past responses or templates.</li>
+                <li><strong>Email Summarization:</strong> Providing quick summaries of long email threads.</li>
+                <li><strong>Unsubscribe Suggestions:</strong> Identifying and suggesting unsubscribing from newsletters or promotional emails that are rarely opened.</li>
+                <li><strong>Action Item Extraction:</strong> Identifying tasks or deadlines mentioned within emails and suggesting adding them to a to-do list or calendar.</li>
+            </ul>
+            <p>These features help users focus on important communications and spend less time sorting through noise.</p>
+
+            <h2 id="data-entry-reporting">AI for Data Entry and Report Generation</h2>
+            <p>Manually entering data or compiling routine reports is time-consuming and error-prone. **Automating repetitive tasks with AI** offers significant improvements:</p>
+            <ul>
+                <li><strong>Automated Data Extraction:</strong> Using OCR and NLP to pull data from documents (invoices, forms, PDFs) and enter it into spreadsheets, databases, or CRM systems (related to <a href="ai-powered-data-entry-and-processing-automation-explained_en.html">AI-Powered Data Entry</a>).</li>
+                <li><strong>Data Validation:</strong> AI can cross-reference entered data against existing records or predefined rules to flag potential errors or inconsistencies.</li>
+                <li><strong>Routine Report Generation:</strong> Automatically compiling data from various sources (e.g., sales figures, website analytics) into standard weekly or monthly reports based on templates.</li>
+                <li><strong>Natural Language Queries:</strong> Some tools allow users to ask questions like "What were the sales figures for Q1?" and the AI generates the relevant report or data visualization.</li>
+            </ul>
+            <p>This automation ensures data accuracy and frees up time for analyzing the information rather than just compiling it.</p>
+
+            <h2 id="transcription-notes">Meeting Transcription and Note-Taking</h2>
+            <p>Capturing accurate notes and action items from meetings is crucial but can distract participants. AI assistants can help:</p>
+            <ul>
+                <li><strong>Real-time Transcription:</strong> Automatically transcribe meeting audio (from platforms like Zoom, Teams, Google Meet) into text.</li>
+                <li><strong>Speaker Identification:</strong> Identifying who said what during the meeting.</li>
+                <li><strong>Action Item Detection:</strong> Highlighting potential tasks or decisions discussed during the meeting.</li>
+                <li><strong>Meeting Summarization:</strong> Generating concise summaries of key discussion points and outcomes.</li>
+            </ul>
+            <p>Tools like Otter.ai, Fireflies.ai, or integrated features in video conferencing platforms provide these capabilities, ensuring important information isn't lost.</p>
+
+            <!-- [Image: Screenshot showing an AI-generated meeting transcript with speaker labels and highlighted action items] -->
+
+            <h2 id="other-admin-tasks">Other Administrative Tasks AI Can Handle</h2>
+            <p>The scope of **AI assistants for administrative tasks** continues to expand:</p>
+            <ul>
+                <li><strong>Travel Arrangements:</strong> Finding flight and hotel options based on preferences and company policy.</li>
+                <li><strong>Document Management:</strong> Automatically tagging, organizing, and retrieving documents based on content.</li>
+                <li><strong>Proofreading and Editing:</strong> Checking documents and emails for grammar, spelling, and style errors.</li>
+                <li><strong>Simple Research:</strong> Gathering preliminary information on specified topics from the web.</li>
+            </ul>
+
+            <h2 id="benefits-implementation">Benefits and Implementation Considerations</h2>
+            <p>The primary benefit of using **AI productivity tools** for admin tasks is **time savings**, leading to:</p>
+            <ul>
+                <li>Increased focus on high-value work.</li>
+                <li>Improved overall productivity and efficiency.</li>
+                <li>Reduced operational costs.</li>
+                <li>Minimized errors in routine tasks.</li>
+                <li>Enhanced employee satisfaction by reducing tedious work.</li>
+            </ul>
+
+            <p>When implementing these tools:</p>
+            <ol>
+                <li><strong>Identify High-Impact Tasks:</strong> Start by automating the most time-consuming or error-prone admin tasks.</li>
+                <li><strong>Choose the Right Tools:</strong> Evaluate assistants based on the specific tasks they automate, integration capabilities, ease of use, and security features.</li>
+                <li><strong>Ensure Security and Privacy:</strong> Be mindful of data sensitivity when using AI tools, especially cloud-based ones. Review vendor security policies.</li>
+                <li><strong>Provide Training:</strong> Help employees understand how to use the tools effectively and trust the automation.</li>
+                <li><strong>Set Clear Expectations:</strong> AI assistants are tools, not replacements for critical thinking. Understand their limitations.</li>
+                <li><strong>Monitor and Refine:</strong> Regularly assess the effectiveness of the automation and make adjustments as needed.</li>
+            </ol>
+
+            <h2 id="conclusion">Conclusion: Reclaiming Time with AI Admin Assistants</h2>
+            <p>**AI assistants for administrative tasks** represent a significant leap forward in workplace productivity. By effectively **automating repetitive tasks with AI**, organizations can empower their employees to focus on more meaningful, strategic work.</p>
+            <p>From **AI email management** to intelligent scheduling and data handling, these **AI productivity tools** are becoming indispensable for streamlining operations and boosting efficiency in 2025. Embracing **AI task automation** for administrative functions is no longer just an option but a strategic imperative for businesses looking to optimize their human capital.</p>
+
+            <!-- FAQ Section -->
+            <h2 id="faq">Frequently Asked Questions about AI for Administrative Tasks</h2>
+            <div class="faq-section mt-8">
+                <div class="faq-item">
+                    <details>
+                        <summary class="faq-question">
+                            What kind of administrative tasks can AI assistants automate?
+                            <span class="faq-icon ml-auto text-indigo-600"><i class="fas fa-plus"></i></span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>AI assistants can automate a wide range of tasks, including scheduling meetings, managing calendars, filtering and prioritizing emails, drafting standard responses, transcribing meeting notes, managing travel arrangements, basic data entry, generating simple reports, and reminding users of deadlines.</p>
+                        </div>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary class="faq-question">
+                            Are AI assistants secure for handling sensitive company information?
+                            <span class="faq-icon ml-auto text-indigo-600"><i class="fas fa-plus"></i></span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Reputable AI assistant providers prioritize security using encryption, access controls, and compliance with data privacy regulations (like GDPR). However, it's crucial to review the security policies of any tool, configure settings appropriately, and ensure employees understand best practices for using AI with sensitive data.</p>
+                        </div>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary class="faq-question">
+                            How do AI assistants differ from traditional automation tools like macros or RPA?
+                            <span class="faq-icon ml-auto text-indigo-600"><i class="fas fa-plus"></i></span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>While macros and RPA excel at automating rule-based, repetitive tasks within specific applications, AI assistants often incorporate natural language processing and machine learning. This allows them to understand context, handle more varied requests, learn user preferences, and interact more flexibly across different platforms (email, calendar, chat).</p>
+                        </div>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary class="faq-question">
+                            What are some popular AI assistant tools for administrative tasks?
+                            <span class="faq-icon ml-auto text-indigo-600"><i class="fas fa-plus"></i></span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Examples include dedicated AI scheduling tools (like Calendly, Motion), AI features within productivity suites (like Microsoft Copilot for Microsoft 365, Google Workspace Duet AI), specialized email management tools, and broader AI assistants that integrate various functions. No-code platforms like Zapier can also be used to build custom AI admin workflows.</p>
+                        </div>
+                    </details>
+                </div>
+                 <div class="faq-item">
+                    <details>
+                        <summary class="faq-question">
+                            What is the main benefit of using AI for administrative task automation?
+                            <span class="faq-icon ml-auto text-indigo-600"><i class="fas fa-plus"></i></span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>The primary benefit is significant time savings for employees. By offloading routine, time-consuming administrative tasks to AI, professionals can free up their schedules to focus on more strategic, complex, and high-value work that requires human judgment and creativity, ultimately boosting overall productivity and job satisfaction.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </article>
+
+        <!-- Author Box -->
+        <section class="author-box mt-12 pt-8 border-t border-gray-200">
+            <div class="flex flex-col md:flex-row items-start md:items-center bg-white p-6 rounded-lg shadow-sm">
+                <img alt="Alex Thompson" class="author-image w-20 h-20 md:w-24 md:h-24 rounded-full object-cover flex-shrink-0 mb-4 md:mb-0 md:mr-6" src="../images/alex-thompson.png"/>
+                <div class="flex-grow">
+                    <h4 class="author-name text-xl font-semibold mb-1">About Alex Thompson</h4>
+                    <p class="author-bio text-gray-600 text-sm mb-3">
+                        Alex is a technology enthusiast and writer specializing in artificial intelligence and automation. With a passion for demystifying complex concepts, Alex aims to empower individuals and businesses to leverage the power of AI for innovation and efficiency. When not exploring the latest AI trends, Alex enjoys photography and hiking.
+                    </p>
+                    <div class="author-social flex space-x-3">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-indigo-600" aria-label="LinkedIn Profile">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-indigo-600" aria-label="Twitter Profile">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                        <a href="../index.html" class="text-gray-500 hover:text-indigo-600" aria-label="Author Website">
+                            <i class="fas fa-globe fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 mt-12 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 AI Master Guides. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="../privacy-policy.html" class="hover:text-white">Privacy Policy</a>
+                <a href="../terms-of-service.html" class="hover:text-white">Terms of Service</a>
+                <a href="../contact.html" class="hover:text-white">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+        menuButton.addEventListener("click", () => {
+            mobileMenu.classList.toggle("open");
+        });
+
+        // FAQ Accordion toggle icons (basic)
+        const detailsElements = document.querySelectorAll(".faq-item details");
+        detailsElements.forEach(details => {
+            const summary = details.querySelector("summary");
+            const icon = summary.querySelector(".faq-icon i");
+            details.addEventListener("toggle", () => {
+                if (details.open) {
+                    icon.classList.remove("fa-plus");
+                    icon.classList.add("fa-times");
+                } else {
+                    icon.classList.remove("fa-times");
+                    icon.classList.add("fa-plus");
+                }
+            });
+            // Initialize icon state based on initial open state
+            if (details.open) {
+                 icon.classList.remove("fa-plus");
+                 icon.classList.add("fa-times");
+            } else {
+                 icon.classList.remove("fa-times");
+                 icon.classList.add("fa-plus");
+            }
+        });
+    </script>
+</body>
+</html>
+
