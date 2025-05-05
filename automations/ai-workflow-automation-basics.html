@@ -340,43 +340,80 @@
         </article>
 
         <!-- Author Box -->
-        <section class="author-box mt-12 pt-8 border-t border-gray-200">
-            <div class="flex flex-col md:flex-row items-start md:items-center bg-white p-6 rounded-lg shadow-sm">
-                <img alt="Alex Thompson" class="author-image w-20 h-20 md:w-24 md:h-24 rounded-full object-cover flex-shrink-0 mb-4 md:mb-0 md:mr-6" src="../images/alex-thompson.png"/>
-                <div class="flex-grow">
-                    <h4 class="author-name text-xl font-semibold mb-1">About Alex Thompson</h4>
-                    <p class="author-bio text-gray-600 text-sm mb-3">
-                        Alex is a technology enthusiast and writer specializing in artificial intelligence and automation. With a passion for demystifying complex concepts, Alex aims to empower individuals and businesses to leverage the power of AI for innovation and efficiency. When not exploring the latest AI trends, Alex enjoys photography and hiking.
+            <div class="author-box mt-12 border-t border-gray-200 pt-8 flex flex-col sm:flex-row items-center bg-white p-6 rounded-lg shadow-sm">
+                <img class="author-image w-24 h-24 rounded-full object-cover mb-4 sm:mb-0 sm:mr-6 flex-shrink-0" src="../images/alex-thompson.png" alt="Alex Thompson, AI Specialist and Content Strategist">
+                <div class="text-center sm:text-left">
+                    <h3 class="author-name text-xl font-bold mb-1">Alex Thompson</h3>
+                    <p class="author-bio text-gray-600">
+                        Alex Thompson is a senior content strategist and AI specialist at AI Tech Insights. With years of experience analyzing and working hands-on with large language models, image generation tools, and automation platforms, Alex focuses on creating clear, actionable guides that help both beginners and professionals navigate the rapidly evolving AI landscape. Their goal is to demystify complex AI concepts and empower readers to leverage these powerful technologies for creativity, productivity, and innovation. When not exploring the latest AI advancements, Alex enjoys experimenting with prompt engineering and sharing practical tips with the community.
                     </p>
-                    <div class="author-social flex space-x-3">
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-indigo-600" aria-label="LinkedIn Profile">
-                            <i class="fab fa-linkedin fa-lg"></i>
-                        </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-indigo-600" aria-label="Twitter Profile">
-                            <i class="fab fa-twitter fa-lg"></i>
-                        </a>
-                        <a href="../index.html" class="text-gray-500 hover:text-indigo-600" aria-label="Author Website">
-                            <i class="fas fa-globe fa-lg"></i>
-                        </a>
-                    </div>
+                    <!-- Optional: Add social links here -->
+                    <!-- <div class="author-social mt-2 space-x-3">
+                        <a href="#" class="text-gray-500 hover:text-indigo-600"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-500 hover:text-indigo-600"><i class="fab fa-twitter"></i></a>
+                    </div> -->
                 </div>
             </div>
-        </section>
-
     </main>
+<!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-12 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">AI Tech Insights</h4>
+                    <p class="text-sm">Your guide to understanding and utilizing the power of artificial intelligence. We provide tutorials, guides, and news on the latest AI trends.</p>
+                </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-300 mt-12 py-8">
-        <div class="container mx-auto px-4 text-center">
-            <p>&copy; 2025 AI Master Guides. All rights reserved.</p>
-            <div class="mt-4 space-x-4">
-                <a href="../privacy-policy.html" class="hover:text-white">Privacy Policy</a>
-                <a href="../terms-of-service.html" class="hover:text-white">Terms of Service</a>
-                <a href="../contact.html" class="hover:text-white">Contact</a>
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="hover:text-white text-sm">Home</a></li>
+                        <li><a href="../guides.html" class="hover:text-white text-sm">Guides</a></li>
+                        <li><a href="../tutorials.html" class="hover:text-white text-sm">Tutorials</a></li>
+                        <li><a href="../trends.html" class="hover:text-white text-sm">AI Trends</a></li>
+                        <li><a href="#" class="hover:text-white text-sm">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white text-sm">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Categories</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../automations.html" class="hover:text-white text-sm">AI Automations</a></li>
+                        <li><a href="#" class="hover:text-white text-sm">Machine Learning</a></li>
+                        <li><a href="#" class="hover:text-white text-sm">Natural Language Processing</a></li>
+                        <li><a href="#" class="hover:text-white text-sm">Computer Vision</a></li>
+                        <li><a href="#" class="hover:text-white text-sm">AI Ethics</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Stay Updated</h4>
+                    <p class="text-sm mb-3">Subscribe to our newsletter for the latest AI news and tutorials.</p>
+                    <form>
+                        <div class="flex">
+                            <input type="email" placeholder="Your email" class="w-full px-3 py-2 rounded-l-md text-gray-800 focus:outline-none text-sm">
+                            <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-r-md text-sm font-medium">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Copyright & Social -->
+            <div class="mt-8 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-center md:text-left">&copy; 2025 AI Tech Insights. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-github"></i></a>
+                </div>
             </div>
         </div>
     </footer>
-
     <script>
         // Mobile menu toggle
         const menuButton = document.getElementById('mobile-menu-button');
