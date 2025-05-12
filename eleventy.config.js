@@ -39,6 +39,8 @@ export default function (eleventyConfig) {
     }),
   ]);
 
+  eleventyConfig.addPassthroughCopy('./images/**/*');
+
   eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
 
   return {

@@ -4,7 +4,7 @@ items:
   - name: Automations
     url: '/automations/'
   - name: Guides
-    url: '/Guides/'
+    url: '/guides/'
   - name: Tutorials
     url: '/tutorials/'
   - name: AI Trends
