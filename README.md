@@ -4,4 +4,4 @@
 
 ## Custom CSS
 
-`assets/css/tailwind.css`
+`css/tailwind.css`

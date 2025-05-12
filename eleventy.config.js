@@ -10,7 +10,7 @@ import yaml from "js-yaml";
 export default function (eleventyConfig) {
   //compile tailwind before eleventy processes the files
   eleventyConfig.on('eleventy.before', async () => {
-    const tailwindInputPath = path.resolve('./assets/css/tailwind.css');
+    const tailwindInputPath = path.resolve('./css/tailwind.css');
 
     const tailwindOutputPath = './dist/assets/css/styles.css';
 
