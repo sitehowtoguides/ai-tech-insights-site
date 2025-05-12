@@ -5,6 +5,8 @@ import cssnano from 'cssnano';
 import postcss from 'postcss';
 import tailwindcss from '@tailwindcss/postcss';
 
+import yaml from "js-yaml";
+
 export default function (eleventyConfig) {
   //compile tailwind before eleventy processes the files
   eleventyConfig.on('eleventy.before', async () => {
@@ -37,7 +39,15 @@ export default function (eleventyConfig) {
     }),
   ]);
 
+  eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
+
   return {
-    dir: { input: './', output: 'dist' },
+    dir: {
+      input: './',
+      output: 'dist',
+      "data": "_data",
+      includes: "_includes",
+      layouts: "_layouts"
+    },
   };
 }
