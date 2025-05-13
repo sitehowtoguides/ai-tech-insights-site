@@ -16,5 +16,30 @@ layout: default
 
         {{ content | safe }}
 
+        {% if faq.items | length > 0 %}
+            {# FAQ Section #}
+            {% if faq.title | length > 0 %}                
+                <h2 id="faq">Frequently Asked Questions about AI for Administrative Tasks</h2>
+            {% endif %}
+
+            <div class="faq-section mt-8">
+                {% for item in faq.items %}
+                    <div class="faq-item">
+                        <details>
+                            <summary class="faq-question">
+                                {{ item.q }}
+                                <span class="faq-icon ml-auto text-indigo-600"><i class="fas fa-plus"></i></span>
+                            </summary>
+                            <div class="faq-answer">
+                                <p>
+                                    {{ faq.a }}
+                                </p>
+                            </div>
+                        </details>                    
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
     </article>
 </main>
