@@ -12,4 +12,23 @@ hero:
   cta2:
     text: Start Learning
     url: '/tutorials/'
+features:
+  heading: Explore Our AI Resources
+  items:
+    - icon: cogs
+      title: AI Automations
+      description: Discover how AI can automate your workflows and boost productivity.
+      url: /automations/
+    - icon: book-open
+      title: Comprehensive Guides
+      description: In-depth guides to help you understand AI concepts and tools.
+      url: /guides/
+    - icon: laptop-code
+      title: Step-by-Step Tutorials
+      description: Practical tutorials to help you implement AI solutions.
+      url: /tutorials/
+    - icon: chart-line
+      title: AI Trends & News
+      description: Stay updated with the latest developments in artificial intelligence.
+      url: /trends/
 ---

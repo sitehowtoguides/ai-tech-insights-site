@@ -1,3 +1,5 @@
+## Front-matter basics
+
 ## Meta data (global and per page)
 
 ## Navigation

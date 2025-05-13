@@ -1,0 +1,25 @@
+{# Featured Categories #}
+<section class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">
+            {{ features.heading }}
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {% for item in features.items %}                
+            <a href="{{ item.url | url }}" class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-200">
+                <div class="text-indigo-600 mb-4">
+                    <i class="fas fa-{{ item.icon }} text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">
+                    {{ item.title }}
+                </h3>
+                <p class="text-gray-600">
+                    {{ item.description }}
+                </p>
+                <div class="mt-4 text-indigo-600 font-medium flex items-center"> Learn more <i class="fas fa-arrow-right ml-2"></i>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
