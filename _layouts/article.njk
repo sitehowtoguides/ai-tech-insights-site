@@ -42,4 +42,10 @@ layout: default
         {% endif %}
 
     </article>
+
+    {% if author | length > 0 %}
+        {% set author_id = author %}
+        {% include "partials/author.njk" %}
+    {% endif %}
+
 </main>

@@ -1,0 +1,27 @@
+{% set author_found = false %}
+{% set the_author = {} %}
+{% for an_author in authors %}
+    {% if an_author.id == author_id %}
+        {% set author_found = true %}
+        {% set the_author = an_author %}
+    {% endif %}
+{% endfor %}
+
+{% if author_found == true %}    
+    <div class="author-box mt-12 border-t border-gray-200 pt-8 flex flex-col sm:flex-row items-center bg-white p-6 rounded-lg shadow-sm">
+        <img class="author-image w-24 h-24 rounded-full object-cover mb-4 sm:mb-0 sm:mr-6 flex-shrink-0" src="{{ the_author.image | url }}" alt="{{ the_author.name }}{% if the_author.title | length > 0 %}, AI Specialist and Content Strategist{% endif %}">
+        <div class="text-center sm:text-left">
+            <h3 class="author-name text-xl font-bold mb-1">
+                {{ the_author.name }}
+            </h3>
+            <p class="author-bio text-gray-600">
+                {{ the_author.bio }}
+            </p>
+            <!-- Optional: Add social links here -->
+            <!-- <div class="author-social mt-2 space-x-3">
+                <a href="#" class="text-gray-500 hover:text-indigo-600"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-gray-500 hover:text-indigo-600"><i class="fab fa-twitter"></i></a>
+            </div> -->
+        </div>
+    </div>
+{% endif %}
