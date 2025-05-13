@@ -1,0 +1,39 @@
+<style>
+/* Styles for article content */
+    .prose {
+        max-width: 80ch;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .prose h1, .prose h2, .prose h3, .prose h4 {
+        color: #1f2937; /* gray-800 */
+        font-weight: 700;
+        margin-top: 1.5em;
+        margin-bottom: 0.8em;
+    }
+    .prose h1 { font-size: 2.25rem; line-height: 2.5rem; }
+    .prose h2 { font-size: 1.875rem; line-height: 2.25rem; }
+    .prose h3 { font-size: 1.5rem; line-height: 2rem; }
+    .prose h4 { font-size: 1.25rem; line-height: 1.75rem; }
+    .prose p { margin-bottom: 1.25em; line-height: 1.7; color: #374151; /* gray-700 */ max-width: 75ch; }
+    .prose p:not(:last-child) { margin-bottom: 1.25em; }
+    .prose a { color: #4f46e5; /* indigo-600 */ text-decoration: none; }
+    .prose a:hover { text-decoration: underline; }
+    .prose ul, .prose ol { margin-left: 1.5em; margin-bottom: 1.25em; color: #374151; }
+    .prose li { margin-bottom: 0.5em; }
+    .prose blockquote { border-left: 4px solid #d1d5db; /* gray-300 */ padding-left: 1em; margin-left: 0; margin-right: 0; font-style: italic; color: #4b5563; /* gray-600 */}
+    .prose code { background-color: #f3f4f6; /* gray-100 */ padding: 0.2em 0.4em; border-radius: 4px; font-size: 0.9em; }
+    .prose pre { background-color: #1f2937; /* gray-800 */ color: #e5e7eb; /* gray-200 */ padding: 1em; border-radius: 8px; overflow-x: auto; }
+    .prose table { width: 100%; border-collapse: collapse; margin-bottom: 1.25em; }
+    .prose th, .prose td { border: 1px solid #d1d5db; /* gray-300 */ padding: 0.5em 0.75em; text-align: left; }
+    .prose th { background-color: #f3f4f6; /* gray-100 */ font-weight: 600; }
+    .prose img { max-width: 100%; height: auto; border-radius: 8px; margin-top: 1em; margin-bottom: 1em; }
+    /* FAQ Accordion Styles */
+    .faq-item details { margin-bottom: 1rem; border-bottom: 1px solid #e0e0e0; padding-bottom: 1rem; }
+    .faq-item summary { width: 100%; text-align: left; background: none; border: none; padding: 0.75rem 0; font-size: 1.1rem; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; color: #1f2937; list-style: none; /* Remove default marker */ }
+    .faq-item summary::-webkit-details-marker { display: none; /* Hide Safari marker */ }
+    .faq-item summary:hover { color: #4f46e5; }
+    .faq-item summary .faq-icon { transition: transform 0.2s ease-in-out; }
+    .faq-item details[open] summary .faq-icon { transform: rotate(45deg); }
+    .faq-answer { padding: 0.5rem 0 1rem 0; color: #374151; }    
+</style>

@@ -7,3 +7,5 @@
 ## Custom CSS
 
 `css/tailwind.css`
+
+## Collections
