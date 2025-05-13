@@ -25,4 +25,8 @@
         {% include "styles/article.njk" %}
     {% endif %}
 
+    {% if faq.items | length > 0 %}
+        {% include "partials/faq-schema.njk" %}
+    {% endif %}
+
 </head>
