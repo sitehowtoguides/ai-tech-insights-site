@@ -76,13 +76,13 @@ These platforms are the ultimate connectors, acting like digital duct tape for y
 *   Create tasks in Asana or Trello when specific emails are received.
 *   Get Slack notifications for important events from other apps.
 
-**Internal Link:** Imagine connecting [ChatGPT](../guides/how-to-use-chatgpt/) to automatically draft social media posts whenever you publish a new blog entry using Zapier!
+**Internal Link:** Imagine connecting [ChatGPT](/guides/how-to-use-chatgpt/) to automatically draft social media posts whenever you publish a new blog entry using Zapier!
 
 \[Visual Placeholder: Logos of Zapier and Make\]
 
 ### 2\. AI Writing Assistants (e.g., Jasper, Copy.ai, ChatGPT, Gemini)
 
-AI writing assistants are essential for anyone creating content. Tools like Jasper and Copy.ai are specifically designed for marketing and business writing, while powerful large language models like OpenAI's [ChatGPT](../guides/how-to-use-chatgpt/) and Google's [Gemini](../guides/how-to-use-gemini-ai/) offer broader text generation capabilities. They automate significant parts of the writing process.
+AI writing assistants are essential for anyone creating content. Tools like Jasper and Copy.ai are specifically designed for marketing and business writing, while powerful large language models like OpenAI's [ChatGPT](/guides/how-to-use-chatgpt/) and Google's [Gemini](/guides/how-to-use-gemini-ai/) offer broader text generation capabilities. They automate significant parts of the writing process.
 
 **How They Automate Writing:** These tools excel at generating first drafts, brainstorming ideas, summarizing long texts, rephrasing content for different audiences or platforms, checking grammar, and overcoming writer's block. You provide a prompt, and they generate text, saving hours of initial composition time.
 
@@ -240,4 +240,4 @@ With so many options, how do you pick the right tools? Consider these factors:
 
 ## The Future of AI Automation
 
-AI automation is evolving rapidly. We're moving towards more sophisticated [agentic AI systems](../trends/biggest-ai-trends-2025/) capable of handling even more complex, multi-step tasks with less human oversight. Expect deeper integration of AI within the software you already use, making automation feel seamless. However, as capabilities grow, so does the importance of ethical considerations, data privacy, and ensuring these tools are used responsibly to augment, not simply replace, human potential.
+AI automation is evolving rapidly. We're moving towards more sophisticated [agentic AI systems](/trends/biggest-ai-trends-2025/) capable of handling even more complex, multi-step tasks with less human oversight. Expect deeper integration of AI within the software you already use, making automation feel seamless. However, as capabilities grow, so does the importance of ethical considerations, data privacy, and ensuring these tools are used responsibly to augment, not simply replace, human potential.
