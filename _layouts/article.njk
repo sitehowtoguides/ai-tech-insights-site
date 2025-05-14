@@ -32,7 +32,9 @@ layout: default
         {% if faq.items | length > 0 %}
             {# FAQ Section #}
             {% if faq.title | length > 0 %}                
-                <h2 id="faq">Frequently Asked Questions about AI for Administrative Tasks</h2>
+                <h2 id="faq">
+                    {{ faq.title }}
+                </h2>
             {% endif %}
 
             <div class="faq-section mt-8">
@@ -45,7 +47,7 @@ layout: default
                             </summary>
                             <div class="faq-answer">
                                 <p>
-                                    {{ faq.a }}
+                                    {{ item.a | markdown | safe }}
                                 </p>
                             </div>
                         </details>                    

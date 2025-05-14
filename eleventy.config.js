@@ -7,6 +7,12 @@ import tailwindcss from '@tailwindcss/postcss';
 
 import yaml from "js-yaml";
 
+import markdownIt from "markdown-it";
+
+const md = new markdownIt({
+  html: true,
+});
+
 export default function (eleventyConfig) {
   //compile tailwind before eleventy processes the files
   eleventyConfig.on('eleventy.before', async () => {
@@ -48,6 +54,10 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("numCommas", function(value) {
 		return value.toLocaleString()
 	});
+
+  eleventyConfig.addFilter("markdown", (content) => {
+    return md.render(content);
+  });
 
   return {
     dir: {
