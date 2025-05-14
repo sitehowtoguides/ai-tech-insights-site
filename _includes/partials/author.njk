@@ -1,27 +1,23 @@
 {% set author_found = false %}
 {% set the_author = {} %}
-{% for an_author in authors %}
-    {% if an_author.id == author_id %}
-        {% set author_found = true %}
-        {% set the_author = an_author %}
-    {% endif %}
-{% endfor %}
+
+{% include "helpers/get-author.njk" %}
 
 {% if author_found == true %}    
-    <div class="author-box mt-12 border-t border-gray-200 pt-8 flex flex-col sm:flex-row items-center bg-white p-6 rounded-lg shadow-sm">
-        <img class="author-image w-24 h-24 rounded-full object-cover mb-4 sm:mb-0 sm:mr-6 flex-shrink-0" src="{{ the_author.image | url }}" alt="{{ the_author.name }}{% if the_author.title | length > 0 %}, AI Specialist and Content Strategist{% endif %}">
-        <div class="text-center sm:text-left">
-            <h3 class="author-name text-xl font-bold mb-1">
-                {{ the_author.name }}
-            </h3>
-            <p class="author-bio text-gray-600">
-                {{ the_author.bio }}
-            </p>
-            <!-- Optional: Add social links here -->
-            <!-- <div class="author-social mt-2 space-x-3">
-                <a href="#" class="text-gray-500 hover:text-indigo-600"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="text-gray-500 hover:text-indigo-600"><i class="fab fa-twitter"></i></a>
-            </div> -->
+
+    <div class="author-box">
+        <img class="author-avatar" src="{{ the_author.image | url }}" alt="{{ the_author.name }}{% if the_author.title | length > 0 %}, {{ the_author.title }}{% endif %}" loading="lazy">
+        <div class="author-info">
+            <h4>{{ the_author.name }}</h4>
+            <p>{{ the_author.bio }}</p>
+            {% if the_author.social | length > 0 %}                
+                <div class="author-socials">
+                    {% for item in the_author.social %}                        
+                        <a href="{{ item.url | url }}" target="_blank" rel="noopener noreferrer"><i class="{% if item.icon == 'globe' %} fas{% else %} fab{% endif %} fa-{{ item.icon }}"></i></a>
+                    {% endfor %}
+                </div>
+            {% endif %}
         </div>
     </div>
+
 {% endif %}

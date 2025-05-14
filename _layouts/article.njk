@@ -1,14 +1,31 @@
 ---
 layout: default
 ---
-<main class="container mx-auto px-4 pt-6 pb-12">
-    <article class="prose lg:prose-xl">
+<main class="container mx-auto px-4 py-12 max-w-4xl">
+    <article>
 
-        <h1 style="margin-top: 0;">
-            {{ title }}
-        </h1>
+        {% set author_found = false %}
+        {% set the_author = {} %}
+        {% set author_id = author %}
+        {% include "helpers/get-author.njk" %}
 
-        {% include "helpers/reading-time.njk" %}
+        <header class="mb-8">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+                {{ title }}
+            </h1>
+            <div class="flex items-center text-sm text-gray-500">
+                {% if author_found == true %}                    
+                    <img class="w-8 h-8 !rounded-full mr-2" src="{{ the_author.image | url }}" alt="{{ the_author.name }}{% if the_author.title | length > 0 %}, {{ the_author.title }}{% endif %}">
+                    <span>By {{ the_author.name }}</span>
+                {% endif %}
+                {% if date %}
+                    <span class="mx-2">|</span>
+                    <span>Published on {{ page.date.toLocaleString('en', { month: 'long' }) }} {{ page.date.getDate() }}, {{ page.date.getFullYear() }} </span>                 
+                {% endif %}
+                <span class="mx-2">|</span>
+                {% include "helpers/reading-time.njk" %}
+            </div>
+        </header>
 
         {{ content | safe }}
 
@@ -42,6 +59,6 @@ layout: default
     {% if author | length > 0 %}
         {% set author_id = author %}
         {% include "partials/author.njk" %}
-    {% endif %}
+    {% endif %}    
 
 </main>

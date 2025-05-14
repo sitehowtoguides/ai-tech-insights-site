@@ -4,6 +4,5 @@
 {% set readingRate = 225 %}
 {% set readingTime = (wordCount/readingRate) | round %}
 {% if readingTime < 1 %}{% set readingTime = 1 %}{% endif %}
-<p>
-	{{ wordCount | numCommas }} words • Reading time: {{ readingTime }} minute{% if readingTime > 1 %}s{% endif %}
-</p>
+
+<i class="far fa-clock mr-1"></i> {{ readingTime }} min read
