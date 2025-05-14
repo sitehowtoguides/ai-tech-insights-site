@@ -23,6 +23,7 @@ layout: default
                     <span>Published on {{ page.date.toLocaleString('en', { month: 'long' }) }} {{ page.date.getDate() }}, {{ page.date.getFullYear() }} </span>                 
                 {% endif %}
                 <span class="mx-2">|</span>
+                {% set the_content = content %}
                 {% include "helpers/reading-time.njk" %}
             </div>
         </header>

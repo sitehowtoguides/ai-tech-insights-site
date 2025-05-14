@@ -1,5 +1,5 @@
 {% set regExpCode = r/<pre class=(.|\n)*?<\/pre>/gm %}
-{% set fixedContent = content | replace(regExpCode, "") | striptags %}
+{% set fixedContent = the_content | replace(regExpCode, "") | striptags %}
 {% set wordCount = fixedContent | wordcount %}
 {% set readingRate = 225 %}
 {% set readingTime = (wordCount/readingRate) | round %}
