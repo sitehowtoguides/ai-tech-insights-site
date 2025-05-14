@@ -5,6 +5,8 @@
 
     {% if meta.title | length > 0 %}
         {% set site_title = meta.title %}
+    {% elif title | length > 0 %}
+        {% set site_title = title %}        
     {% else %}
         {% set site_title = global.meta.title %}
     {% endif %}
