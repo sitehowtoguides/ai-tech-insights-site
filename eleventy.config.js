@@ -45,6 +45,10 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
+  eleventyConfig.addFilter("numCommas", function(value) {
+		return value.toLocaleString()
+	});
+
   return {
     dir: {
       input: './',

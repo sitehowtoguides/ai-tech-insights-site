@@ -8,11 +8,7 @@ layout: default
             {{ title }}
         </h1>
 
-        {% if subtitle | length > 0 %}            
-            <p class="text-lg text-gray-600">
-                {{ subtitle }}
-            </p>
-        {% endif %}
+        {% include "helpers/reading-time.njk" %}
 
         {{ content | safe }}
 
