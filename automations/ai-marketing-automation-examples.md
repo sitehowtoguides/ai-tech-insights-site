@@ -92,7 +92,7 @@ Tools like Google Analytics 4 (with its AI features), Tableau, Power BI, or mark
 Choosing and implementing the right **AI tools for marketing workflows** is crucial. Consider:
 
 1.  **Clear Objectives:** What specific problem are you trying to solve or which task do you want to **automate marketing tasks with AI**? (E.g., save time on content creation, improve lead qualification).
-2.  **Integration with Existing Tools:** Does the new tool integrate well with your CRM, email platform, etc.? Platforms like [Zapier or Make](ai-automation-approaches_en.html) can help connect tools that don't integrate natively.
+2.  **Integration with Existing Tools:** Does the new tool integrate well with your CRM, email platform, etc.? Platforms like [Zapier or Make](ai-automation-approaches_en/) can help connect tools that don't integrate natively.
 3.  **Ease of Use vs. Power:** Evaluate the learning curve versus the flexibility offered. Start with simpler tools if your team is new to AI.
 4.  **Cost and ROI:** Assess pricing models (subscription, usage-based) and estimate the return on investment (time saved, leads generated, etc.). Start with free plans or trials.
 5.  **Data Quality:** AI relies on good data. Ensure your marketing data is organized and accessible.
@@ -104,4 +104,4 @@ Start with one or two high-impact, low-risk use cases to gain experience before 
 
 The **AI marketing automation examples** demonstrate that artificial intelligence is no longer a future vision but a practical and powerful tool for marketing teams today. By choosing to **automate marketing tasks with AI**, teams can focus on what they do best: strategy, creativity, and relationship building.
 
-From optimizing campaigns and personalizing communication to generating content and analyzing data, **AI tools for marketing workflows** are redefining efficiency and effectiveness. Adopting intelligent automation is not just a competitive advantage but an essential step for any marketing team looking to thrive in the dynamic landscape of 2025. Explore more about automation in our [Automations category](../automations.html).
+From optimizing campaigns and personalizing communication to generating content and analyzing data, **AI tools for marketing workflows** are redefining efficiency and effectiveness. Adopting intelligent automation is not just a competitive advantage but an essential step for any marketing team looking to thrive in the dynamic landscape of 2025. Explore more about automation in our [Automations category](../automations/).

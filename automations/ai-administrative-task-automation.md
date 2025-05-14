@@ -66,7 +66,7 @@ These features help users focus on important communications and spend less time 
 
 Manually entering data or compiling routine reports is time-consuming and error-prone. **Automating repetitive tasks with AI** offers significant improvements:
 
-*   **Automated Data Extraction:** Using OCR and NLP to pull data from documents (invoices, forms, PDFs) and enter it into spreadsheets, databases, or CRM systems (related to [AI-Powered Data Entry](ai-powered-data-entry-and-processing-automation-explained_en.html)).
+*   **Automated Data Extraction:** Using OCR and NLP to pull data from documents (invoices, forms, PDFs) and enter it into spreadsheets, databases, or CRM systems (related to [AI-Powered Data Entry](ai-powered-data-entry-and-processing-automation-explained_en/)).
 *   **Data Validation:** AI can cross-reference entered data against existing records or predefined rules to flag potential errors or inconsistencies.
 *   **Routine Report Generation:** Automatically compiling data from various sources (e.g., sales figures, website analytics) into standard weekly or monthly reports based on templates.
 *   **Natural Language Queries:** Some tools allow users to ask questions like "What were the sales figures for Q1?" and the AI generates the relevant report or data visualization.

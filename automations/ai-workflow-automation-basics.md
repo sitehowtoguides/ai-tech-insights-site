@@ -17,7 +17,7 @@ faq:
 
     - q: What are some simple AI workflow automation examples for beginners?
       a: |-
-        Examples include: automatically summarizing news articles and sending them to a Slack channel; analyzing the sentiment of brand mentions on social media and creating follow-up tasks; automatically transcribing audio recordings of meetings and generating a summary; categorizing incoming emails based on content using AI. Find more ideas in our [Automations section](https://aimasterguides.com/automations.html).
+        Examples include: automatically summarizing news articles and sending them to a Slack channel; analyzing the sentiment of brand mentions on social media and creating follow-up tasks; automatically transcribing audio recordings of meetings and generating a summary; categorizing incoming emails based on content using AI. Find more ideas in our [Automations section](https://aimasterguides.com/automations/).
 
     - q: How do I identify the best tasks to start automating with AI?
       a: |-
@@ -66,7 +66,7 @@ Brainstorming tasks that fit these criteria is key to knowing **how to start aut
 
 ## Choosing the Right Tools: No-Code, Low-Code, or Custom?
 
-Once you've identified potential tasks, you need the right tools. The good news is you don't always need to be a programmer. There are different approaches, as detailed in our [comparison of AI automation approaches](ai-automation-approaches_en.html):
+Once you've identified potential tasks, you need the right tools. The good news is you don't always need to be a programmer. There are different approaches, as detailed in our [comparison of AI automation approaches](ai-automation-approaches_en/):
 
 *   **No-Code Platforms:** Tools like Zapier, Make (formerly Integromat), and n8n allow you to build workflows visually by connecting app triggers and actions. They often have built-in AI capabilities or allow easy integration with AI services (like OpenAI). Ideal for beginners and many common tasks.
 *   **Low-Code Platforms:** Offer more flexibility than no-code, allowing some scripting or customization for more complex logic, while still relying heavily on visual interfaces. Examples include Retool or Appian (though these can be more enterprise-focused).

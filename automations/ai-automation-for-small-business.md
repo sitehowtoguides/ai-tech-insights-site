@@ -25,7 +25,7 @@ faq:
 
     - q: Where should I start implementing AI automation for small business?
       a: |-
-        Start by identifying the most repetitive, time-consuming, and error-prone tasks in areas like administration, marketing, or customer service. Choose a low-risk task with high potential impact. Experiment with a no-code tool using a free plan to build your first simple automation and learn from the process. Check our [beginner's guide](https://aimasterguides.com/automations/ai-workflow-automation-basics_en.html) for more tips.
+        Start by identifying the most repetitive, time-consuming, and error-prone tasks in areas like administration, marketing, or customer service. Choose a low-risk task with high potential impact. Experiment with a no-code tool using a free plan to build your first simple automation and learn from the process. Check our [beginner's guide](https://aimasterguides.com/automations/ai-workflow-automation-basics_en/) for more tips.
 ---
 Small and medium-sized businesses (SMBs) face unique challenges: limited resources, lean teams, and the constant need to compete with larger players. Fortunately, technology offers solutions, and **AI automation for small business** emerges as a powerful ally in 2025. Far from being exclusive to large corporations, intelligent automation is becoming accessible and vital for SMBs looking to optimize operations, boost productivity, and drive growth.
 
@@ -60,7 +60,7 @@ Marketing is an area where AI automation can have a significant impact, even for
 *   **Personalized Email Marketing:** Segment email lists based on user behavior and send automated, personalized campaigns (lead nurturing).
 *   **Ad Optimization:** Ad platforms (Google, Meta) already use AI extensively, but additional tools can help analyze performance and suggest optimizations.
 
-Tools like Mailchimp, HubSpot (with AI features), ManyChat (chatbots), and even no-code platforms like [Zapier/Make](ai-automation-approaches_en.html) connected to AI models can facilitate these automations.
+Tools like Mailchimp, HubSpot (with AI features), ManyChat (chatbots), and even no-code platforms like [Zapier/Make](ai-automation-approaches_en/) connected to AI models can facilitate these automations.
 
 ### More Efficient Sales with AI
 
@@ -103,7 +103,7 @@ One of the biggest myths is that AI is expensive. While high-end enterprise solu
 
 ### No-Code/Low-Code Platforms:
 
-As mentioned in our [guide to automation approaches](ai-automation-approaches_en.html), tools like Zapier, Make, and n8n are ideal for SMBs. They allow connecting apps you already use and adding layers of artificial intelligence (like calls to the ChatGPT API) without needing to code. Many offer generous free plans to get started.
+As mentioned in our [guide to automation approaches](ai-automation-approaches_en/), tools like Zapier, Make, and n8n are ideal for SMBs. They allow connecting apps you already use and adding layers of artificial intelligence (like calls to the ChatGPT API) without needing to code. Many offer generous free plans to get started.
 
 *   **Zapier/Make:** Excellent for connecting hundreds of apps and creating visual workflows. Paid plans based on task volume.
 *   **n8n:** Powerful option that can be self-hosted (reducing long-term costs) or used in the cloud.
@@ -127,7 +127,7 @@ The key to **cost-effective AI automation** is starting small, focusing on autom
 
 Adopting AI automation requires more than just picking tools; it demands a strategic approach.
 
-1.  **Identify Major Bottlenecks:** Use the framework from our [workflow basics guide](ai-workflow-automation-basics_en.html) to find the most impactful tasks to automate first. Focus on "quick wins."
+1.  **Identify Major Bottlenecks:** Use the framework from our [workflow basics guide](ai-workflow-automation-basics_en/) to find the most impactful tasks to automate first. Focus on "quick wins."
 2.  **Start Small and Simple:** Don't try to automate everything at once. Choose 1-2 initial processes to learn and demonstrate value.
 3.  **Choose the Right Tools:** Evaluate options (no-code, low-code, specific tools) based on the task, budget, and technical skill. Use free trials.
 4.  **Involve the Team:** Communicate the benefits, train employees on how to use the new tools and processes, and gather feedback. Automation should empower, not frighten.

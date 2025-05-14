@@ -21,11 +21,11 @@ faq:
 
     - q: What are some examples of tasks AI automation can perform?
       a: |-
-        There are countless examples, including: automatic email sorting and response, sentiment analysis of customer feedback, report generation, intelligent meeting scheduling, invoice processing, marketing campaign optimization, customer service chatbots, and much more. See more use cases in our [automations category](https://aimasterguides.com/automations.html).
+        There are countless examples, including: automatic email sorting and response, sentiment analysis of customer feedback, report generation, intelligent meeting scheduling, invoice processing, marketing campaign optimization, customer service chatbots, and much more. See more use cases in our [automations category](https://aimasterguides.com/automations/).
 
     - q: Is AI automation secure?
       a: |-
-        Security depends on the implementation and the tools used. It's crucial to choose reliable platforms, manage permissions properly, and be aware of data privacy issues. Implementing AI responsibly, with human oversight and ethical considerations, is fundamental to ensuring security. Read more about [ethics in AI automation](https://aimasterguides.com/trends/ethical-ai-automation.html) (Note: Link assumes this future article exists).
+        Security depends on the implementation and the tools used. It's crucial to choose reliable platforms, manage permissions properly, and be aware of data privacy issues. Implementing AI responsibly, with human oversight and ethical considerations, is fundamental to ensuring security. Read more about [ethics in AI automation](https://aimasterguides.com/trends/ethical-ai-automation/) (Note: Link assumes this future article exists).
 
 
 ---
@@ -73,7 +73,7 @@ By automating tasks, companies can reduce costs associated with labor, manual er
 
 AI automation not only executes tasks but also analyzes large volumes of data to extract valuable insights. Predictive analytics tools can forecast market trends, consumer behavior, or operational risks, providing crucial information for more informed and assertive strategic decisions.
 
-This transforms decision-making from a reactive process to a proactive one, based on concrete evidence. Explore more on how AI assists decision-making in our [guide on AI in decision-making](../guides/ai-decision-making.html) (Note: Link assumes this future article exists).
+This transforms decision-making from a reactive process to a proactive one, based on concrete evidence. Explore more on how AI assists decision-making in our [guide on AI in decision-making](../guides/ai-decision-making/) (Note: Link assumes this future article exists).
 
 ### Enhanced Customer Experience (CX)
 
@@ -111,7 +111,7 @@ The future of work will likely involve closer collaboration between humans and m
 
 To thrive in this new landscape, adaptation is crucial. Professionals will need to develop new skills (upskilling) or retrain (reskilling) to work alongside AI. This includes understanding how to use AI tools, interpreting AI-generated data, and focusing on "human" skills that complement the technology.
 
-Companies also have a responsibility to invest in their employees' development, preparing them for this new era. See how you can start learning about specific tools in our [AI tutorials](../tutorials.html).
+Companies also have a responsibility to invest in their employees' development, preparing them for this new era. See how you can start learning about specific tools in our [AI tutorials](../tutorials/).
 
 ### Human-AI Collaboration: The New Normal
 
@@ -121,6 +121,6 @@ The most effective model seems to be the "centaur" model, where human and artifi
 
 If you're convinced of the importance (**why use AI automation**), the next step is to start. It doesn't have to be a radical overnight transformation. Start small by identifying processes or tasks that are repetitive, time-consuming, or prone to errors.
 
-Consider areas like customer service (simple chatbots), marketing (post scheduling), or administration (email sorting). There are many accessible tools, including [no-code and low-code options](../automations/ai-automation-approaches.html), that allow experimentation without large initial investments (Note: Link assumes this future article exists and uses the correct slug).
+Consider areas like customer service (simple chatbots), marketing (post scheduling), or administration (email sorting). There are many accessible tools, including [no-code and low-code options](../automations/ai-automation-approaches/), that allow experimentation without large initial investments (Note: Link assumes this future article exists and uses the correct slug).
 
 The most important thing is to start exploring, learning, and experimenting. AI automation isn't a passing trend; it's a fundamental evolution in how we work and live.

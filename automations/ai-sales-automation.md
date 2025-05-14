@@ -109,7 +109,7 @@ The market for **AI tools for sales teams** is rapidly expanding. Some key categ
 *   **Conversation Intelligence:** Gong.io, Chorus.ai (acquired by ZoomInfo).
 *   **Scheduling Tools:** Calendly, Chili Piper.
 *   **Data Enrichment Tools:** ZoomInfo, Clearbit.
-*   **No-Code/Low-Code Platforms:** [Zapier/Make](ai-automation-approaches_en.html) can connect various tools and add AI steps.
+*   **No-Code/Low-Code Platforms:** [Zapier/Make](ai-automation-approaches_en/) can connect various tools and add AI steps.
 
 When implementing **AI sales automation**:
 

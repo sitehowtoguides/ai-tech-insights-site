@@ -131,7 +131,7 @@ Congratulations! You've built a functional \*\*AI automation workflow\*\*. Now y
 *   **Try Different AI Tasks:** Use AI for summarization, translation, text generation, or classification within your workflows.
 *   **Build More Complex Logic:** Use Paths in Zapier or Routers/Filters in Make to handle multiple outcomes.
 
-Refer back to guides on [AI workflow automation basics](ai-workflow-automation-basics_en.html) and [comparing automation approaches](ai-automation-approaches_en.html) as you explore further.
+Refer back to guides on [AI workflow automation basics](ai-workflow-automation-basics_en/) and [comparing automation approaches](ai-automation-approaches_en/) as you explore further.
 
 ## Conclusion: Your Journey into AI Automation
 

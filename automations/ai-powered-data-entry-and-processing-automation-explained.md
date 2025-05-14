@@ -100,7 +100,7 @@ Implementing **AI data entry automation** offers substantial advantages:
 *   **Improved Scalability:** Easily handle peaks and troughs in document volume without hiring temporary staff.
 *   **Enhanced Data Security:** Reduces the number of people handling sensitive data.
 *   **Better Compliance:** Ensures consistent data capture and creates audit trails.
-*   **Employee Empowerment:** Frees up staff from tedious tasks to focus on more engaging, analytical, or customer-facing roles (related to [automating admin tasks](ai-administrative-task-automation.html)).
+*   **Employee Empowerment:** Frees up staff from tedious tasks to focus on more engaging, analytical, or customer-facing roles (related to [automating admin tasks](ai-administrative-task-automation/)).
 
 These **benefits of AI data entry** translate directly into improved operational efficiency and a stronger bottom line.
 
