@@ -4,6 +4,7 @@ summary: |-
   Leverage AI to personalize email campaigns, automate responses, and optimize your email marketing strategy.
 date: 2025-05-05
 author: alex-thompson
+teaser_image: /images/ai-email-marketing.png
 ---
 Email marketing remains a cornerstone of digital communication, but generic blasts no longer cut it. Customers expect personalized, relevant content delivered at the right time. This is where **AI-powered email marketing automation** steps in, transforming how businesses engage with their audience. By leveraging artificial intelligence, marketers can automate complex tasks, deliver hyper-personalized experiences, and significantly improve campaign performance in 2025 and beyond.
 
