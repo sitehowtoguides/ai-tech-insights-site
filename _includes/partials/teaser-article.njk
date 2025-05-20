@@ -8,7 +8,7 @@
             <img src="{{ item.data.teaser_image | url }}" alt="" class="w-full h-48 object-contain p-4 bg-gray-100">
         {% else %}
             <div class="w-full h-48 bg-gray-200 flex items-center justify-center text-gray-500">
-                Content Coming Soon
+                {{ global.no_content_text }}
             </div>
         {% endif %}
         <div class="p-6">
