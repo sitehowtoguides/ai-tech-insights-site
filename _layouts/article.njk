@@ -31,29 +31,33 @@ layout: default
         {{ content | safe }}
 
         {% if faq.items | length > 0 %}
-            {# FAQ Section #}
-            {% if faq.title | length > 0 %}                
-                <h2 id="faq">
-                    {{ faq.title }}
-                </h2>
-            {% endif %}
+            <div class="mt-16 pt-6 border-t border-gray-200">
+                {# FAQ Section #}
+                {% if faq.title | length > 0 %}                
+                    <h2 class="!mt-0" id="faq">
+                        {{ faq.title }}
+                    </h2>
+                {% endif %}
 
-            <div class="faq-section mt-8">
-                {% for item in faq.items %}
-                    <div class="faq-item">
-                        <details>
-                            <summary class="faq-question">
-                                {{ item.q }}
-                                <span class="faq-icon ml-auto text-indigo-600"><i class="fas fa-plus"></i></span>
-                            </summary>
-                            <div class="faq-answer">
-                                <p>
-                                    {{ item.a | markdown | safe }}
-                                </p>
-                            </div>
-                        </details>                    
-                    </div>
-                {% endfor %}
+                <div class="faq-section mt-8">
+                    {% for item in faq.items %}
+                        <div class="faq-item">
+                            <details>
+                                <summary class="faq-question">
+                                    {{ item.q }}
+                                    <span class="faq-icon ml-auto text-gray-800 text-sm">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                </summary>
+                                <div class="faq-answer">
+                                    <p>
+                                        {{ item.a | markdown | safe }}
+                                    </p>
+                                </div>
+                            </details>                    
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
         {% endif %}
 
