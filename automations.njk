@@ -18,7 +18,7 @@ description: Discover how AI can automate your workflows, boost productivity, an
 
     {# Automations Grid #}
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {% for item in collections.automation %}
+        {% for item in collections.automation | reverse %}
             {% include "partials/teaser-article.njk" %}
         {% endfor %}
     </div>
