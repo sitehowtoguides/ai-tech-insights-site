@@ -1,0 +1,43 @@
+<div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+    <div class="flex items-start">
+        {% if item.data.type == 'video' %}                
+            <div class="bg-indigo-100 p-3 rounded-lg mr-4">
+                    <i class="fas fa-play-circle text-indigo-600 text-2xl"></i>
+            </div>
+        {% elif item.data.type == 'written' %}
+            <div class="bg-green-100 p-3 rounded-lg mr-4">
+                <i class="fas fa-lightbulb text-green-600 text-2xl"></i>
+            </div>
+        {% endif %}
+        <div>
+            <h3 class="text-xl font-bold mb-2">
+                <a href="midjourney-guide.html" class="hover:text-indigo-600">
+                    {{ item.data.title }}
+                </a>
+            </h3>
+
+            <p class="text-gray-600 mb-3">
+                {{  item.data.summary }}
+            </p>
+
+            {% if item.data.tags | length > 1 %}                
+                {% if item.data.type == 'video' %}
+                    {% set the_colors = 'bg-indigo-50 text-indigo-600' %}
+                {% elif item.data.type == 'written' %}
+                    {% set the_colors = 'bg-green-50 text-green-600' %}                
+                {% endif %}
+
+                <div class="flex flex-wrap gap-2">
+                    {% for tag_name in item.data.tags %}
+                        {% if tag_name != 'tutorial' %}                            
+                            <span class="px-2 py-1 {{ the_colors }}  text-xs rounded">
+                                {{ tag_name }}
+                            </span>
+                        {% endif %}                 
+                    {% endfor %}
+                </div>
+            {% endif %}
+
+        </div>
+    </div>
+</div>

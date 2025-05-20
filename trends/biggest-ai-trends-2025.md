@@ -4,6 +4,7 @@ summary: |-
   Explore the most significant AI trends shaping 2025, from generative models to ethical AI and beyond.
 date: 2025-05-05
 author: alex-thompson
+featured: true
 faq:
   title: Frequently Asked Questions (FAQ)
   items:

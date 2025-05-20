@@ -12,7 +12,7 @@ hero:
   cta2:
     text: Start Learning
     url: '/tutorials/'
-features:
+resources_section:
   heading: Explore Our AI Resources
   items:
     - icon: cogs
@@ -31,4 +31,15 @@ features:
       title: AI Trends & News
       description: Stay updated with the latest developments in artificial intelligence.
       url: /trends/
+featured_section:
+  heading: Featured Articles
+  cta:
+    text: View All Articles
+    url: /tutorials/
+popular_section:
+  heading: Popular Tutorials
+  cta:
+    text: View All articles
+    url: /tutorials/
+
 ---

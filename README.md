@@ -20,6 +20,8 @@
 
 ## Quotes in FM fields
 
+## Featured articles
+
 ## Content coming soon
 
 ## Drafts

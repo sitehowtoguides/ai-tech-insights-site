@@ -5,6 +5,7 @@ summary: |-
 date: 2025-05-02
 author: alex-thompson
 teaser_image: /images/chatgpt-logo.png
+featured: true
 faq:
   title: Quick FAQ
   items:

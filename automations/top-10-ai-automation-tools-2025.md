@@ -4,6 +4,7 @@ summary: |-
   Discover the leading AI tools that can automate tasks, improve efficiency, and transform your business operations in 2025.
 date: 2025-05-05
 author: alex-thompson
+featured: true
 faq:
   title: Frequently Asked Questions (FAQ)
   items:
