@@ -11,10 +11,8 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {% for item in collections.all %}
-                {% if item.data.popular == true %}
-                    {% include "partials/teaser-tutorial.njk" %}
-                {% endif %}             
+            {% for item in collections.all | where('popular', true) %}
+                {% include "partials/teaser-tutorial.njk" %}
             {% endfor %}
         </div>
 

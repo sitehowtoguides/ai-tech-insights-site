@@ -59,6 +59,12 @@ export default function (eleventyConfig) {
     return md.render(content);
   });
 
+  eleventyConfig.addFilter('where', function(collection, field, value) {
+    if (!value) return collection;
+      const filtered = collection.filter(item => item.data[field] == value)
+      return filtered;
+  });
+
   return {
     dir: {
       input: './',
