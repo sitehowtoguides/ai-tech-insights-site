@@ -1,4 +1,5 @@
 ---
+redirect_from: /guides/how-to-make-chatgpt-write-longer-responses.html
 title: "How to Make ChatGPT Write Longer Responses (2025 Guide)"
 summary: |-
   Techniques and prompts to encourage ChatGPT to generate more detailed and comprehensive text outputs.

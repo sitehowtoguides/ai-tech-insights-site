@@ -1,4 +1,5 @@
 ---
+redirect_from: /guides/how-to-use-midjourney-for-free.html
 title: "How to Use Midjourney for Free (Trial Guide 2025)"
 summary: |-
   Explore methods and potential trials for generating AI art with Midjourney without paying for a subscription.

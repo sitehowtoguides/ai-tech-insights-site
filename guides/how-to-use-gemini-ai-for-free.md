@@ -1,4 +1,5 @@
 ---
+redirect_from: /guides/how-to-use-gemini-ai-for-free.html
 title: "How to Use Gemini AI for Free: Google's AI Chatbot (2025)"
 summary: |-
   Access and utilize Google's powerful Gemini AI chatbot for free, including its multimodal features.

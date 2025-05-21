@@ -1,4 +1,5 @@
 ---
+redirect_from: /guides/how-to-use-midjourney.html
 title: "How to Use Midjourney: Beginner's Guide to AI Image Generation (2025)"
 summary: |-
   A beginner's guide to AI image generation with Midjourney on Discord, covering prompts, parameters, and more.

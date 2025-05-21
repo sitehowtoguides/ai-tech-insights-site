@@ -1,4 +1,5 @@
 ---
+redirect_from: /guides/how-to-use-chatgpt-for-free.html
 title: "How to Use ChatGPT for Free: A Comprehensive Guide (2025)"
 summary: |-
   Discover ways to access and utilize ChatGPT's capabilities without a paid subscription in 2025.

@@ -1,4 +1,5 @@
 ---
+redirect_from: /guides/how-to-use-github-copilot.html
 title: "How to Use GitHub Copilot: Beginner's Guide (2025)"
 summary: |-
   Learn how to set up and use GitHub Copilot, the AI pair programmer, in your IDE to write code faster.

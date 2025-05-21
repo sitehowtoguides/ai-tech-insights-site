@@ -1,4 +1,5 @@
 ---
+redirect_from: /guides/how-to-use-gemini-ai.html
 title: "How to Use Gemini AI: A Quick Start Guide for Beginners (2025)"
 summary: |-
   Learn how to use Google's Gemini AI, explore its multimodal features, and integrate it into your workflow.

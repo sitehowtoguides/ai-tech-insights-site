@@ -1,4 +1,5 @@
 ---
+redirect_from: /guides/choosing-lim.html
 title: 'Choosing the Right Large Language Model (LLM)'
 summary: |-
   Compare popular LLMs like GPT-4, Gemini, Claude, and others to find the best fit for your needs.

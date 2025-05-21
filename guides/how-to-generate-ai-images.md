@@ -1,4 +1,5 @@
 ---
+redirect_from: /guides/how-to-generate-ai-images.html
 title: "How to Generate AI Images: A Beginner's Overview (2025)"
 summary: |-
   A beginner's overview of generating images from text using AI tools like Midjourney, DALL-E, and Stable Diffusion.

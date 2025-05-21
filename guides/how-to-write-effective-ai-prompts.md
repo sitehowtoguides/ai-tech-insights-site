@@ -1,4 +1,5 @@
 ---
+redirect_from: /guides/how-to-write-effective-ai-prompts.html
 title: "How to Write Effective AI Prompts: A Beginner's Guide (2025)"
 summary: |-
   Learn the art of prompt engineering to get better results from AI tools like ChatGPT, Midjourney, and DALL-E.

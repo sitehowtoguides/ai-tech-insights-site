@@ -1,4 +1,5 @@
 ---
+redirect_from: /guides/how-to-use-chatgpt.html
 title: "How to Use ChatGPT: A Quick Start Guide for Beginners (2025)"
 summary: |-
   A beginner's guide to interacting with ChatGPT, crafting effective prompts, and understanding its capabilities.

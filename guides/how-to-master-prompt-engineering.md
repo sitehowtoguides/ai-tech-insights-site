@@ -1,4 +1,5 @@
 ---
+redirect_from: /guides/how-to-master-prompt-engineering.html
 title: "How to Master Prompt Engineering: Get Better AI Results (2025)"
 summary: |-
   Learn essential techniques to write effective prompts and get better results from AI tools like ChatGPT and Midjourney.

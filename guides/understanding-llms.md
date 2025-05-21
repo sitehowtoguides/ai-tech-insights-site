@@ -1,4 +1,5 @@
 ---
+redirect_from: /guides/understanding-llms.html
 title: "Understanding Large Language Models (LLMs)"
 summary: |-
   A beginner-friendly explanation of what LLMs are, how they work, and their common applications.

@@ -1,4 +1,5 @@
 ---
+redirect_from: /guides/how-to-use-dalle.html
 title: "How to Use DALL-E: Beginner's Guide to AI Image Generation (2025)"
 summary: |-
   Learn to generate AI images with DALL-E 3 via ChatGPT, Bing Image Creator, and more. Simple steps for beginners.

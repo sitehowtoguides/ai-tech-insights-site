@@ -1,4 +1,5 @@
 ---
+redirect_from: /guides/how-to-use-ai-for-content-creation.html
 title: "How to Use AI for Content Creation: Beginner's Guide (2025)"
 summary: |-
   Leverage AI tools like ChatGPT for brainstorming, drafting, editing, and optimizing various types of content.
