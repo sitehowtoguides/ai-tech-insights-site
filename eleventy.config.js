@@ -9,6 +9,8 @@ import yaml from "js-yaml";
 
 import markdownIt from "markdown-it";
 
+import { IdAttributePlugin } from "@11ty/eleventy";
+
 const md = new markdownIt({
   html: true,
 });
@@ -44,6 +46,8 @@ export default function (eleventyConfig) {
       preset: 'default',
     }),
   ]);
+
+  eleventyConfig.addPlugin(IdAttributePlugin);
 
   eleventyConfig.addPassthroughCopy('./images/**/*');
 
