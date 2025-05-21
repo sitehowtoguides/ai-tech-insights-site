@@ -77,16 +77,16 @@ Once you've chosen a tool:
 This is the most critical step. As covered in our [guide to effective prompts](how-to-write-effective-ai-prompts.html), be clear and detailed.
 
 *   **Core Elements:** Subject, Action, Setting, Style, Composition, Lighting, Color, Details.
-*   **Example:** Instead of \`cat\`, try \`A fluffy ginger cat sleeping peacefully in a pool of sunlight on a windowsill, detailed fur texture, photorealistic style, warm lighting\`.
+*   **Example:** Instead of `cat`, try `A fluffy ginger cat sleeping peacefully in a pool of sunlight on a windowsill, detailed fur texture, photorealistic style, warm lighting`.
 *   **Keywords are Key:** Use strong adjectives and specific nouns.
 
 ### Step 4: Add Parameters or Settings (Optional)
 
 Many tools allow you to refine the output using parameters or settings:
 
-*   **Aspect Ratio:** Controls the image dimensions (e.g., \`16:9\` for widescreen, \`1:1\` for square, \`2:3\` for portrait). Common parameters: \`--ar\` (Midjourney), or dropdown menus/input boxes.
-*   **Style Intensity:** Influences how strongly the AI applies its artistic interpretation (e.g., \`--s\` in Midjourney).
-*   **Negative Prompts:** Specify what to exclude (e.g., \`--no text\`, or a dedicated negative prompt box). Helps remove unwanted elements like extra fingers, text, or specific objects.
+*   **Aspect Ratio:** Controls the image dimensions (e.g., `16:9` for widescreen, `1:1` for square, `2:3` for portrait). Common parameters: `--ar` (Midjourney), or dropdown menus/input boxes.
+*   **Style Intensity:** Influences how strongly the AI applies its artistic interpretation (e.g., `--s` in Midjourney).
+*   **Negative Prompts:** Specify what to exclude (e.g., `--no text`, or a dedicated negative prompt box). Helps remove unwanted elements like extra fingers, text, or specific objects.
 *   **Seed Number:** A number used to initialize the generation. Using the same seed with the same prompt can produce similar results, useful for consistency.
 *   **Model Version:** Some tools let you choose different versions of their AI model, which may have different strengths.
 
@@ -124,8 +124,8 @@ Once you have a low-resolution preview you like:
 
 *   **Specificity is King:** The more detail, the better. Think like you're describing the scene to someone who can't see it.
 *   **Master Prompt Structure:** Experiment with ordering elements in your prompt (e.g., subject first vs. style first).
-*   **Learn Style Keywords:** Explore terms like \`cinematic lighting\`, \`art deco\`, \`cyberpunk\`, \`watercolor\`, \`vector art\`, \`macro photography\`, \`isometric view\`.
-*   **Use Negative Prompts:** Actively exclude things you don't want (e.g., \`ugly\`, \`deformed\`, \`blurry\`, \`text\`, \`watermark\`).
+*   **Learn Style Keywords:** Explore terms like `cinematic lighting`, `art deco`, `cyberpunk`, `watercolor`, `vector art`, `macro photography`, `isometric view`.
+*   **Use Negative Prompts:** Actively exclude things you don't want (e.g., `ugly`, `deformed`, `blurry`, `text`, `watermark`).
 *   **Study Other Prompts:** Look at galleries and communities for your chosen tool to see what prompts create which kinds of images.
 *   **Understand Your Tool's Strengths:** Some tools excel at realism, others at artistic styles. Play to their strengths.
 

@@ -20,7 +20,7 @@ export default function (eleventyConfig) {
   eleventyConfig.on('eleventy.before', async () => {
     const tailwindInputPath = path.resolve('./css/tailwind.css');
 
-    const tailwindOutputPath = './dist/assets/css/styles.css';
+    const tailwindOutputPath = './_site/assets/css/styles.css';
 
     const cssContent = fs.readFileSync(tailwindInputPath, 'utf8');
 
@@ -72,7 +72,7 @@ export default function (eleventyConfig) {
   return {
     dir: {
       input: './',
-      output: 'dist',
+      output: '_site',
       "data": "_data",
       includes: "_includes",
       layouts: "_layouts"

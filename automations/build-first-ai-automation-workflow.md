@@ -28,9 +28,9 @@ faq:
       a: |-
         Start with a simple, high-frequency task that causes you pain. Examples include: categorizing emails based on keywords or sentiment, summarizing meeting notes and sending them to a specific channel, automatically posting social media updates from a blog RSS feed after adding AI-generated commentary, or extracting specific information from incoming leads.
 ---
-The world of AI automation can seem daunting, but getting started is easier than you might think, especially with today's powerful \*\*no-code AI workflow tools\*\*. You don't need to be a programmer to automate tasks and leverage AI. This guide provides a practical, \*\*step-by-step AI automation example\*\* to help you build your very first workflow.
+The world of AI automation can seem daunting, but getting started is easier than you might think, especially with today's powerful **no-code AI workflow tools**. You don't need to be a programmer to automate tasks and leverage AI. This guide provides a practical, **step-by-step AI automation example** to help you build your very first workflow.
 
-We'll use a common scenario: automatically analyzing the sentiment of incoming emails and notifying a team via Slack about negative feedback. This \*\*AI automation tutorial\*\* focuses on using popular platforms like Zapier or Make (formerly Integromat), demonstrating the core concepts of triggers, actions, and integrating AI capabilities like \*\*AI sentiment analysis workflow\*\* without writing a single line of code.
+We'll use a common scenario: automatically analyzing the sentiment of incoming emails and notifying a team via Slack about negative feedback. This **AI automation tutorial** focuses on using popular platforms like Zapier or Make (formerly Integromat), demonstrating the core concepts of triggers, actions, and integrating AI capabilities like **AI sentiment analysis workflow** without writing a single line of code.
 
 ## Why Start with a Simple Workflow?
 
@@ -41,7 +41,7 @@ Building complex automations can be overwhelming initially. Starting with a simp
 *   **Low Risk:** Simple workflows are easier to troubleshoot if something goes wrong.
 *   **Foundation for Complexity:** The principles learned apply to building more sophisticated automations later.
 
-The goal of this \*\*first AI automation project\*\* is to build confidence and familiarity with the tools and possibilities.
+The goal of this **first AI automation project** is to build confidence and familiarity with the tools and possibilities.
 
 ## Prerequisites
 
@@ -79,8 +79,8 @@ _(Make equivalent: Create a new scenario, add the Gmail module, select 'Watch em
 3.  **Action Event:** Choose "Send Prompt". (Alternatively, some platforms might have a specific "Analyze Sentiment" action, but using a prompt offers more control). Click Continue.
 4.  **Connect Account:** Connect your OpenAI account using your API key (found in your OpenAI account settings). Click Continue.
 5.  **Configure Action:**
-    *   **Model:** Select a suitable model (e.g., \`gpt-3.5-turbo\` or \`gpt-4\` if available - check OpenAI pricing).
-    *   **Prompt:** This is crucial. Instruct the AI clearly. Example prompt: \`\`\` Analyze the sentiment of the following email text and return only one word: Positive, Negative, or Neutral. Email Subject: \[Insert Subject from Step 1\] Email Body: \[Insert Body Plain from Step 1\] \`\`\` \*Use the Zapier data mapping feature to insert the actual subject and body fields from the Gmail trigger step.\*
+    *   **Model:** Select a suitable model (e.g., `gpt-3.5-turbo` or `gpt-4` if available - check OpenAI pricing).
+    *   **Prompt:** This is crucial. Instruct the AI clearly. Example prompt: ``` Analyze the sentiment of the following email text and return only one word: Positive, Negative, or Neutral. Email Subject: \[Insert Subject from Step 1\] Email Body: \[Insert Body Plain from Step 1\] ``` *Use the Zapier data mapping feature to insert the actual subject and body fields from the Gmail trigger step.*
     *   Adjust other settings like Temperature (usually lower, e.g., 0.2, for classification tasks) if needed.
 6.  **Test Action:** Zapier will send the prompt with sample data to OpenAI. Review the response – it should ideally be just "Positive", "Negative", or "Neutral". Click Continue.
 
@@ -108,7 +108,7 @@ This step only runs if the Filter condition (Sentiment is Negative) is met.
 4.  **Connect Account:** Connect your Slack account, granting permissions. Click Continue.
 5.  **Configure Action:**
     *   **Channel:** Select the Slack channel where you want notifications sent (e.g., #support-alerts).
-    *   **Message Text:** Compose your message using mapped data. Example: \`\`\` 🚨 Negative Email Received 🚨 From: \[Insert From Email from Step 1\] Subject: \[Insert Subject from Step 1\] Sentiment: \[Insert Sentiment from Step 3\] Link: \[Insert Link to Email from Step 1 (if available)\] \[Insert Snippet from Step 1\] \`\`\`
+    *   **Message Text:** Compose your message using mapped data. Example: ``` 🚨 Negative Email Received 🚨 From: \[Insert From Email from Step 1\] Subject: \[Insert Subject from Step 1\] Sentiment: \[Insert Sentiment from Step 3\] Link: \[Insert Link to Email from Step 1 (if available)\] \[Insert Snippet from Step 1\] ```
     *   Configure other options like Bot Name, Icon, etc., as desired.
 6.  **Test Action:** Zapier will send a test message to your selected Slack channel. Check Slack to confirm it looks correct. Click Continue.
 
@@ -124,7 +124,7 @@ Your first AI automation workflow is now live! Send a test email (with clearly n
 
 ## Next Steps and Further Exploration
 
-Congratulations! You've built a functional \*\*AI automation workflow\*\*. Now you can:
+Congratulations! You've built a functional **AI automation workflow**. Now you can:
 
 *   **Refine the Prompt:** Experiment with the OpenAI prompt for more nuanced sentiment or different outputs.
 *   **Add More Actions:** Instead of just Slack, add steps to create a task in a project management tool, add a tag in your CRM, or send a different notification based on positive sentiment.
@@ -136,6 +136,6 @@ Refer back to guides on [AI workflow automation basics](ai-workflow-automation-b
 
 ## Conclusion: Your Journey into AI Automation
 
-Building your \*\*first AI automation project\*\* using \*\*no-code AI workflow tools\*\* demystifies the process and highlights the power of connecting apps with intelligence. This \*\*step-by-step AI automation example\*\* is just the beginning.
+Building your **first AI automation project** using **no-code AI workflow tools** demystifies the process and highlights the power of connecting apps with intelligence. This **step-by-step AI automation example** is just the beginning.
 
 By starting simple, understanding the core components, and gradually increasing complexity, you can leverage AI automation to save time, reduce errors, and focus on more impactful work. Keep experimenting and exploring the possibilities!

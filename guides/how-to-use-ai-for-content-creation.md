@@ -90,10 +90,10 @@ Consider factors like features, ease of use, integration capabilities, pricing, 
 
 AI is excellent for overcoming the blank page. Use it to:
 
-*   **Generate Topic Ideas:** \`Give me 15 blog post ideas about healthy eating on a budget.\`
-*   **Create Headlines/Titles:** \`Write 10 catchy headlines for an article about the benefits of meditation.\`
-*   **Develop Outlines:** \`Create a detailed outline for a comprehensive guide on how to start a podcast.\`
-*   **Explore Different Angles:** \`Suggest 5 different angles for writing about the impact of social media on mental health.\`
+*   **Generate Topic Ideas:** `Give me 15 blog post ideas about healthy eating on a budget.`
+*   **Create Headlines/Titles:** `Write 10 catchy headlines for an article about the benefits of meditation.`
+*   **Develop Outlines:** `Create a detailed outline for a comprehensive guide on how to start a podcast.`
+*   **Explore Different Angles:** `Suggest 5 different angles for writing about the impact of social media on mental health.`
 
 Select the best ideas and refine the outlines provided by the AI to fit your strategy.
 
@@ -101,10 +101,10 @@ Select the best ideas and refine the outlines provided by the AI to fit your str
 
 Once you have a solid outline, use the AI to draft individual sections. Provide clear, specific prompts for each part:
 
-*   **Specify the Section:** \`Write the introduction for the podcasting guide outlined above.\`
-*   **Provide Context:** \`Target audience is beginners with no technical experience. Tone should be encouraging and informative.\`
-*   **Include Key Points:** \`Mention the growing popularity of podcasts and the accessibility of starting one.\`
-*   **Set Length Constraints (Optional):** \`Keep the introduction around 150 words.\`
+*   **Specify the Section:** `Write the introduction for the podcasting guide outlined above.`
+*   **Provide Context:** `Target audience is beginners with no technical experience. Tone should be encouraging and informative.`
+*   **Include Key Points:** `Mention the growing popularity of podcasts and the accessibility of starting one.`
+*   **Set Length Constraints (Optional):** `Keep the introduction around 150 words.`
 
 Draft section by section rather than asking the AI to write the entire piece at once, as this gives you more control and often yields better results.
 
@@ -174,7 +174,7 @@ Using AI for content creation comes with ethical responsibilities. As these tool
 *   **Avoiding Misrepresentation:** Do not use AI to generate fake reviews, impersonate others, or create intentionally misleading content.
 *   **Bias Awareness:** Be mindful that AI can perpetuate biases present in its training data. Actively review content for fairness and inclusivity, and correct any biased language or perspectives.
 *   **Data Privacy:** Be cautious about inputting sensitive or confidential information into AI tools, especially free versions. Review the tool's data privacy policy to understand how your inputs are used.
-*   **Respecting Copyright:** AI models are trained on vast amounts of data, some of which may be copyrighted. While the legal landscape is evolving, avoid prompting AI to replicate copyrighted styles too closely or generating content that infringes on intellectual property. Focus on using AI as a tool to create \*new\*, transformative work.
+*   **Respecting Copyright:** AI models are trained on vast amounts of data, some of which may be copyrighted. While the legal landscape is evolving, avoid prompting AI to replicate copyrighted styles too closely or generating content that infringes on intellectual property. Focus on using AI as a tool to create *new*, transformative work.
 *   **Human Oversight:** Reinforce the necessity of human judgment. AI should augment, not replace, critical thinking, ethical decision-making, and accountability for the final content.
 
 Responsible AI use involves leveraging its capabilities while mitigating potential harms and upholding ethical standards in content creation.

@@ -55,7 +55,7 @@ The most direct method is to tell ChatGPT how long you want the response to be. 
 *   **Bullet Point Count:** "List **at least 10** benefits of regular exercise."
 *   **General Descriptors:** Use terms that imply length: "Provide a **detailed** explanation...", "Write a **comprehensive** guide...", "Explain this **thoroughly**...", "Be **elaborate**..."
 
-**Note on Word Counts:** ChatGPT is generally good at targeting requested lengths but isn't perfect. Expect it to be \*around\* the target, not exact. For very long requests (e.g., >2000 words), it's better to break the task down (Technique 2).
+**Note on Word Counts:** ChatGPT is generally good at targeting requested lengths but isn't perfect. Expect it to be *around* the target, not exact. For very long requests (e.g., >2000 words), it's better to break the task down (Technique 2).
 
 ### Technique 2: Break Down Complex Requests
 

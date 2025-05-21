@@ -47,7 +47,7 @@ Start by clearly defining what you want the chatbot to achieve. What specific pr
 *   Book appointments or demos.
 *   Troubleshoot basic technical issues.
 
-**Crucially, define what the chatbot \*won't\* handle** and establish clear escalation paths to human agents.
+**Crucially, define what the chatbot *won't* handle** and establish clear escalation paths to human agents.
 
 ### 2\. Choose the Right Platform/Technology
 
@@ -75,8 +75,8 @@ Focus on creating a natural, helpful, and efficient user experience.
 
 This is crucial for intent-based and conversational AI bots. You need to provide training data:
 
-*   **Intents:** Define the goals users might have (e.g., \`check\_order\_status\`, \`ask\_refund\_policy\`, \`product\_inquiry\`).
-*   **Utterances:** Provide numerous examples of how users might phrase each intent (e.g., for \`check\_order\_status\`: "Where is my order?", "Track my package", "What's the status of order #12345?"). The more varied the examples, the better the bot understands.
+*   **Intents:** Define the goals users might have (e.g., `check\_order\_status`, `ask\_refund\_policy`, `product\_inquiry`).
+*   **Utterances:** Provide numerous examples of how users might phrase each intent (e.g., for `check\_order\_status`: "Where is my order?", "Track my package", "What's the status of order #12345?"). The more varied the examples, the better the bot understands.
 *   **Entities:** Identify key pieces of information within utterances (e.g., order numbers, product names, dates, locations).
 
 Most platforms provide interfaces for managing this training data. Start with a solid base and plan to continuously add more data based on real user interactions.

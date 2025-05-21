@@ -73,8 +73,8 @@ Each approach offers distinct advantages and disadvantages regarding flexibility
 
 ### Examples:
 
-*   **Python Scripts:** Using libraries like \`requests\` (for APIs), \`pandas\` (data manipulation), \`scikit-learn\` (traditional ML), \`transformers\` (NLP models), \`openai\` (OpenAI API). Often run as scheduled tasks, serverless functions (AWS Lambda, Google Cloud Functions), or part of larger applications.
-*   **Node.js Scripts:** Using \`axios\` or \`node-fetch\` for APIs, and various JavaScript AI libraries.
+*   **Python Scripts:** Using libraries like `requests` (for APIs), `pandas` (data manipulation), `scikit-learn` (traditional ML), `transformers` (NLP models), `openai` (OpenAI API). Often run as scheduled tasks, serverless functions (AWS Lambda, Google Cloud Functions), or part of larger applications.
+*   **Node.js Scripts:** Using `axios` or `node-fetch` for APIs, and various JavaScript AI libraries.
 *   **Dedicated AI Applications:** Building full-fledged applications (web apps, backend services) that incorporate custom-trained or fine-tuned AI models.
 
 ### Pros:
@@ -118,4 +118,4 @@ Often, a hybrid approach works best. You might use a no-code tool for simple tas
 
 ## Conclusion
 
-Choosing between no-code, low-code, and custom scripts for AI automation isn't about finding the single best approach, but rather the best approach \*for a specific task and team\*. By understanding the trade-offs between speed, flexibility, cost, and required expertise, you can make an informed decision and successfully implement AI automation to drive efficiency and innovation within your organization.
+Choosing between no-code, low-code, and custom scripts for AI automation isn't about finding the single best approach, but rather the best approach *for a specific task and team*. By understanding the trade-offs between speed, flexibility, cost, and required expertise, you can make an informed decision and successfully implement AI automation to drive efficiency and innovation within your organization.

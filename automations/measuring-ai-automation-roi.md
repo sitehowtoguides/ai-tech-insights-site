@@ -49,7 +49,7 @@ Without measuring ROI, it's difficult to know if your AI automation efforts are 
 
 The fundamental concept of ROI is comparing the gains from an investment relative to its cost. A common formula is:
 
-**ROI (%) = \[ (Total Benefits - Total Investment Cost) / Total Investment Cost \] \* 100**
+**ROI (%) = \[ (Total Benefits - Total Investment Cost) / Total Investment Cost \] * 100**
 
 To use this formula for **AI automation ROI calculation**, you need to quantify both the benefits and the costs over a specific period (e.g., one year, three years).
 
@@ -71,7 +71,7 @@ It's crucial to capture the Total Cost of Ownership (TCO), not just the initial 
 Benefits can be tangible (directly measurable in monetary terms) or intangible (harder to assign a specific dollar value but still impactful). Focus on quantifying as many benefits as possible:
 
 *   **Cost Savings (Tangible):**
-    *   _Reduced Labor Costs:_ Calculate time saved by employees previously doing the task manually. (Time Saved per Task \* Frequency \* Employee Cost per Hour).
+    *   _Reduced Labor Costs:_ Calculate time saved by employees previously doing the task manually. (Time Saved per Task * Frequency * Employee Cost per Hour).
     *   _Error Reduction Savings:_ Quantify the cost of errors before automation (e.g., cost of rework, penalties, lost revenue) and the reduction achieved.
     *   _Reduced Material Costs:_ Savings on paper, printing, postage, etc.
     *   _Avoided Penalties:_ Savings from improved compliance or meeting deadlines.
@@ -112,7 +112,7 @@ Choose metrics directly relevant to the goals of the specific automation project
 
 Calculating a precise ROI for AI automation isn't always straightforward. Common challenges include:
 
-*   **Establishing Baselines:** Difficulty in accurately measuring performance \*before\* automation, especially for poorly documented manual processes.
+*   **Establishing Baselines:** Difficulty in accurately measuring performance *before* automation, especially for poorly documented manual processes.
 *   **Quantifying Intangibles:** Assigning credible monetary values to benefits like improved morale or better decision-making.
 *   **Isolating AI Impact:** Separating the benefits derived specifically from AI automation versus other concurrent business changes or improvements.
 *   **Long-Term Benefits Horizon:** Some benefits (like improved data quality leading to better strategy) may take time to materialize fully.
@@ -124,7 +124,7 @@ Acknowledge these challenges and aim for a realistic, well-supported estimate ra
 ## Best Practices for Measuring and Reporting ROI
 
 1.  **Define Clear Objectives:** What specific business problem is the automation solving? What are the expected outcomes?
-2.  **Establish Baselines Early:** Measure current performance \*before\* starting the implementation. Use historical data if available, or conduct time studies.
+2.  **Establish Baselines Early:** Measure current performance *before* starting the implementation. Use historical data if available, or conduct time studies.
 3.  **Involve Stakeholders:** Work with finance, operations, and IT to agree on metrics, cost assumptions, and benefit calculations.
 4.  **Focus on Key Drivers:** Prioritize measuring the 2-3 most significant cost savings or efficiency gains.
 5.  **Be Conservative with Estimates:** Especially when quantifying less tangible benefits or projecting future gains.

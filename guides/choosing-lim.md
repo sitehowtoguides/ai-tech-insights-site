@@ -75,7 +75,7 @@ The best way to choose is to try them out:
 2.  **Use Free Tiers/Trials:** Most platforms offer free access or trials. Test your prompts across different models.
 3.  **Compare Outputs Side-by-Side:** Evaluate the quality, relevance, accuracy, tone, and creativity of the responses.
 4.  **Assess User Experience:** Consider the ease of use of the interface or API.
-5.  **Check Benchmarks (with caution):** Look at independent benchmarks (like LMSys Chatbot Arena), but remember they don't always reflect real-world performance on \*your\* specific tasks.
+5.  **Check Benchmarks (with caution):** Look at independent benchmarks (like LMSys Chatbot Arena), but remember they don't always reflect real-world performance on *your* specific tasks.
 6.  **Consider Cost vs. Performance:** Is the performance gain of a premium model worth the extra cost for your needs? Sometimes a slightly less capable but cheaper model is sufficient.
 
 Flowchart Placeholder: Decision Process for Choosing an LLM

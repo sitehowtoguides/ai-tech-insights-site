@@ -27,3 +27,5 @@
 ## Drafts
 
 ## ids on headingd from markdown
+
+## Redirects

@@ -106,7 +106,7 @@ Interacting with suggestions is simple:
 *   **Accept:** Press the `Tab` key. The grayed-out suggestion becomes part of your code.
 *   **Reject:** Simply continue typing your own code, or press `Esc`. The suggestion disappears.
 *   **See Alternatives:** Copilot often has multiple ideas. Use the keyboard shortcuts for your IDE to cycle through them (e.g., `Alt+\]` / `Option+\]` to see the next suggestion, `Alt+\[` / `Option+\[` for the previous one in VS Code). You might also see a small popup indicating multiple suggestions are available.
-*   **Trigger Suggestions Manually:** Sometimes you might want to explicitly ask for a suggestion. The shortcut varies by IDE (e.g., `Alt+\\` or `Option+\\` in VS Code might open suggestions in a separate panel).
+*   **Trigger Suggestions Manually:** Sometimes you might want to explicitly ask for a suggestion. The shortcut varies by IDE (e.g., `Alt+\` or `Option+\` in VS Code might open suggestions in a separate panel).
 
 ### Step 6: Use Comments to Guide Copilot
 

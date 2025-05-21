@@ -67,7 +67,7 @@ Here's how it works:
 
 *   **OpenAI Free Credits (Rare):** In the past, OpenAI sometimes offered free credits upon signing up for their API platform, which could be used for DALL-E 2. This is less common for DALL-E 3, but it's worth checking your OpenAI account dashboard ([platform.openai.com](https://platform.openai.com/)) for any promotional credits after signing up.
 *   **Third-Party Integrations (Limited Trials):** Some applications might integrate the DALL-E API and offer their own limited free trials. Be cautious and verify the legitimacy of such services.
-*   **ChatGPT Free Tier (Text Only):** The free version of ChatGPT does \*not\* include DALL-E 3 image generation. This feature is reserved for ChatGPT Plus subscribers.
+*   **ChatGPT Free Tier (Text Only):** The free version of ChatGPT does *not* include DALL-E 3 image generation. This feature is reserved for ChatGPT Plus subscribers.
 
 ## Understanding Limitations of Free DALL-E Access
 

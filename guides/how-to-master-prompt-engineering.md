@@ -94,7 +94,7 @@ Rarely is the first output perfect. Analyze the result and adjust your prompt ac
 ### Text Generation (ChatGPT, Gemini)
 
 *   Focus on clear instructions, context, persona, and desired format.
-*   Use delimiters (like \`\`\`, ###, ) to separate instructions from content to be processed.
+*   Use delimiters (like ```, ###, ) to separate instructions from content to be processed.
 *   Specify negative constraints (e.g., "Do not mention price," "Avoid technical jargon").
 
 ### Image Generation (Midjourney, DALL-E)
@@ -103,7 +103,7 @@ Rarely is the first output perfect. Analyze the result and adjust your prompt ac
 *   Use keywords effectively. Midjourney often responds well to comma-separated keywords.
 *   Specify art styles (e.g., photorealistic, cartoon, watercolor, cyberpunk, Van Gogh style).
 *   Mention camera details (e.g., wide-angle shot, macro lens, shallow depth of field).
-*   Use negative prompts (e.g., \`--no text\` in Midjourney) to exclude unwanted elements.
+*   Use negative prompts (e.g., `--no text` in Midjourney) to exclude unwanted elements.
 *   Reference our specific guides: [How to Use Midjourney](/how-to-use-midjourney/), [How to Use DALL-E](/how-to-use-dalle/).
 
 ![Example of a detailed prompt for AI image generation](/images/prompt-engineering-image-example.png)
@@ -123,7 +123,7 @@ Rarely is the first output perfect. Analyze the result and adjust your prompt ac
 *   **Chain-of-Thought (CoT) Prompting:** Encouraging the AI to "think step-by-step" or explain its reasoning process before giving the final answer. This often improves performance on complex reasoning tasks. Add phrases like "Let's think step by step."
 *   **Self-Consistency:** Generating multiple responses using CoT prompting with varied reasoning paths, then selecting the most common answer as the final output (often improves accuracy).
 *   **Generated Knowledge Prompting:** Asking the AI to first generate relevant facts or knowledge about a topic before answering the actual question based on that generated knowledge.
-*   **Using Delimiters:** Clearly separating different parts of your prompt (instructions, context, examples, input data) using characters like \`\`\`, ###, ---, or XML-like tags (, ).
+*   **Using Delimiters:** Clearly separating different parts of your prompt (instructions, context, examples, input data) using characters like ```, ###, ---, or XML-like tags (, ).
 
 <div class="callout callout-info">
     <strong>Example (Few-Shot):</strong><br>
