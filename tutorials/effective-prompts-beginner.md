@@ -1,4 +1,5 @@
 ---
+redirect_from: /tutorials/effective-prompts-beginner.html
 title: 'How to use ChatGPT for content creation'
 summary: |-
   Learn how to use ChatGPT for content creation.

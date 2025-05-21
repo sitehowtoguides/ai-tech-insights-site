@@ -1,4 +1,5 @@
 ---
+redirect_from: /tutorials/midjourney-beginner-guide.html
 title: 'How to use ChatGPT for SEO'
 summary: |-
   Learn how to use ChatGPT for SEO

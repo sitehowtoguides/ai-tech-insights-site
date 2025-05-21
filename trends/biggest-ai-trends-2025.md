@@ -1,4 +1,5 @@
 ---
+redirect_from: /trends/biggest-ai-trends-2025.html
 title: "The Biggest AI Trends to Watch in 2025: What You Need to Know"
 summary: |-
   Explore the most significant AI trends shaping 2025, from generative models to ethical AI and beyond.
