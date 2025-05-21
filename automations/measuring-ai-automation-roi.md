@@ -1,4 +1,5 @@
 ---
+redirect_from: /automations/measuring-ai-automation-roi.html
 title: "Measuring the ROI of AI Automation Projects: A Practical Guide (2025)"
 summary: |-
   Learn how to measure the ROI of AI automation projects. Understand key metrics, calculation methods, and challenges in quantifying AI value.

@@ -1,4 +1,5 @@
 ---
+redirect_from: /automations/top-10-ai-automation-tools-2025.html
 title: "Top 10 AI Automation Tools to Boost Your Productivity in 2025"
 summary: |-
   Discover the leading AI tools that can automate tasks, improve efficiency, and transform your business operations in 2025.

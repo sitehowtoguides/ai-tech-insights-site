@@ -1,4 +1,5 @@
 ---
+redirect_from: /automations/build-first-ai-automation-workflow.html
 title: "Building Your First AI Automation Workflow (Step-by-Step Example)"
 summary: |-
   Learn how to build your first AI automation workflow step-by-step using no-code tools like Zapier or Make. Automate tasks like email sorting.

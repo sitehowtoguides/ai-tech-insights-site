@@ -1,4 +1,5 @@
 ---
+redirect_from: /automations/ai-powered-data-entry-and-processing-automation-explained.html
 title: 'AI-Powered Data Entry and Processing Automation Explained (2025)'
 summary: |-
   Learn about AI data entry automation and automated data processing with AI. Explore OCR AI data extraction, IDP, and the benefits for businesses.

@@ -22,6 +22,7 @@ faq:
     - q: How do I identify the best tasks to start automating with AI?
       a: |-
         Look for tasks that are: 1) Repetitive and rule-based (even if complex). 2) Time-consuming and manual. 3) Prone to human error. 4) Data-driven (input, processing, analysis). 5) Involve multiple apps or systems. Start with those of lower complexity and higher potential impact.
+redirect_from: /automations/ai-workflow-automation-basics.html
 ---
 Have you ever found yourself performing the same sequence of digital tasks over and over? Copying data, sending standard emails, updating spreadsheets... The good news is that Artificial Intelligence can help! This guide focuses on the **AI workflow automation basics**, showing how you, even as a beginner, can start automating workflows using AI.
 

@@ -1,4 +1,5 @@
 ---
+redirect_from: /automations/ai-finance-accounting-automation.html
 title: 'Finance and Accounting Automation with AI: Key Trends and Benefits (2025)'
 summary: |-
   Explore AI finance automation trends for 2025. Learn about accounting automation AI, AI for financial analysis, and the key benefits of AI in accounting.

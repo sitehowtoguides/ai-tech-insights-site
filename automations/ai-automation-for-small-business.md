@@ -1,4 +1,5 @@
 ---
+redirect_from: /automations/ai-automation-for-small-business.html
 title: 'AI Automation for Small Business: Transforming Operations in 2025'
 summary: |-
   Discover how AI automation for small business is revolutionizing marketing, sales, customer service, and administration. See practical examples.

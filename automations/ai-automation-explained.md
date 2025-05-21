@@ -1,4 +1,5 @@
 ---
+redirect_from: /automations/ai-automation-explained.html
 title: "AI Automation Explained: Why It's Crucial in 2025"
 summary: |-
   Understand what AI automation is and discover the benefits and growing importance of this technology for the future of work in 2025.
