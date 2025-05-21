@@ -51,6 +51,8 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy('./images/**/*');
 
+  eleventyConfig.addPassthroughCopy("CNAME");
+
   eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
 
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
