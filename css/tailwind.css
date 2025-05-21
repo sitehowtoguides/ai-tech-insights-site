@@ -3,6 +3,16 @@
 /* @plugin "@tailwindcss/typography"; */
 
 @layer components {
+
+    .site-logo {
+        width: 200px;
+        height: auto;
+        transition: fill .1s cubic-bezier(0.4, 0, 1, 1);
+    }
+
+    .site-logo:hover {
+        fill:#4f46e5;
+    }
     
     .gradient-bg {
         background: linear-gradient(135deg, #6e8efb 0%, #a777e3 100%);

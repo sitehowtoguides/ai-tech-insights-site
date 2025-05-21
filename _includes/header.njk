@@ -3,9 +3,8 @@
         <div class="flex justify-between items-center">
             {# Logo #}
             <div class="flex items-center">
-                <a href="{{ '/' | url }}" class="text-2xl font-bold text-indigo-600 flex items-center">
-                    {# Replace Font Awesome icon with your image #}
-                    <img src="{{ '/images/logo.svg' | url }}" alt="{{ global.title }} Logo" class="mr-2" style="height: 1.5em; width: auto;" /> {{ global.title }}
+                <a href="{{ '/' | url }}" class="py-1 text-2xl font-bold text-indigo-600 flex items-center">
+                    {% include "logo.svg" %}
                 </a>
             </div>
             {# Desktop Navigation #}
