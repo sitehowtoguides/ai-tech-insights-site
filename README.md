@@ -1,6 +1,14 @@
+# aimasterguides.com
+
+An eleveny site
+
 ## Front-matter basics
 
+## Markdown
+
 ## Meta data (global and per page)
+
+## Writing articles
 
 ## Navigation
 
