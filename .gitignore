@@ -3,5 +3,4 @@ _site
 dist
 package-lock.json
 .DS_Store
-assets/css/styles.css
 .env
