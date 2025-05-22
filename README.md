@@ -2,6 +2,12 @@
 
 An eleveny site
 
+## Install
+
+Node install
+
+## Serve and build
+
 ## Front-matter basics
 
 ## Markdown
