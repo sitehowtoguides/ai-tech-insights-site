@@ -1,0 +1,71 @@
+---
+layout: default
+---
+<main class="container mx-auto px-4 py-12 max-w-4xl">
+    <article class="article">
+
+        {% set author_found = false %}
+        {% set the_author = {} %}
+        {% set author_id = author %}
+        {% include "helpers/get-author.njk" %}
+
+        <header class="mb-8">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+                {{ title }}
+            </h1>
+            <div class="flex items-center text-sm text-gray-500">
+                {% if author_found == true %}                    
+                    <img class="w-8 h-8 !rounded-full mr-2" src="{{ the_author.image | url }}" alt="{{ the_author.name }}{% if the_author.title | length > 0 %}, {{ the_author.title }}{% endif %}">
+                    <span>By {{ the_author.name }}</span>
+                {% endif %}
+                {% if date %}
+                    <span class="mx-2">|</span>
+                    <span>Published on {{ page.date.toLocaleString('en', { month: 'long' }) }} {{ page.date.getDate() }}, {{ page.date.getFullYear() }} </span>                 
+                {% endif %}
+                <span class="mx-2">|</span>
+                {% set the_content = content %}
+                {% include "helpers/reading-time.njk" %}
+            </div>
+        </header>
+
+        {{ content | safe }}
+
+        {% if faq.items | length > 0 %}
+            <div class="mt-16 pt-6 border-t border-gray-200">
+                {# FAQ Section #}
+                {% if faq.title | length > 0 %}                
+                    <h2 class="!mt-0" id="faq">
+                        {{ faq.title }}
+                    </h2>
+                {% endif %}
+
+                <div class="faq-section mt-8">
+                    {% for item in faq.items %}
+                        <div class="faq-item">
+                            <details>
+                                <summary class="faq-question">
+                                    {{ item.q }}
+                                    <span class="faq-icon ml-auto text-gray-800 text-sm">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                </summary>
+                                <div class="faq-answer">
+                                    <p>
+                                        {{ item.a | markdown | safe }}
+                                    </p>
+                                </div>
+                            </details>                    
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endif %}
+
+    </article>
+
+    {% if author | length > 0 %}
+        {% set author_id = author %}
+        {% include "partials/author.njk" %}
+    {% endif %}    
+
+</main>

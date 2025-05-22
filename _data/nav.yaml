@@ -1,0 +1,11 @@
+items:
+  - name: Home
+    url: '/'
+  - name: Automations
+    url: '/automations/'
+  - name: Guides
+    url: '/guides/'
+  - name: Tutorials
+    url: '/tutorials/'
+  - name: AI Trends
+    url: '/trends/'

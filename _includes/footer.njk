@@ -1,0 +1,73 @@
+<footer class="bg-gray-800 text-gray-300 py-12 mt-12">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {# About #}
+            <div>
+                <h4 class="text-lg font-semibold text-white mb-4">
+                    {{ footer.about.title }}
+                </h4>
+                <p class="text-sm">
+                    {{ footer.about.description }}
+                </p>
+            </div>
+            {# Quick Links #}
+            <div>
+                <h4 class="text-lg font-semibold text-white mb-4">
+                    {{ footer.links.title }}
+                </h4>
+                <ul class="space-y-2">
+                    {% for item in footer.links.items %}                        
+                        <li>
+                            <a href="{{ item.url | url }}" class="hover:text-white text-sm">
+                                {{ item.name }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {# <Categories #}
+            <div>
+                <h4 class="text-lg font-semibold text-white mb-4">
+                    {{ footer.categories.title }}
+                </h4>
+                <ul class="space-y-2">
+                    {% for item in footer.categories.items %}                        
+                        <li>
+                            <a href="{{ item.url | url }}" class="hover:text-white text-sm">
+                                {{ item.name }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {# Newsletter #}
+            <div>
+                <h4 class="text-lg font-semibold text-white mb-4">
+                    {{ footer.contact.title }}
+                </h4>
+                <p class="text-sm mb-3">
+                    {{ footer.contact.description }}
+                </p>
+                <form>
+                    <div class="flex">
+                        <input type="email" placeholder="{{ footer.contact.form.input_placeholder }}" class="w-full px-3 py-2 rounded-l-md text-gray-800 focus:outline-none text-sm">
+                        <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-r-md text-sm font-medium">
+                            {{ footer.contact.form.button_text }}
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        {# Copyright & Social #}
+        <div class="mt-8 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-sm text-center md:text-left">&copy; {% year %} {{ footer.copyright }}</p>
+            <div class="flex space-x-4 mt-4 md:mt-0">
+                {% for item in footer.social.items %}                    
+                    <a href="{{ item.url | url }}" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-{{ item.icon }}"></i>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</footer>

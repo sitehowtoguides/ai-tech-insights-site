@@ -1,0 +1,6 @@
+{% for an_author in authors %}
+    {% if an_author.id == author_id %}
+        {% set author_found = true %}
+        {% set the_author = an_author %}
+    {% endif %}
+{% endfor %}

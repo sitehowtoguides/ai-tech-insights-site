@@ -1,0 +1,47 @@
+about:
+  title: AI Tech Insights
+  description: Your guide to understanding and utilizing the power of artificial intelligence. We provide tutorials, guides, and news on the latest AI trends.
+links:
+  title: Quick Links
+  items:
+  - name: Home
+    url: '/'
+  - name: Guides
+    url: '/guides/'
+  - name: Turorials
+    url: '/tutorials/'
+  - name: 'AI Trends'
+    url: '/trends/'
+  - name: 'Privacy Policy'
+    url: '#'
+  - name: Terms of Service
+    url: '#'
+categories:
+  title: Categories
+  items:
+    - name: AI Automations
+      url: '#'
+    - name: Machine Learning
+      url: '#'
+    - name: Natural Language Processing
+      url: '#'
+    - name: Computer Vision
+      url: '#'
+    - name: AI Ethics
+      url: '#'
+contact:
+  title: Stay Updated
+  description: Subscribe to our newsletter for the latest AI news and tutorials.
+  form:
+    input_placeholder: Your email
+    button_text: Subscribe
+# the current year is inserted automatically
+copyright: AI Tech Insights. All rights reserved.
+social:
+  items:
+    - icon: twitter
+      url: #
+    - icon: linkedin-in
+      url: #
+    - icon: github
+      url: #

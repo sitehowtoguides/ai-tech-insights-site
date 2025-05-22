@@ -1,0 +1,12 @@
+- id: alex-thompson
+  name: Alex Thompson
+  title: AI Specialist and Content Strategist
+  bio: Alex Thompson is a senior content strategist and AI specialist at AI Tech Insights. With years of experience analyzing and working hands-on with large language models, image generation tools, and automation platforms, Alex focuses on creating clear, actionable guides that help both beginners and professionals navigate the rapidly evolving AI landscape. Their goal is to demystify complex AI concepts and empower readers to leverage these powerful technologies for creativity, productivity, and innovation. When not exploring the latest AI advancements, Alex enjoys experimenting with prompt engineering and sharing practical tips with the community. 
+  image: /images/alex-thompson.png
+  social:
+    - icon: linkedin-in
+      url: '#'
+    - icon: twitter
+      url: '#'
+    - icon: globe
+      url: '#'

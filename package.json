@@ -1,0 +1,27 @@
+{
+  "name": "ai-tech-insights-site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx eleventy",
+    "serve": "npx eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@tailwindcss/postcss": "^4.1.6",
+    "markdown-it": "^14.1.0",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.6"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.16",
+    "cssnano": "^7.0.7",
+    "npm-run-all": "^4.1.5"
+  },
+  "type": "module"
+}
