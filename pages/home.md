@@ -1,5 +1,6 @@
 ---
 layout: home
+permalink: '/'
 meta:
   title: AI Master Guides - Latest AI News, Tutorials & Guides
   description: Your go-to resource for AI tutorials, automation guides, and the latest technology trends. Learn how to use AI tools effectively with our beginner-friendly guides.
