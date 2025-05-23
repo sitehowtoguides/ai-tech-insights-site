@@ -4,11 +4,25 @@ An eleveny site
 
 ## Install
 
-Node install
+In order to run this locally, you will need node.js installed on your system. Its version must be 20 or higher. The site has been tested with no problems on Node 22.
+
+Once you ensure that you have the proper node version, just CD into the site's folder and run:
+
+`npm install`
 
 ## Serve and build
 
-## Front-matter basics
+In order to serve the site locally, just run:
+
+`npm run serve`
+
+And then you can visit it on `http://localhost:8080/`
+
+## Front-matter
+
+Part of the pages' and the site's content can be found in the Front-matter area. This is easily distinguished, as it is between three dashes (`---`). The fron-matter area includes fields and their corresponding values. You can even have arrays, objects (or group fields), or arrays of objects.
+
+## Global data
 
 ## Markdown
 
