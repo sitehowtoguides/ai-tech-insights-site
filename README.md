@@ -6,6 +6,8 @@ An eleveny site
 
 In order to run this locally, you will need node.js installed on your system. Its version must be 20 or higher. The site has been tested with no problems on Node 22.
 
+A great tool that allows you to have multiple node versions and switch between them, is [nvm (Node Version Manager)](https://github.com/nvm-sh/nvm).
+
 Once you ensure that you have the proper node version, just CD into the site's folder and run:
 
 `npm install`
@@ -24,7 +26,7 @@ Part of the pages' content can be found in the Front-matter area.
 
 This is easily distinguished, as in it is between three dashes (`---`).
 
-The fron-matter area resides in files for pages and it includes fields and their corresponding values. You can have plain fields, arrays, objects (or group fields), even arrays of objects. It uses the yaml syntax.
+The front-matter area resides in files for pages and it includes fields and their corresponding values. You can have plain fields, arrays, objects (or group fields), even arrays of objects. It uses the yaml syntax.
 
 A plain field looks like this:
 
@@ -94,7 +96,7 @@ There some special fields:
 
 `permalink`: This defines the page's URL.
 
-`redirect_from`: This creates a redirect from an another URL. In our case, it used for redirections from the previous URLs which ended in .html
+`redirect_from`: Optional - This creates a redirect from an another URL. In our case, it used for redirections from the previous URLs which ended in .html
 
 ## Writing articles
 
@@ -102,7 +104,7 @@ The articles (automations, guides, tutorials, trends) can be found in the folder
 
 The `.yaml` files inside these folders are used to set default values for the respective collection. Generally, it should not be edited.
 
-The front-matter area contains structured content, as well as the content for the FAQ section. There is also the author, which will explained further below.
+The front-matter area contains structured content, as well as the content for the FAQ section. There is also the author, which will be explained further below.
 
 The `summary` field contains the text for articles teasers.
 
@@ -168,7 +170,7 @@ If the content contains double quotes, wrap it in single quotes. For example:
 text: 'Please hit the "Submit" button'
 ```
 
-If the content contains both single and double quotes, wrap it in single quotes ans escape the single quotes with `\` (or the other way around). For example:
+If the content contains both single and double quotes, wrap it in single quotes and escape the content's single quotes with `\` (or the other way around). For example:
 
 ```yaml
 text: 'Let\'s hit the "Submit" button'
@@ -190,10 +192,20 @@ The popular articles have `popular: true` in their Front-matter area
 
 ### Types of popular articles
 
+There are two types of teasers for the popular articles. By color, there are blue and green ones. By type, let's say they are of `video` and `written`, respectively. So again, respectively, you can set the fields to `type: video` or `type: written`.
+
 ## Content coming soon
+
+For articles that have no content yet (nothing in their Markdown area), but you want them to appear on the lists, they will, but they won't be links. In the image's place, the text *Content coming soon* will be shown. You can change this text in `_data/global.yml`, in the `no_content_text` field. 
 
 ## Drafts
 
+If you want articles to render when you work locally, but you do not want Github to publish them just yet, just set `draft: true`
+
 ## ids on headings from markdown
 
+Upon build, the headings automaticaly get ids so that you can create links to them.
+
 ## Redirects
+
+If you have a URL that you want it to redirect to a new page, just use the redirect_from field on the page.
