@@ -73,6 +73,12 @@ export default function (eleventyConfig) {
     return md.render(content);
   });
 
+  eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
+		if(data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
+			return false;
+		}
+	});
+
   eleventyConfig.addFilter('where', function(collection, field, value) {
     if (!value) return collection;
       const filtered = collection.filter(item => item.data[field] == value)
