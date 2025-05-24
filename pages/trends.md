@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: trends
 permalink: /trends/
 redirect_from: /trends.html
 meta:
@@ -8,21 +8,3 @@ meta:
 title: AI Trends & News
 description: Keep pace with the rapidly evolving world of artificial intelligence. Explore the latest breakthroughs, industry news, ethical discussions, and future predictions shaping AI.
 ---
-<main class="container mx-auto px-4 py-12">
-
-    <h1 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
-        {{ title }}
-    </h1>
-
-    <p class="text-lg text-gray-600 mb-8">
-        {{ description }}
-    </p>
-
-    {# Tutorial Grid #}
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {% for item in collections.trends | reverse %}
-            {% include "partials/teaser-article.njk" %}
-        {% endfor %}
-    </div>
-
-</main>

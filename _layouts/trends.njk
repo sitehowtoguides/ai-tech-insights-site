@@ -1,12 +1,5 @@
 ---
-permalink: /automations/
 layout: default
-redirect_from: /automations.html
-meta:
-  title: AI Automations - AI Master Guides
-  description:
-title: AI Automations
-description: Discover how AI can automate your workflows, boost productivity, and streamline business processes. Explore guides and tutorials on AI automation tools.
 ---
 <main class="container mx-auto px-4 py-12">
 
@@ -18,9 +11,9 @@ description: Discover how AI can automate your workflows, boost productivity, an
         {{ description }}
     </p>
 
-    {# Automations Grid #}
+    {# Tutorial Grid #}
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {% for item in collections.automation | reverse %}
+        {% for item in collections.trends | reverse %}
             {% include "partials/teaser-article.njk" %}
         {% endfor %}
     </div>
