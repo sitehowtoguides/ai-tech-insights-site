@@ -30,6 +30,7 @@ categories:
     - name: AI Ethics
       url: '#'
 contact:
+  show: false
   title: Stay Updated
   description: Subscribe to our newsletter for the latest AI news and tutorials.
   form:
