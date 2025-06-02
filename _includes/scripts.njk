@@ -4,7 +4,8 @@
     const mobileMenu = document.getElementById('mobile-menu');
 
     mobileMenuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('open');
+        mobileMenu.classList.toggle('max-h-0');
+        mobileMenu.classList.toggle('max-h-[500px]');
     });
 
     // Smooth scrolling for anchor links
