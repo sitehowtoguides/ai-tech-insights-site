@@ -5,15 +5,19 @@
 
 {% if author_found == true %}    
 
-    <div class="author-box">
-        <img class="author-avatar" src="{{ the_author.image | url }}" alt="{{ the_author.name }}{% if the_author.title | length > 0 %}, {{ the_author.title }}{% endif %}" loading="lazy">
-        <div class="author-info">
-            <h4>{{ the_author.name }}</h4>
-            <p>{{ the_author.bio }}</p>
+    <div class="bg-gray-50 border border-gray-200 rounded p-6 mt-12 flex items-start">
+        <img class="w-16 h-16 rounded-full mr-4 object-cover" src="{{ the_author.image | url }}" alt="{{ the_author.name }}{% if the_author.title | length > 0 %}, {{ the_author.title }}{% endif %}" loading="lazy">
+        <div>
+            <h4 class="text-lg text-gray-900 font-semibold mb-2">
+                {{ the_author.name }}
+            </h4>
+            <p class="text-sm text-gray-500 mb-2">
+                {{ the_author.bio }}
+            </p>
             {% if the_author.social | length > 0 %}                
                 <div class="author-socials">
                     {% for item in the_author.social %}                        
-                        <a href="{{ item.url | url }}" target="_blank" rel="noopener noreferrer"><i class="{% if item.icon == 'globe' %} fas{% else %} fab{% endif %} fa-{{ item.icon }}"></i></a>
+                        <a class="text-gray-500 mr-3 no-underline hover:text-indigo-600" href="{{ item.url | url }}" target="_blank" rel="noopener noreferrer"><i class="{% if item.icon == 'globe' %} fas{% else %} fab{% endif %} fa-{{ item.icon }}"></i></a>
                     {% endfor %}
                 </div>
             {% endif %}
