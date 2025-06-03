@@ -7,16 +7,21 @@
                     {% include "logo.svg" %}
                 </a>
             </div>
+            
             {# Desktop Navigation #}
             <nav class="hidden md:flex space-x-8">
-                {% for item in nav.items %}                    
-                    <a href="{{ item.url | url }}" class="font-medium hover:after:w-full after:content-none after:block after:w-0 after:h-0.5 after:bg-indigo-600 transition-[width] hover:text-indigo-600{% if item.url == page.url %} text-indigo-600{% else %} text-gray-700{% endif %}">
+                {% for item in nav.items %} 
+
+                    {% set is_of_collection = false %}
+                    {% include "helpers/check-active-menu-item.njk" %}
+
+                    <a href="{{ item.url | url }}" class="font-medium hover:after:w-full after:content-none after:block after:w-0 after:h-0.5 after:bg-indigo-600 transition-[width] hover:text-indigo-600{% if item.url == page.url or is_of_collection == true %} text-indigo-600{% else %} text-gray-700{% endif %}">
                         {{ item.name }}
                     </a>
                 {% endfor %}
             </nav>
             {# Mobile menu button #}
-            <button id="mobile-menu-button" class="md:hidden cursor-pointer focus:outline-none{% if item.url == page.url %} text-indigo-600{% else %} text-gray-700{% endif %}">
+            <button id="mobile-menu-button" class="md:hidden cursor-pointer focus:outline-none">
                 <i class="fas fa-bars text-xl"></i>
             </button>
         </div>
@@ -24,7 +29,11 @@
         <div id="mobile-menu" class="max-h-0 overflow-hidden transition-[max-height] md:hidden">
             <div class="pt-2 pb-4 space-y-1">
                 {% for item in nav.items %}
-                    <a href="{{ item.url | url }}" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">
+
+                    {% set is_of_collection = false %}
+                    {% include "helpers/check-active-menu-item.njk" %}
+
+                    <a href="{{ item.url | url }}" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50{% if item.url == page.url or is_of_collection == true %} text-indigo-600{% else %} text-gray-700{% endif %}">
                         {{ item.name }}
                     </a>
                 {% endfor %}

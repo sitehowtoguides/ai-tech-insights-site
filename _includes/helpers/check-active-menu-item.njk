@@ -1,0 +1,14 @@
+{% for tag in tags %}
+    {% if tag == 'automation' and item.url == '/automations/' %}
+        {% set is_of_collection = true %}
+    {% endif %}
+    {% if tag == 'guide' and item.url == '/guides/' %}
+        {% set is_of_collection = true %}
+    {% endif %}
+    {% if tag == 'tutorial' and item.url == '/tutorials/' %}
+        {% set is_of_collection = true %}
+    {% endif %}
+    {% if tag == 'trends' and item.url == '/trends/' %}
+        {% set is_of_collection = true %}
+    {% endif %}
+{% endfor %}
