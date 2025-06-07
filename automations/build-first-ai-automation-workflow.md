@@ -5,6 +5,7 @@ summary: |-
   Learn how to build your first AI automation workflow step-by-step using no-code tools like Zapier or Make. Automate tasks like email sorting.
 date: 2025-05-05
 author: alex-thompson
+teaser_image: /images/ai-workflow.png
 faq:
   title: Frequently Asked Questions about Building AI Workflows
   items:
