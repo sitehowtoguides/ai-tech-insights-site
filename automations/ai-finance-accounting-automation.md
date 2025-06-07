@@ -5,6 +5,7 @@ summary: |-
   Explore AI finance automation trends for 2025. Learn about accounting automation AI, AI for financial analysis, and the key benefits of AI in accounting.
 date: 2025-05-05
 author: alex-thompson
+teaser_image: /images/finance.png
 faq:
   title: Frequently Asked Questions about AI in Finance and Accounting
   items:
