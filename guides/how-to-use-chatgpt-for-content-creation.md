@@ -215,8 +215,6 @@ Despite its capabilities, ChatGPT has important limitations:
 
 Understanding these strengths and limitations is crucial for developing an effective ChatGPT content creation workflow that leverages the tool's capabilities while compensating for its weaknesses.
 
-![ChatGPT capabilities and limitations infographic](/images/chatgpt-capabilities-limitations.webp)
-
 ## Setting Up Your ChatGPT Account
 
 Before diving into content creation, you'll need to set up your ChatGPT account and understand the available options.
@@ -268,7 +266,7 @@ To switch between models, use the model selector in the interface (typically fou
 
 > **Pro Tip**: Start new conversations for different content projects to keep your context clear and organized. Use the "New Chat" button to begin fresh conversations.
 
-![ChatGPT account setup screenshot](/images/chatgpt-account-setup.webp)
+![ChatGPT account setup screenshot](/images/chatgpt-account-setup.png)
 
 ## Crafting Effective Prompts for Content Creation
 
@@ -379,8 +377,6 @@ The tone should be [DESCRIBE TONE] and the total length should be approximately 
 
 > **Pro Tip**: Save your most effective prompts in a document for reuse. Creating a "prompt library" for different content types will significantly speed up your workflow.
 
-![Effective prompt engineering examples](/images/chatgpt-prompt-engineering.webp)
-
 ## Step-by-Step Content Creation Process
 
 Developing a systematic process for using ChatGPT in content creation will help you achieve consistent results. Here's a comprehensive workflow that combines AI assistance with human expertise.
@@ -487,8 +483,6 @@ Review this content for:
 ```
 
 > **Pro Tip**: Always maintain a "human in the loop" approach. ChatGPT should be a collaborative tool that enhances your content creation process, not a replacement for human creativity and expertise.
-
-![Content creation workflow diagram](/images/chatgpt-content-workflow.webp)
 
 ## Content Types and Specialized Techniques
 
@@ -616,8 +610,6 @@ Generate 10 headline options for a landing page about [PRODUCT/SERVICE]. Each he
 
 > **Pro Tip**: For any content type, provide ChatGPT with examples of successful content you admire. This gives the AI a better understanding of the style and approach you're targeting.
 
-![Content type examples with annotations](/images/chatgpt-content-types.webp)
-
 ## Editing and Refining AI-Generated Content
 
 The editing phase transforms raw AI output into polished, professional content. Here's how to effectively refine ChatGPT-generated material.
@@ -720,8 +712,6 @@ I need to improve this AI-generated content. Please:
 ```
 
 > **Pro Tip**: Create a personal editing checklist based on patterns you notice in ChatGPT's output. For example, if you find it consistently uses passive voice, add "convert passive to active voice" to your checklist.
-
-![Content editing process visualization](/images/chatgpt-editing-process.webp)
 
 ## Maintaining Brand Voice and Style
 
@@ -848,8 +838,6 @@ Example of ideal content:
 
 > **Pro Tip**: Update your brand voice guide for ChatGPT quarterly, incorporating successful elements from recent content and removing approaches that didn't resonate with your audience.
 
-![Brand voice consistency diagram](/images/chatgpt-brand-voice.webp)
-
 ## SEO Optimization Strategies
 
 Leveraging ChatGPT for SEO-optimized content requires specific techniques to ensure your material ranks well while remaining valuable to readers.
@@ -967,8 +955,6 @@ Optimize this content for local SEO targeting [LOCATION]. Suggest:
 
 > **Pro Tip**: Remember that over-optimization can trigger search engine penalties. Use ChatGPT's suggestions selectively and ensure your content remains natural and valuable to human readers first.
 
-![SEO optimization techniques diagram](/images/chatgpt-seo-optimization.webp)
-
 ## Ethical Considerations and Best Practices
 
 Using AI for content creation raises important ethical questions. Adhering to these principles ensures responsible and effective use of the technology.
@@ -1074,8 +1060,6 @@ Develop a thoughtful approach to AI integration:
 4. **Continuous improvement**: Regularly review and refine your AI content processes
 
 > **Pro Tip**: Create a decision tree for your team that helps determine when to use AI for content creation, when to use it for assistance only, and when to rely primarily on human creation.
-
-![Ethical AI content creation framework](/images/chatgpt-ethics-framework.webp)
 
 ## Troubleshooting Common Issues
 
@@ -1217,8 +1201,6 @@ For this sensitive topic, please focus primarily on:
 ```
 
 > **Pro Tip**: Keep a troubleshooting log of issues you encounter and effective solutions. This will help you develop more effective prompts over time and train team members more efficiently.
-
-![Troubleshooting decision tree](/images/chatgpt-troubleshooting.webp)
 
 ## Frequently Asked Questions
 
