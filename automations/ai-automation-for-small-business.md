@@ -5,6 +5,7 @@ summary: |-
   Discover how AI automation for small business is revolutionizing marketing, sales, customer service, and administration. See practical examples.
 date: 2025-05-05
 author: alex-thompson
+teaser_image: /images/small.png
 faq:
   title: Frequently Asked Questions about AI Automation for SMBs
   items:
