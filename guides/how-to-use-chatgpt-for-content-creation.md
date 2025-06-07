@@ -4,6 +4,7 @@ title: "How to Use ChatGPT for Content Creation: Complete Guide (2025)"
 permalink: /guides/how-to-use-chatgpt-for-content-creation/
 date: 2025-05-24
 author: alex-thompson
+teaser_image: /images/chatgpt-logo.png
 summary: "Learn how to leverage ChatGPT to create high-quality content for blogs, social media, and marketing materials with this comprehensive step-by-step guide."
 featured: true
 popular: true
