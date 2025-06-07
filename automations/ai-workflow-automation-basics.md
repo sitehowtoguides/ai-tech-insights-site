@@ -4,6 +4,7 @@ summary: |-
   Learn the fundamentals of AI workflow automation basics. This beginner's guide shows how to identify tasks and take the first steps towards automating workflows with AI.
 date: 2025-05-05
 author: alex-thompson
+teaser_image: /images/basic-workflow.png
 faq:
   title: Frequently Asked Questions on AI Workflow Basics
   items:
