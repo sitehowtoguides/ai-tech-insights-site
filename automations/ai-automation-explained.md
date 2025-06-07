@@ -5,6 +5,7 @@ summary: |-
   Understand what AI automation is and discover the benefits and growing importance of this technology for the future of work in 2025.
 date: 2025-05-05
 author: alex-thompson
+teaser_image: /images/explained.png
 faq:
   title: Frequently Asked Questions about AI Automation
   items:
