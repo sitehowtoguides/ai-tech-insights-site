@@ -5,6 +5,7 @@ summary: |-
   Learn about AI data entry automation and automated data processing with AI. Explore OCR AI data extraction, IDP, and the benefits for businesses.
 date: 2025-05-05
 author: alex-thompson
+teaser_image: /images/data-entry.png
 faq:
   title: Frequently Asked Questions about AI Data Entry Automation
   items:
