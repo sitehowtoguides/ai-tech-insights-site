@@ -4,6 +4,7 @@ summary: |-
   Explore practical AI marketing automation examples for 2025. See how to automate marketing tasks, from content creation to campaign optimization.
 date: 2025-05-05
 author: alex-thompson
+teaser_image: /images/mkt-automation.png
 faq:
   title: Frequently Asked Questions about AI Marketing Automation
   items:
