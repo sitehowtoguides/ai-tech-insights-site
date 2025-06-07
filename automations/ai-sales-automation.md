@@ -5,6 +5,7 @@ summary: |-
   Discover how AI sales automation is transforming sales processes. Explore AI tools for sales teams, lead scoring, forecasting, and CRM automation.
 date: 2025-05-05
 author: alex-thompson
+teaser_image: /images/sales-automation.png
 faq:
   title: Frequently Asked Questions about AI Sales Automation
   items:
