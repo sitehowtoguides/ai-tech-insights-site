@@ -5,6 +5,7 @@ summary: |-
   Learn how AI assistants automate repetitive administrative tasks like scheduling, email management, data entry, and report generation.
 date: 2025-05-05
 author: alex-thompson
+teaser_image: /images/tasks.png
 faq:
   title: Frequently Asked Questions about AI for Administrative Tasks
   items:
