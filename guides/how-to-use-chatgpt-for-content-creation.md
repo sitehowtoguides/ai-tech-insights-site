@@ -149,7 +149,7 @@ faq:
 
 # How to Use ChatGPT for Content Creation: Complete Guide (2025)
 
-![ChatGPT content creation guide header image](/images/chatgpt-content-creation-guide.webp)
+![ChatGPT content creation guide header image](/images/chatgpt-content-creation-guide.png)
 
 ## Introduction
 
