@@ -5,6 +5,7 @@ summary: |-
   Learn how to measure the ROI of AI automation projects. Understand key metrics, calculation methods, and challenges in quantifying AI value.
 date: 2025-05-05
 author: alex-thompson
+teaser_image: /images/ai-roi.png
 faq:
   title: Frequently Asked Questions about AI Automation ROI
   items:
