@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 permalink: /terms-of-service/
 title: Terms of Service - AI Master Guides
 meta:
