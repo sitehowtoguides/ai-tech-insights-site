@@ -27,7 +27,7 @@ categories:
       url: '/automations/ai-email-marketing-automation/'
     - name: AI Chat Bots
       url: '/automations/ai-chatbots-for-customer-service/'
-      - name: How to use ChatGPT
+    - name: How to use ChatGPT
       url: '/guides/how-to-use-chatgpt/'
     - name: How to use Gemini AI
       url: '/guides/how-to-use-gemini-ai/'
