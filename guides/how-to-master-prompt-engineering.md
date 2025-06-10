@@ -6,6 +6,7 @@ summary: |-
 date: 2025-05-03
 author: alex-thompson
 teaser_image: /images/effective-ai-prompts.png
+featured: true
 faq:
   title: Frequently Asked Questions
   items:
