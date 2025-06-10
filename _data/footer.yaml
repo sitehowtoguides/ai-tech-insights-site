@@ -27,7 +27,7 @@ categories:
       url: '/automations/ai-email-marketing-automation/'
     - name: AI Chat Bots
       url: '/automations/ai-chatbots-for-customer-service/'
-      categories:
+  links:
       title: Popular Guides
   items:
     - name: How to use Gemini AI
