@@ -13,7 +13,7 @@ links:
   - name: 'AI Trends'
     url: '/trends/'
   - name: 'Privacy Policy'
-    url: '/privacy-policy'
+    url: '/privacy-policy/'
   - name: Terms of Service
     url: '/terms-of-serivce/'
 categories:
