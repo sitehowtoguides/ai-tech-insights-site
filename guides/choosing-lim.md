@@ -45,8 +45,6 @@ Before diving into specific models, consider these crucial factors:
 
 Here's a high-level comparison of some leading LLMs. Keep in mind that capabilities and features change rapidly.
 
-### Placeholder: Detailed LLM Comparison Table
-
 | Feature | OpenAI GPT-4 / 4o | Google Gemini (Advanced/Pro) | Anthropic Claude 3 (Opus/Sonnet) | Meta Llama 3 |
 | --- | --- | --- | --- | --- |
 | Strengths | Strong reasoning, creativity, coding, broad knowledge, multimodality (4o) | Strong reasoning, multimodality, integration with Google ecosystem, large context window | Strong performance, very large context window, emphasis on safety/ethics, good for complex reasoning & analysis | Strong performance (especially larger models), open-source availability, good for customization |
@@ -77,8 +75,6 @@ The best way to choose is to try them out:
 4.  **Assess User Experience:** Consider the ease of use of the interface or API.
 5.  **Check Benchmarks (with caution):** Look at independent benchmarks (like LMSys Chatbot Arena), but remember they don't always reflect real-world performance on *your* specific tasks.
 6.  **Consider Cost vs. Performance:** Is the performance gain of a premium model worth the extra cost for your needs? Sometimes a slightly less capable but cheaper model is sufficient.
-
-Flowchart Placeholder: Decision Process for Choosing an LLM
 
 ## Conclusion: No Single Best LLM
 
