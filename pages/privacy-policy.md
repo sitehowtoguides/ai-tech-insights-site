@@ -14,7 +14,7 @@ meta:
 
 ## Introduction
 
-AI Tech Insights ("we," "our," or "us") operates the website aimasterguides.com (the "Service"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services.
+AI Master Guides ("we," "our," or "us") operates the website aimasterguides.com (the "Service"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services.
 
 This Privacy Policy applies to all information collected through our website, and any related services, sales, marketing, or events. By accessing or using our Service, you agree to the collection and use of information in accordance with this Privacy Policy.
 
@@ -212,7 +212,7 @@ We encourage you to review this Privacy Policy periodically to stay informed abo
 
 If you have any questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us:
 
-**AI Tech Insights**  
+**AI Master Guides**  
 Email: privacy@aimasterguides.com  
 Website: https://aimasterguides.com
 
