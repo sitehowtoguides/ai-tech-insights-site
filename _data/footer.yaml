@@ -17,16 +17,16 @@ links:
   - name: Terms of Service
     url: '/terms-of-serivce/'
 categories:
-  title: Categories
+  title: Popular Automations
   items:
-    - name: AI Automations
-      url: '#'
-   # - name: Machine Learning
-   #   url: '#'
-   # - name: Natural Language Processing
-   #   url: '#'
-   # - name: Computer Vision
-    #  url: '#'
+    - name: Top 10 AI Automations
+      url: '/top-10-ai-automation-tools-2025/'
+    - name: AI Sales Automation
+      url: '/ai-sales-automation/'
+    - name: Email Marketing Automation
+      url: '/ai-email-marketing-automation/'
+    - name: AI Chat Bots
+      url: '/ai-chatbots-for-customer-service/'
    # - name: AI Ethics
     #  url: '#'
 # contact:
