@@ -6,6 +6,7 @@ summary: |-
 date: 2025-05-03
 author: alex-thompson
 teaser_image: /images/image-generation-logo.png
+featured: true
 faq:
   title: Frequently Asked Questions
   items:
