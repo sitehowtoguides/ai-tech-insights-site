@@ -13,9 +13,9 @@ links:
   - name: 'AI Trends'
     url: '/trends/'
   - name: 'Privacy Policy'
-    url: '#'
+    url: '/privacy-policy'
   - name: Terms of Service
-    url: '#'
+    url: '/terms-of-serivce/'
 categories:
   title: Categories
   items:
