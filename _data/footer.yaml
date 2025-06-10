@@ -21,21 +21,21 @@ categories:
   items:
     - name: AI Automations
       url: '#'
-    - name: Machine Learning
-      url: '#'
-    - name: Natural Language Processing
-      url: '#'
-    - name: Computer Vision
-      url: '#'
-    - name: AI Ethics
-      url: '#'
-contact:
-  show: false
-  title: Stay Updated
-  description: Subscribe to our newsletter for the latest AI news and tutorials.
-  form:
-    input_placeholder: Your email
-    button_text: Subscribe
+   # - name: Machine Learning
+   #   url: '#'
+   # - name: Natural Language Processing
+   #   url: '#'
+   # - name: Computer Vision
+    #  url: '#'
+   # - name: AI Ethics
+    #  url: '#'
+# contact:
+ # show: false
+ # title: Stay Updated
+ # description: Subscribe to our newsletter for the latest AI news and tutorials.
+ # form:
+  #  input_placeholder: Your email
+   # button_text: Subscribe
 # the current year is inserted automatically
 copyright: AI Master Guides. All rights reserved.
 social:
