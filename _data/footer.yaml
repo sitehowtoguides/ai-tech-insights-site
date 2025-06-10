@@ -20,13 +20,24 @@ categories:
   title: Popular Automations
   items:
     - name: Top 10 AI Automations
-      url: '/top-10-ai-automation-tools-2025/'
+      url: '/automations/top-10-ai-automation-tools-2025/'
     - name: AI Sales Automation
-      url: '/ai-sales-automation/'
+      url: '/automations/ai-sales-automation/'
     - name: Email Marketing Automation
-      url: '/ai-email-marketing-automation/'
+      url: '/automations/ai-email-marketing-automation/'
     - name: AI Chat Bots
-      url: '/ai-chatbots-for-customer-service/'
+      url: '/automations/ai-chatbots-for-customer-service/'
+      categories:
+      title: Popular Guides
+  items:
+    - name: How to use Gemini AI
+      url: '/guides/how-to-use-gemini-ai/'
+    - name: How to use ChatGPT
+      url: '/guides/how-to-use-chatgpt/'
+    - name: How to master Prompt Engineering
+      url: '/guides/how-to-master-prompt-engineering/'
+    - name: How to use AI for content creation
+      url: '/guides/how-to-use-ai-for-content-creation/'
    # - name: AI Ethics
     #  url: '#'
 # contact:
