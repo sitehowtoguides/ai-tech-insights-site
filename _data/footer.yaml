@@ -17,7 +17,7 @@ links:
   - name: Terms of Service
     url: '/terms-of-serivce/'
 categories:
-  title: Popular Automations
+  title: Popular Automations and Guides
   items:
     - name: Top 10 AI Automations
       url: '/automations/top-10-ai-automation-tools-2025/'
@@ -27,10 +27,7 @@ categories:
       url: '/automations/ai-email-marketing-automation/'
     - name: AI Chat Bots
       url: '/automations/ai-chatbots-for-customer-service/'
-  links:
-      title: Popular Guides
-  items:
-    - name: How to use Gemini AI
+     - name: How to use Gemini AI
       url: '/guides/how-to-use-gemini-ai/'
     - name: How to use ChatGPT
       url: '/guides/how-to-use-chatgpt/'
