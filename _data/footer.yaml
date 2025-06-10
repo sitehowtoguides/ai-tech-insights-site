@@ -12,7 +12,7 @@ links:
     url: '/tutorials/'
   - name: 'AI Trends'
     url: '/trends/'
-    - name: 'About'
+    - name: 'About us'
     url: '/about/'
   - name: 'Privacy Policy'
     url: '/privacy-policy/'
