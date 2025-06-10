@@ -38,11 +38,11 @@ categories:
    # button_text: Subscribe
 # the current year is inserted automatically
 copyright: AI Master Guides. All rights reserved.
-social:
-  items:
-    - icon: twitter
-      url: #
-    - icon: linkedin-in
-      url: #
-    - icon: github
-      url: #
+# social:
+ # items:
+ #  - icon: twitter
+   #   url: #
+  #  - icon: linkedin-in
+   #   url: #
+   # - icon: github
+     # url: #
