@@ -1,5 +1,5 @@
 about:
-  title: AI Tech Insights
+  title: AI Master Guides
   description: Your guide to understanding and utilizing the power of artificial intelligence. We provide tutorials, guides, and news on the latest AI trends.
 links:
   title: Quick Links
@@ -37,7 +37,7 @@ contact:
     input_placeholder: Your email
     button_text: Subscribe
 # the current year is inserted automatically
-copyright: AI Tech Insights. All rights reserved.
+copyright: AI Master Guides. All rights reserved.
 social:
   items:
     - icon: twitter
