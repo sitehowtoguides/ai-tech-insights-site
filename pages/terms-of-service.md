@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 permalink: /terms-of-service/
 title: Terms of Service - AI Master Guides
 meta:
