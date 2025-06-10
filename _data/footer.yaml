@@ -12,6 +12,8 @@ links:
     url: '/tutorials/'
   - name: 'AI Trends'
     url: '/trends/'
+    - name: 'About'
+    url: '/about/'
   - name: 'Privacy Policy'
     url: '/privacy-policy/'
   - name: Terms of Service
