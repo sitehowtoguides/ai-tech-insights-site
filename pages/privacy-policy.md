@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 permalink: /privacy-policy/
 title: Privacy Policy - AI Master Guides
 meta:
