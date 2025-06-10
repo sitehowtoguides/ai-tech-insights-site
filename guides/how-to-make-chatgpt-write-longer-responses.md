@@ -77,8 +77,6 @@ If ChatGPT stops abruptly mid-sentence or mid-paragraph, it likely hit an intern
 
 ChatGPT usually remembers the context and will pick up where it left off.
 
-![Screenshot showing how to use the 'continue' command in ChatGPT](../images/chatgpt-longer-continue-example.png)
-
 ### Technique 4: Ask for More Detail or Elaboration
 
 If the initial response is too brief but covers the main points, ask for expansion on specific parts.
