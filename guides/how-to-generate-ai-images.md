@@ -5,7 +5,7 @@ summary: |-
   A beginner's overview of generating images from text using AI tools like Midjourney, DALL-E, and Stable Diffusion.
 date: 2025-05-03
 author: alex-thompson
-teaser_image: /images/image-generation-logo.png
+teaser_image: /images/image-generation-logo.webp
 featured: true
 faq:
   title: Frequently Asked Questions
