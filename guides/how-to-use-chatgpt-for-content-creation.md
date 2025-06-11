@@ -7,7 +7,7 @@ author: alex-thompson
 teaser_image: /images/chatgpt-logo.png
 summary: "Learn how to leverage ChatGPT to create high-quality content for blogs, social media, and marketing materials with this comprehensive step-by-step guide."
 featured: true
-popular: true
+popular: false
 type: written
 meta:
   title: "How to Use ChatGPT for Content Creation: Complete Guide (2025)"
