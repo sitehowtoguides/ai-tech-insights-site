@@ -6,7 +6,7 @@ summary: |-
 date: 2025-01-11
 author: alex-thompson
 popular: true
-type: video
+type: tutorial
 tags:
   - presentation-ai
   - gamma
