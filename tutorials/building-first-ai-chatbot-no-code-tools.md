@@ -5,6 +5,7 @@ summary: |-
   Learn how to create a professional AI chatbot for your small business without any coding knowledge. This step-by-step guide covers the best no-code platforms, practical setup instructions, and real-world examples to automate customer service and boost engagement.
 date: 2025-06-11
 author: alex-thompson
+teaser_image: /images/ai-chatbot.png
 popular: true
 type: tutorial
 tags:
