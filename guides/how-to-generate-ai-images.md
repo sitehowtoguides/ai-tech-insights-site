@@ -33,7 +33,7 @@ The ability to create images purely from text descriptions is one of the most ca
 
 But where do you start? With tools like Midjourney, DALL-E, Stable Diffusion, Adobe Firefly, and others emerging rapidly, the landscape can seem confusing. This guide provides a general overview for beginners, outlining the fundamental steps and concepts common across most text-to-image AI tools. We'll cover choosing a tool, understanding prompts, the generation process, and tips for getting better results, empowering you to start your AI art journey.
 
-Explore specific tools in more detail! Check out our guides on [How to Use Midjourney](how-to-use-midjourney) and [How to Use DALL-E](how-to-use-dalle).
+Explore specific tools in more detail! Check out our guides on How to Use Midjourney and How to Use DALL-E.
 
 ## How Does AI Image Generation Work (Simply Put)?
 
@@ -75,7 +75,7 @@ Once you've chosen a tool:
 
 ### Step 3: Write a Descriptive Prompt
 
-This is the most critical step. As covered in our [guide to effective prompts](how-to-write-effective-ai-prompts.html), be clear and detailed.
+This is the most critical step. As covered in our guide to effective prompts, be clear and detailed.
 
 *   **Core Elements:** Subject, Action, Setting, Style, Composition, Lighting, Color, Details.
 *   **Example:** Instead of `cat`, try `A fluffy ginger cat sleeping peacefully in a pool of sunlight on a windowsill, detailed fur texture, photorealistic style, warm lighting`.
@@ -135,5 +135,3 @@ Once you have a low-resolution preview you like:
 AI image generation is a rapidly evolving field that puts incredible creative power at your fingertips. By understanding the basic workflow – choosing a tool, writing descriptive prompts, generating, refining, and saving – you can start transforming your textual ideas into visual realities. While different tools have unique interfaces and features, the core principles of clear communication and iterative refinement remain constant.
 
 Don't be discouraged if your first few images aren't perfect. Practice writing prompts, experiment with different tools and styles, and learn from the results. The journey into AI art is one of exploration and discovery. Have fun creating!
-
-Ready for advanced techniques? **Download our FREE Ultimate Guide to AI Image Generation** covering style blending, character consistency, advanced parameters, and more! \[Link to Landing Page Placeholder\]
