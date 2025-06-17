@@ -32,8 +32,6 @@ Ever seen those incredibly detailed, artistic, or sometimes bizarre images onlin
 
 But how do you actually use Midjourney? Unlike some other AI tools with web interfaces, Midjourney primarily operates through Discord, a popular chat platform. This might seem unusual at first, but this guide will walk you through everything you need to know as a beginner. We'll cover joining the Discord server, understanding the basic commands, writing your first prompts, and generating your initial images. By the end of this guide, you'll be ready to start creating your own AI art!
 
-Want to master Midjourney? Unlock advanced techniques, explore powerful parameters, and discover expert prompting strategies with our **Ultimate Midjourney Guide**. **[Download your FREE comprehensive guide today!](#)** \[Link to Landing Page Placeholder\]
-
 ![Collage of diverse Midjourney images (fantasy, realistic, abstract)](/images/midjourney-images.png)
 
 ## What is Midjourney and Why Discord?
