@@ -30,7 +30,7 @@ faq:
 ---
 ChatGPT is a remarkably versatile AI assistant, capable of generating text for countless applications. However, users often find its responses can be frustratingly brief, especially when tackling complex topics or creative writing tasks. While conciseness can be a virtue, sometimes you need more depth, detail, and substance. So, how do you coax ChatGPT into providing longer, more comprehensive answers?
 
-Fortunately, you have significant control over the length and detail of ChatGPT's output through careful prompting. This guide explores various practical techniques and [prompt engineering](/how-to-master-prompt-engineering/) strategies to encourage ChatGPT to generate longer responses in 2025. From explicitly requesting length to breaking down tasks and asking for elaboration, you'll learn how to overcome ChatGPT's tendency towards brevity and get the detailed content you need.
+Fortunately, you have significant control over the length and detail of ChatGPT's output through careful prompting. This guide explores various practical techniques and prompt engineering strategies to encourage ChatGPT to generate longer responses in 2025. From explicitly requesting length to breaking down tasks and asking for elaboration, you'll learn how to overcome ChatGPT's tendency towards brevity and get the detailed content you need.
 
 ## Why Are ChatGPT Responses Sometimes Short?
 
