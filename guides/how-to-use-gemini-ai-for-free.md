@@ -30,7 +30,7 @@ faq:
 ---
 Google has firmly established its presence in the AI chatbot arena with Gemini (formerly Bard). Positioned as a direct competitor to OpenAI's ChatGPT, Google Gemini offers powerful conversational AI capabilities, tightly integrated with Google's vast information ecosystem. The best part? The standard, highly capable version of Gemini is available completely free.
 
-This guide provides everything you need to know about using Google Gemini for free in 2025. We'll cover how to access it, navigate its interface, understand its core features (including its impressive real-time information access and multimodality), compare it to the free tier of [ChatGPT](/how-to-use-chatgpt-for-free/), and offer tips to maximize its potential. Whether you need help with research, writing, coding, or just exploring AI, learn how to leverage Google's free AI offering effectively.
+This guide provides everything you need to know about using Google Gemini for free in 2025. We'll cover how to access it, navigate its interface, understand its core features (including its impressive real-time information access and multimodality), compare it to the free tier of ChatGPT, and offer tips to maximize its potential. Whether you need help with research, writing, coding, or just exploring AI, learn how to leverage Google's free AI offering effectively.
 
 ## What is Google Gemini?
 
@@ -49,8 +49,6 @@ Getting started with free Gemini is incredibly simple, especially if you already
 
 Google may also offer access through dedicated mobile apps (check your app store) or integrations within other Google products (like Android or Google Workspace).
 
-![Screenshot showing the Google Gemini website login/access page](/images/gemini-free-access-page.png)
-
 ## Navigating the Gemini Interface
 
 The Gemini web interface is clean and user-friendly:
@@ -60,8 +58,6 @@ The Gemini web interface is clean and user-friendly:
 *   **Chat Window:** Displays the conversation history.
 *   **Sidebar (Left):** Typically contains options for starting a new chat, viewing recent chats, accessing settings, and managing extensions.
 *   **Response Area:** Where Gemini's answers appear. May include options to view other drafts, copy text, rate the response, or modify the query.
-
-![Overview screenshot of the Google Gemini interface elements](/images/gemini-free-interface-overview.png)
 
 ## Interacting with Gemini
 
