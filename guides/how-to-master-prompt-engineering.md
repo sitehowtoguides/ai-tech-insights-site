@@ -25,7 +25,7 @@ faq:
     - q: Is prompt engineering a skill that will remain valuable?
       a: While AI models are becoming better at understanding natural language, the ability to communicate effectively and precisely with AI to achieve specific, complex, or creative goals is likely to remain a valuable skill. The specific techniques may evolve, but the core principle of effective human-AI communication will persist.
 ---
-Artificial intelligence tools like [ChatGPT](how-to-use-chatgpt.html), [Google Gemini](how-to-use-gemini-ai-for-free.html), [Midjourney](how-to-use-midjourney.html), and [DALL-E](how-to-use-dalle.html) are incredibly powerful, but unlocking their full potential often hinges on one critical skill: **prompt engineering**. Simply put, prompt engineering is the art and science of crafting effective inputs (prompts) to guide AI models toward generating the desired outputs, whether it's text, images, code, or data analysis.
+Artificial intelligence tools like ChatGPT, Google Gemini, Midjourney, and DALL-E are incredibly powerful, but unlocking their full potential often hinges on one critical skill: **prompt engineering**. Simply put, prompt engineering is the art and science of crafting effective inputs (prompts) to guide AI models toward generating the desired outputs, whether it's text, images, code, or data analysis.
 
 A well-crafted prompt can be the difference between a generic, unhelpful response and a precise, creative, and valuable result. As AI becomes more integrated into our workflows, mastering prompt engineering is becoming essential for maximizing productivity and creativity. This guide will walk you through the core principles, practical steps, and advanced techniques needed to become proficient in prompt engineering for various AI tools in 2025. You'll learn how to communicate your intentions clearly to AI, leading to consistently better outcomes.
 
@@ -86,10 +86,6 @@ Rarely is the first output perfect. Analyze the result and adjust your prompt ac
 *   **AI Output:** (Generic ideas)
 *   **Refined Prompt:** "Generate 5 unique fantasy novel concepts that blend steampunk elements with traditional elven mythology. Focus on political intrigue and forbidden technology. For each concept, provide a logline and three potential main character archetypes."
 
-<div class="callout callout-tip">
-    <strong>Tip:</strong> Use feedback phrases like "Make it more concise," "Expand on the second point," "Rewrite this in a more formal tone," or "Focus more on the user benefits." Check our guide on <a href="/how-to-make-chatgpt-write-longer-responses/">making ChatGPT write longer responses</a> for related techniques.
-</div>
-
 ## Prompting for Different AI Types
 
 ### Text Generation (ChatGPT, Gemini)
@@ -105,9 +101,7 @@ Rarely is the first output perfect. Analyze the result and adjust your prompt ac
 *   Specify art styles (e.g., photorealistic, cartoon, watercolor, cyberpunk, Van Gogh style).
 *   Mention camera details (e.g., wide-angle shot, macro lens, shallow depth of field).
 *   Use negative prompts (e.g., `--no text` in Midjourney) to exclude unwanted elements.
-*   Reference our specific guides: [How to Use Midjourney](/how-to-use-midjourney/), [How to Use DALL-E](/how-to-use-dalle/).
-
-![Example of a detailed prompt for AI image generation](/images/prompt-engineering-image-example.png)
+*   Reference our specific guides: How to Use Midjourney, How to Use DALL-E.
 
 ### Coding Assistance (Copilot, ChatGPT, Gemini)
 
