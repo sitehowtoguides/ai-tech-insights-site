@@ -35,8 +35,6 @@ Imagine having an AI assistant right inside your code editor, helping you write 
 
 For developers new to AI coding assistants, getting started with Copilot can significantly boost productivity and help learn new patterns. This guide provides a step-by-step walkthrough for beginners, covering how to sign up, install the extension in popular IDEs like Visual Studio Code, understand how suggestions work, use comments effectively, and leverage the power of Copilot Chat for conversational coding help. Whether you're writing Python, JavaScript, Java, or dozens of other languages, Copilot aims to be your helpful coding companion.
 
-Unlock the full potential of AI-assisted coding! **[Download our FREE GitHub Copilot Cheat Sheet](#)** with essential shortcuts and advanced prompting techniques! \[Link to Landing Page Placeholder\]
-
 ## What Exactly is GitHub Copilot?
 
 GitHub Copilot is more than just autocomplete. It's an AI model trained on billions of lines of public code and text. It integrates directly into your Integrated Development Environment (IDE) or code editor and works by:
@@ -157,5 +155,3 @@ Check your IDE's settings for the GitHub Copilot extension. You can often custom
 GitHub Copilot is a powerful tool that can significantly enhance developer productivity and learning. By understanding how to install it, interact with its suggestions, guide it with comments, and leverage features like Copilot Chat, you can integrate this AI pair programmer effectively into your workflow. Remember to always review and test the generated code, maintain secure coding practices, and treat Copilot as a valuable assistant rather than a replacement for your own critical thinking and expertise.
 
 As you gain experience, you'll develop a better intuition for how to prompt Copilot effectively for different tasks, making it an even more valuable part of your development toolkit.
-
-Master Copilot shortcuts and prompts! **[Download our FREE GitHub Copilot Cheat Sheet](#)** today! \[Link to Landing Page Placeholder\]
