@@ -161,11 +161,6 @@ Google also offers a paid subscription (often called **Gemini Advanced**) which 
 
 **For beginners:** Stick with the free Gemini Pro access first. It's powerful enough for learning and exploration. Consider Gemini Advanced only if you need top-tier performance for very complex tasks.
 
-<div class="bg-indigo-100 border-l-4 border-indigo-500 text-indigo-700 p-4 my-8" role="alert">
-  <p class="font-bold">Go Deeper with Gemini!</p>
-  <p>Mastered the basics? Unlock advanced multimodal prompting, explore 50+ real-world use cases, and get exclusive troubleshooting tips. <a href="#" class="font-bold underline">Download our FREE Ultimate Gemini AI Guide now!</a></p>
-</div>
-
 ## Conclusion: Your Multimodal AI Assistant
 
 You've successfully taken your first steps with Google's Gemini AI! You now know how to access it, interact using both text and images, and understand its core strengths, particularly its multimodal capabilities and Google integration. Gemini is a versatile tool that can assist with everything from answering questions to analyzing visuals.
