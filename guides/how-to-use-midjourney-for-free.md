@@ -28,7 +28,7 @@ faq:
       a: |-
         Yes, several alternatives offer free tiers or credits, such as Stable Diffusion (requires setup or uses web interfaces), Leonardo.Ai, Adobe Firefly, and sometimes DALL-E via integrations like Microsoft Copilot or limited free credits. Check our guide on <a href='how-to-generate-ai-images.html'>How to Generate AI Images</a> for more options.
 ---
-Midjourney has captured the imagination of artists and creators worldwide with its stunning AI-generated imagery. Known for its distinct artistic style and powerful capabilities, it's a highly sought-after tool. However, unlike [ChatGPT's persistent free tier](/how-to-use-chatgpt-for-free/), Midjourney primarily operates on a subscription model. So, can you actually use Midjourney for free?
+Midjourney has captured the imagination of artists and creators worldwide with its stunning AI-generated imagery. Known for its distinct artistic style and powerful capabilities, it's a highly sought-after tool. However, unlike ChatGPT's persistent free tier, Midjourney primarily operates on a subscription model. So, can you actually use Midjourney for free?
 
 The answer is: sometimes. Midjourney occasionally offers limited-time free trials, usually announced on their Discord server. This guide focuses on how to navigate these potential free trial opportunities in 2025. We'll cover how to check for trials, join the essential Discord server, use the basic commands, understand the typical limitations, and maximize your experience if you catch a free window. We'll also touch upon alternatives if a free trial isn't currently available.
 
@@ -87,12 +87,6 @@ If a free trial is active, here's the core process:
 4.  **Send the Command:** Press Enter.
 5.  **Wait for Generation:** The Midjourney bot will acknowledge your request and start generating. You'll see four initial low-resolution images appear in the chat after a short wait.
 6.  **Upscale or Vary:** Below the grid of four images (labeled 1-4, top-left to bottom-right), you'll see buttons: U1-U4 (Upscale) and V1-V4 (Variations). Clicking a 'U' button creates a larger, higher-resolution version of that image. Clicking a 'V' button creates four new variations based on the style of that image. The 🔄 button reruns the original prompt.
-
-<div class="callout callout-tip">
-    <strong>Tip:</strong> Upscales and variations also consume your trial credits (GPU time). Be mindful of your usage! Check our <a href="how-to-master-prompt-engineering.html">prompt engineering guide</a> for tips.
-</div>
-
-![Example of using the /imagine command in Midjourney](/images/midjourney-imagine-command-example.png)
 
 ## Understanding Trial Limitations
 
