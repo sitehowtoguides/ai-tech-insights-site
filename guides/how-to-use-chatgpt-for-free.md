@@ -117,7 +117,7 @@ Get the most out of your free ChatGPT experience:
 
 If the free ChatGPT tier isn't meeting your needs, or you want to explore other options, consider these popular free alternatives:
 
-*   **Google Gemini:** Strong multimodal capabilities (understands images), integrates with Google services. See our [Gemini Free Guide](/how-to-use-gemini-ai-for-free/).
+*   **Google Gemini:** Strong multimodal capabilities (understands images), integrates with Google services. See our (Gemini Free Guide)[https://aimasterguides.com/guides/how-to-use-gemini-ai-for-free/].
 *   **Microsoft Copilot:** Often integrated with Bing search and Windows, providing access to recent information and sometimes newer models like GPT-4 for free.
 *   **Perplexity AI:** Focuses on providing answers with cited sources, good for research.
 *   **Claude (Anthropic):** Known for strong performance in creative writing and longer conversations, often has a free tier available via their website or platforms like Poe.
