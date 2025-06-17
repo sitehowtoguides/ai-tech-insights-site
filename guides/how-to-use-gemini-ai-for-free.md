@@ -109,7 +109,7 @@ How does free Gemini stack up against free ChatGPT (usually GPT-3.5)?
 *   **Leverage Extensions:** Enable relevant extensions (like Google Workspace) if you need Gemini to access your personal data (emails, docs) for tasks.
 *   **Use Image Input:** Don't forget you can upload images for analysis, identification, or creative prompts.
 *   **Ask for Sources:** When getting factual information, ask Gemini for its sources or use the "Double-check response" feature (often represented by a Google 'G' icon) to verify claims against web results.
-*   **Refine Prompts:** If you don't get the desired output, edit your prompt or ask follow-up questions. Specify format, tone, and length. Check our [prompt engineering guide](/how-to-master-prompt-engineering/).
+*   **Refine Prompts:** If you don't get the desired output, edit your prompt or ask follow-up questions. Specify format, tone, and length. Check our prompt engineering guide.
 *   **Experiment with Drafts:** Click "Show drafts" to see if alternative responses better suit your needs.
 
 ## Conclusion: Google's Powerful Free AI Tool
