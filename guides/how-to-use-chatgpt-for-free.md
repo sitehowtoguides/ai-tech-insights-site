@@ -50,8 +50,6 @@ Getting started with the free version of ChatGPT is straightforward. Here’s ho
 
 That's it! You now have access to the free tier of ChatGPT without needing to provide any payment information.
 
-![Screenshots showing the ChatGPT signup process](/images/chatgpt-free-signup-process.png)
-
 ## Navigating the Free Interface
 
 The ChatGPT interface is designed to be intuitive:
@@ -62,8 +60,6 @@ The ChatGPT interface is designed to be intuitive:
 *   **Sidebar (Left):** Shows your chat history. You can click on past conversations to resume them or review them.
 *   **New Chat Button:** Usually at the top of the sidebar, click this to start a fresh conversation.
 *   **Account/Settings Menu:** Often found at the bottom-left, allowing access to settings, help, and logout options.
-
-![Annotated screenshot of the free ChatGPT interface](/images/chatgpt-free-interface-annotated.png)
 
 ## Free Tier vs. ChatGPT Plus: Key Differences
 
@@ -101,7 +97,7 @@ Despite the limitations, the free tier is far from basic. Here are some common a
 
 Get the most out of your free ChatGPT experience:
 
-*   **Be Specific with Prompts:** Clear, detailed instructions yield better results. Specify the desired format, tone, length, and target audience. Check our guide on [mastering prompt engineering](/how-to-master-prompt-engineering/).
+*   **Be Specific with Prompts:** Clear, detailed instructions yield better results. Specify the desired format, tone, length, and target audience. Check our guide on mastering prompt engineering.
 *   **Break Down Complex Tasks:** If a task is too large, ask ChatGPT to handle it in smaller, sequential steps.
 *   **Iterate and Refine:** Don't expect perfection on the first try. Ask for revisions, clarifications, or alternative phrasings.
 *   **Use During Off-Peak Hours:** To potentially avoid "at capacity" messages and get faster responses, try using ChatGPT during times when fewer people are likely online in major regions (e.g., late nights or early mornings in North America/Europe).
